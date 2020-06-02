@@ -462,167 +462,65 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-span.animated {
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    bottom: 50px;
-    height: 4px;
-    width: 4px;
-    border-radius: 2px;
+
+/* START SOCIAL ICONS */
+
+.model-7 li {
+    margin: 0 10px;
+}
+
+.model-7 a {
+    background: none;
+    -moz-box-shadow: 0 0 4px 3px;
+    -webkit-box-shadow: 0 0 4px 3px;
+    box-shadow: 0 0 4px 3px;
+    text-shadow: 0 0 1px #333;
+    -moz-transition: -moz-transform 0.4s, background 0.4s;
+    -o-transition: -o-transform 0.4s, background 0.4s;
+    -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+    transition: transform 0.4s, background 0.4s;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.model-7 a .fa {
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+
+.model-7 a:hover {
     background: #fff;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
 }
 
-span::before,
-span::after {
-    position: absolute;
-    top: -23px;
-    content: "";
-    height: 30px;
-    width: 4px;
-    border-radius: 2px;
-    background: #fff;
+.model-7 a:hover .fa {
+    -moz-transform: rotate(-10deg) scale(3);
+    -ms-transform: rotate(-10deg) scale(3);
+    -webkit-transform: rotate(-10deg) scale(3);
+    transform: rotate(-10deg) scale(3);
 }
 
-span::before {
-    left: -10px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+.model-7 .twitter {
+    color: #00ACED;
 }
 
-span::after {
-    right: -10px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+.model-7 .facebook {
+    color: #3B579D;
+}
+
+.model-7 .google-plus {
+    color: #DD4A3A;
+}
+
+.model-7 .linkedin {
+    color: #007BB6;
+}
+
+.model-7 .pinterest {
+    color: #CB2026;
 }
 
 
-/* Scroll animations styles */
-
-.scroll-animations {
-    display: flex;
-}
-
-.scroll-animations div {
-    flex-grow: 1;
-    padding: 30px;
-    text-align: center;
-    opacity: 0;
-    color: #333;
-}
-
-.scroll-animations div span {
-    font-size: 4em;
-    color: #5AA9E0;
-}
-
-.scroll-animations div h3 {
-    font-size: 1.9em;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-
-/* Click animations styles */
-
-.click-animations {
-    margin-top: 35px;
-    padding-bottom: 20px;
-    background: #f6f8fa;
-}
-
-.click-animations input {
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    height: 50px;
-    width: 50%;
-    font-size: 30px;
-    outline: none;
-    border: 2px solid transparent;
-    transition: 0.3s;
-}
-
-.click-animations textarea {
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 50%;
-    font-size: 30px;
-    outline: none;
-    border: 2px solid transparent;
-    resize: none;
-    transition: 0.3s;
-}
-
-.click-animations input:focus,
-.click-animations textarea:focus {
-    border-color: #30cc8b;
-}
-
-.click-animations button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 50%;
-    font-size: 30px;
-    border: none;
-    outline: none;
-    background: #30cc8b;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.click-animations button:active {
-    transform: scale(0.95);
-}
-
-.form-error {
-    border-color: #F46036 !important;
-}
-
-
-/* Media queries */
-
-@media (max-width: 759px) {
-    header h1 {
-        font-size: 5em;
-    }
-    .new-section {
-        font-size: 3em;
-    }
-    .scroll-animations {
-        display: block;
-    }
-    .scroll-animations div {
-        padding: 20px 80px;
-    }
-    .click-animations input,
-    .click-animations textarea,
-    .click-animations button {
-        width: 80%;
-    }
-}
-
-@media (max-width: 475px) {
-    .new-section {
-        font-size: 2.5em;
-    }
-    header h1 {
-        font-size: 3.2em;
-    }
-    header h2,
-    .funky-animations h3 {
-        font-size: 1.5em;
-    }
-}
+/* START SOCIAL ICONS */
