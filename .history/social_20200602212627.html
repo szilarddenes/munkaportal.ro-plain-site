@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
+    <title>Document</title>
+
+    <style>
+      .social-nav {
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+        margin: 10px auto;
+      }
+      .social-nav li {
+        display: inline-block;
+      }
+      .social-nav a {
+        display: inline-block;
+        float: left;
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        line-height: 48px;
+        background: #000;
+        position: relative;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+
+      .model-7 li {
+        margin: 0 10px;
+      }
+      .model-7 a {
+        background: none;
+        -moz-box-shadow: 0 0 4px 3px;
+        -webkit-box-shadow: 0 0 4px 3px;
+        box-shadow: 0 0 4px 3px;
+        text-shadow: 0 0 1px #333;
+        -moz-transition: -moz-transform 0.4s, background 0.4s;
+        -o-transition: -o-transform 0.4s, background 0.4s;
+        -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+        transition: transform 0.4s, background 0.4s;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+      }
+      .model-7 a .fa {
+        -moz-transition: -moz-transform 1s;
+        -o-transition: -o-transform 1s;
+        -webkit-transition: -webkit-transform 1s;
+        transition: transform 1s;
+      }
+      .model-7 a:hover {
+        background: #fff;
+      }
+      .model-7 a:hover .fa {
+        -moz-transform: rotate(-10deg) scale(3);
+        -ms-transform: rotate(-10deg) scale(3);
+        -webkit-transform: rotate(-10deg) scale(3);
+        transform: rotate(-10deg) scale(3);
+      }
+      .model-7 .twitter {
+        color: #00aced;
+      }
+      .model-7 .facebook {
+        color: #3b579d;
+      }
+      .model-7 .google-plus {
+        color: #dd4a3a;
+      }
+      .model-7 .linkedin {
+        color: #007bb6;
+      }
+      .model-7 .pinterest {
+        color: #cb2026;
+      }
+</style>
+
+  </head>
+
+  <body>
+    <ul class="social-nav model-7">
+      <li>
+        <a class="twitter" href="https://twitter.com/vineethtrv"
+          ><i class="fa fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a class="facebook" href="#"
+          ><i class="fa">
+            <svg class="fa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="40%" xml:space="preserve"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+        </i>
+        
+        
+      </a>
+      </li>
+      <li>
+        <a
+          class="google-plus"
+          href="https://plus.google.com/u/0/109987289949504261649/posts"
+          ><i class="fa fa-google-plus"></i
+        ></a>
+      </li>
+      <li>
+        <a class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a class="pinterest"><i class="fa fa-pinterest-p"></i></a>
+      </li>
+    </ul>
+    <br />
+
+    <!-- MODEL 3D -->
+    <style>
+      .model-3d-0 a {
+        background: #333;
+        float: left;
+        margin: 0 10px;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+      .model-3d-0 a:hover {
+        -moz-transform: rotateX(-90deg);
+        -webkit-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+      }
+      .model-3d-0 a:hover .fornt {
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .model-3d-0 a:hover .back {
+        -moz-backface-visibility: visible;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+      }
+      .model-3d-0 .front,
+      .model-3d-0 .back {
+        width: 48px;
+        height: 48px;
+        background: #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -moz-transform: translateZ(18px);
+        -webkit-transform: translateZ(18px);
+        transform: translateZ(18px);
+        -moz-backface-visibility: visible;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+      }
+      .model-3d-0 .back {
+        font-size: 32px;
+        -moz-transform: rotateX(90deg) translateZ(18px);
+        -ms-transform: rotateX(90deg) translateZ(18px);
+        -webkit-transform: rotateX(90deg) translateZ(18px);
+        transform: rotateX(90deg) translateZ(18px);
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .model-3d-0 .twitter .back {
+        background: #00aced;
+      }
+      .model-3d-0 .facebook .back {
+        background: #3b579d;
+      }
+      .model-3d-0 .google-plus .back {
+        background: #dd4a3a;
+      }
+      .model-3d-0 .linkedin .back {
+        background: #007bb6;
+      }
+      .model-3d-0 .pinterest .back {
+        background: #cb2026;
+      }
+    </style>
+    <ul class="social-nav model-3d-0">
+      <li>
+        <a class="twitter" href="https://twitter.com/vineethtrv">
+          <div class="front"><i class="fa fa-twitter"></i></div>
+          <div class="back"><i class="fa fa-twitter"></i></div
+        ></a>
+      </li>
+      <li>
+        <a class="facebook" href="https://www.facebook.com/vini.thekingal">
+          <div class="fornt"><i class="fa fa-facebook">
+        </i></i></div>
+          <div class="back"><i class="fa fa-facebook">
+        </i></i></div
+        ></a>
+      </li>
+      <li>
+        <a
+          class="google-plus"
+          href="https://plus.google.com/u/0/109987289949504261649/posts"
+        >
+          <div class="front"><i class="fa fa-google-plus"></i></div>
+          <div class="back"><i class="fa fa-google-plus"></i></div
+        ></a>
+      </li>
+      <li>
+        <a class="linkedin">
+          <div class="front"><i class="fa fa-linkedin"></i></div>
+          <div class="back"><i class="fa fa-linkedin"></i></div
+        ></a>
+      </li>
+      <li>
+        <a class="pinterest">
+          <div class="front"><i class="fa fa-pinterest-p"></i></div>
+          <div class="back"><i class="fa fa-pinterest-p"></i></div
+        ></a>
+      </li>
+    </ul>
+    <br />
+<!-- END MODEL 3D -->
+
+  </body>
+</html>
