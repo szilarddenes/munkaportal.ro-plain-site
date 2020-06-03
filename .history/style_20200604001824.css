@@ -41,6 +41,7 @@ body {
   width: 100%;
   z-index: 100;
   transition: all 0.3s ease-in;
+  padding: 1rem 1rem;
 }
 
 #site-header.hide {

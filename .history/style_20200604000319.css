@@ -41,6 +41,7 @@ body {
   width: 100%;
   z-index: 100;
   transition: all 0.3s ease-in;
+  padding: 1rem 1rem;
 }
 
 #site-header.hide {
@@ -282,6 +283,22 @@ body {
 }
 
 /*============= START NAVIGATION ===*/
+/*============ BOOTSTRAP BREAK POINTS RESPONSIVE PADDING OF NAVBAR ============*/
+
+/* Extra small (xs) devices (portrait phones, less than 576px) */
+No media query since this is the default in Bootstrap
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 
 
 
@@ -291,7 +308,7 @@ body {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   background-color: #e6e7ee !important;
-  /* padding: 0.3rem 0.1rem 0.3rem 1rem !important; */
+  padding: 0.3rem 0.1rem 0.3rem 1rem !important;
   box-shadow: 6px 6px 12px #5d5f6b, -6px -6px 12px;
   text-transform: uppercase;
 }
@@ -775,30 +792,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-/*============ BOOTSTRAP BREAK POINTS RESPONSIVE PADDING OF NAVBAR ============*/
-
-/* Extra (xl) large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px){ 
-    .navbar{
-        padding:0.5rem 5rem 0.5rem 10rem !important;
-    }
-    }
-    /* Large (lg) devices (desktops, 992px and up) */
- @media (min-width: 992px) {.navbar{
-        padding:0.3rem 3rem 0.3rem 3rem !important;
-    }
-    }
-    /* Medium (md) devices (tablets, 768px and up) */
-    @media (min-width: 768px) {.navbar{
-        padding:0.3rem 3rem 0.3rem 3rem !important;
-    }
-    }
-    /* Small (sm) devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) {.navbar{
-        padding:0.5rem 4rem 0.3rem 4rem !important;
-    }
-    }
-    /* Extra small (xs) devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-
-/*============END BOOTSTRAP BREAK POINTS RESPONSIVE PADDING OF NAVBAR ============*/
