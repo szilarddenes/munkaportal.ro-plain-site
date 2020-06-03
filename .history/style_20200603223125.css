@@ -52,10 +52,8 @@ body {
 }
 
 .navbar.nyitva{
-    border-radius:0 0 10px 10px;
-    padding-bottom: 3rem !important;
-    padding-top: 0.8rem !important;
-    box-shadow:#0e0d0d 0 0 0.9rem 0 ;
+    border-radius: 25px;
+    
 }
 
 .transpp {
@@ -85,7 +83,7 @@ body {
 }
 
 .shadow-soft {
-    box-shadow: 6px 6px 12px #5d5f6b; /* #b8b9be*/
+    box-shadow: 6px 6px 12px #b8b9be;
     /* border-style: -6px -6px 12px #fff!important; */
     border-radius: .55rem!important;
     box-sizing: border-box;
@@ -312,8 +310,8 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
     background-color: #e6e7ee !important;
-    padding: .7rem .5rem .7rem 1rem !important;
-    box-shadow: 6px 6px 12px #5d5f6b, -6px -6px 12px;
+    padding: .2rem .2rem .2rem 1rem !important;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px;
     text-transform: uppercase;
     
     

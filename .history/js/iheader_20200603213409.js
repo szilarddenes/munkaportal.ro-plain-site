@@ -30,11 +30,11 @@
         }
         if (window.pageYOffset <= 20) {
             header.classList.add('transpp');
-            // prevDirection = direction;
+            prevDirection = direction;
 
         } else if (window.pageYOffset >= 20) {
             header.classList.remove('transpp');
-            // prevDirection = direction;
+            prevDirection = direction;
         }
 
         prevScroll = curScroll;

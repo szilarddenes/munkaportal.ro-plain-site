@@ -42,25 +42,15 @@ body {
     top: 0;
     width: 100%;
     z-index: 100;
-    transition: all .3s ease-in;
-    padding: 1rem 1rem;
+    transition: all 1s ease;
 }
 
 #site-header.hide {
-    /* display: none; */
-    top: -100px;
-}
-
-.navbar.nyitva{
-    border-radius:0 0 10px 10px;
-    padding-bottom: 3rem !important;
-    padding-top: 0.8rem !important;
-    box-shadow:#0e0d0d 0 0 0.9rem 0 ;
+    display: none;
 }
 
 .transpp {
     box-shadow: none !important;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -85,37 +75,20 @@ body {
 }
 
 .shadow-soft {
-    box-shadow: 6px 6px 12px #5d5f6b; /* #b8b9be*/
-    /* border-style: -6px -6px 12px #fff!important; */
+    box-shadow: 6px 6px 12px #b8b9be;
+    border-style: -6px -6px 12px #fff!important;
     border-radius: .55rem!important;
     box-sizing: border-box;
-}
-.shade-hard{
-    box-shadow: 6px 6px 12px #787b86;
-    /* border-style: -6px -6px 12px #fff!important; */
-    border-radius: .55rem!important;
-    box-sizing: border-box;
-
 }
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 50px) {
-    .jumbotron,
-    .jumbotron-fluid,
-    .customJumbotron {
-        margin: 5rem 5rem !important;
-        padding: 1.5rem;
-        display: flex;
-        align-items: center;
-    }
-}
 
 @media (min-width: 576px) {
     .jumbotron,
     .jumbotron-fluid,
     .customJumbotron {
-        margin: 5rem 5rem !important;
+        margin: 4rem 4rem !important;
         padding: 1.5rem;
         display: flex;
         align-items: center;
@@ -312,18 +285,14 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
     background-color: #e6e7ee !important;
-    padding: .7rem .5rem .7rem 1rem !important;
-    box-shadow: 6px 6px 12px #5d5f6b, -6px -6px 12px;
-    text-transform: uppercase;
-    
-    
+    padding: .1rem .1rem .1rem .8rem !important;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff;
 }
 
-
 .navbar-brand img {
-    height: 2.5rem;
-    margin: 0.0rem;
-    padding: .0rem;
+    height: 2.8rem;
+    margin: 0rem;
+    padding: .1rem;
 }
 
 .navbar-nav li {
@@ -331,36 +300,27 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: black;
+    color: #373d3f;
     /* text-shadow: 0.1rem 0.1rem 0.5rem black; */
     margin-top: 0.2rem;
-    padding: 0.75rem;
-
-}
-.navbar-dark .navbar-nav .nav-link .nyitva {
-    color: black;
-    /* text-shadow: 0.1rem 0.1rem 0.5rem black; */
-    margin-top: 0.2rem;
-    padding: 0.75rem;
-    text-shadow: 0.1rem 0.1rem 0.8rem #090c16;
+    padding: 0.6rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active>.nav-link {
-    color: black;
+    color: #d29320;
     text-shadow: none;
- 
 }
 
-#postajob, #postajob:hover {
+#postajob:hover {
     color: white;
     background-color: seagreen !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-#facebook,#facebook:hover {
+#facebook:hover {
     color: white;
     background-color: #4167b2 !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
@@ -379,8 +339,6 @@ body {
     justify-content: center;
     text-align: center;
     padding-top: 0.5rem;
-    padding-bottom: 0.3rem;
-    
 }
 
 .navbar.nyitva {
@@ -417,13 +375,9 @@ body {
     width: 25px;
     height: 3px;
     background-color: white;
-    background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
-    background-size: 200% 200%;
-    animation: gradient 10s ease infinite;
     display: block;
     transition: all 0.2s;
     margin-top: 4px;
-    border-radius: 25px;
 }
 
 .navbar-toggler,

@@ -30,18 +30,18 @@
         }
         if (window.pageYOffset <= 20) {
             header.classList.add('transpp');
-            // prevDirection = direction;
+            prevDirection = direction;
 
-        } else if (window.pageYOffset >= 20) {
+        } else if (window.pageYOffset >= 50) {
             header.classList.remove('transpp');
-            // prevDirection = direction;
+            prevDirection = direction;
         }
 
         prevScroll = curScroll;
     };
 
     var toggleHeader = function(direction, curScroll) {
-        if (direction === 2 && curScroll > 10) {
+        if (direction === 2 && curScroll > 52) {
 
             //replace 52 with the height of your header in px
 
