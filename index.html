@@ -17,13 +17,14 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarSupportedContent">
+
     <!--- Start Home section -->
     <div id="home">
         <!---Navigation-->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">
+        <!-- navbar-light navbar-transparent headroom--not-bottom headroom--pinned headroom--top -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="site-header">
+            <a class="navbar-brand shadow-soft" href="#">
                 <img src="img/jobP_logo_85x40svg.svg" />
-                <!--style="width: auto; height: 48px;" class="img-responsive">-->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="icon-bar top-bar"></span>
@@ -53,11 +54,13 @@
                 </ul>
             </div>
         </nav>
+    </div>
 
-        <!---End Navigation-->
+    <!---End Navigation-->
 
-        <!--- Start Landing Page Section-->
-
+    <!--- Start Landing Page Section-->
+    <!-- Start Jumobtron -->
+    <div class="jumbotron-fluid text-center justify-content-center customJumbotron float-md-center shadow-soft">
         <!-- Start Slider section -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
             <ol class="carousel-indicators">
@@ -66,9 +69,9 @@
             </ol>
             <!-- Start carousel inner -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
+                <div class="item active img-fluid">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="img/slider_bg1_768.png" />
+                        <source media="(max-width:768%)" srcset="img/slider_bg1_1024.png" />
                         <source media="(min-width: 769px)" srcset="img/slider_bg1_1024.png" />
                         <img src="img/slide_7.png" width="100%" height="100%" />
                     </picture>
@@ -84,6 +87,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
+
         <!-- End Slider Section -->
 
         <div class="caption text-center">
@@ -91,21 +95,24 @@
             <h3 class="animate__animated animate__bounce">by munkaportal.ro</h3>
             <a class="btn btn-outline-light btn-lg" href="#mid"> Learn More </a>
         </div>
-        <br>
-        <!--- End Landing Page Section-->
+    </div>
+    <!-- End Jumobtron -->
+    <!--- End Landing Page Section-->
 
-        <!--- Start Home section -->
-        <div id="Home"></div>
-        <!--- End Home section -->
+    <!--- Start Post a JoB HEader -->
+    <div class="jumbotron-fluid customTitle float-md-center shadow-soft text-center text-uppercase" id="postajob">
+        <h4> Post a Job</h4>
+    </div>
+    <!--- End Post a JOb Header -->
 
-        <!--- Start Post a Job section -->
+    <!--- Start Post a Job section -->
 
-        <div class="container-md" id="postjobcontainer">
-            postjobcontainer
-            <div class="row">
-                <div class="col-md d-flex justify-content-center" id="postjob ">
-                    <div class="responsiveEmbedd">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSei5lbbt-Ow0BDDjJBKBSz3DX0C4YRwPTaVNXci3fltt4gvmg/viewform?embedded=true " width="300 " height="400 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe
+    <div class="container-md" id="postjobcontainer">
+        postjobcontainer
+        <div class="row">
+            <div class="col-md d-flex justify-content-center" id="postjob ">
+                <div class="responsiveEmbedd">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSei5lbbt-Ow0BDDjJBKBSz3DX0C4YRwPTaVNXci3fltt4gvmg/viewform?embedded=true " width="300 " height="400 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe
           >
         </div>
       </div>
@@ -211,7 +218,7 @@
 
 
     <!--- Start Contact section -->
-    <div class="mx-auto" id="Contact" style="; width:fit-content; font-size: 6vw;"> CONTACT US
+    <div class="mx-auto" id="Contact" style="width:fit-content; font-size: 6vw;"> CONTACT US
     </div>
   <div class="<div class="container-md" id="ContainerForm">
     
@@ -229,13 +236,15 @@
 
     <!--- End Contact section -->
     <!--- Script Source Files -->
-    <script defer src="js/jquery-3.3.1.min.js"></script>
-    <script defer src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
+    <script src="js/iheader.js"></script>
    
     <!--- End of Script Source Files -->
+
 </body>
 
 </html>
