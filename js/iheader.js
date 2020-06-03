@@ -28,11 +28,11 @@
         if (direction !== prevDirection) {
             toggleHeader(direction, curScroll);
         }
-        if (window.pageYOffset <= 55) {
+        if (window.pageYOffset <= 50) {
             header.classList.add('transpp');
             prevDirection = direction;
 
-        } else if (window.pageYOffset >= 55) {
+        } else if (window.pageYOffset >= 50) {
             header.classList.remove('transpp');
             prevDirection = direction;
         }
