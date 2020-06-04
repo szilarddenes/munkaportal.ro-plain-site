@@ -536,10 +536,6 @@ button.navbar-toggler {
 
 /*============ START LANDING PAGE CSS: ===*/
 
-#welcomeText{
-    margin-top: 80px;
-    font-weight: 500;
-}
 
 /* start divider */
 
@@ -555,11 +551,7 @@ button.navbar-toggler {
     background-size: cover;
 }
 
-@media (max-width: 576px){
-#hidebelowSM{
-    display: none !important;
-}
-}
+.hide
 
 
 /* end divider */
