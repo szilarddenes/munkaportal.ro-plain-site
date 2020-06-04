@@ -8,7 +8,6 @@
   var prevDirection = 0;
   var header = document.getElementById('site-header');
   var pageYOffset = 0;
-  header.classList.add('transpp');
 
   var checkScroll = function () {
     /*

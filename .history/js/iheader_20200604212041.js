@@ -8,14 +8,13 @@
   var prevDirection = 0;
   var header = document.getElementById('site-header');
   var pageYOffset = 0;
-  header.classList.add('transpp');
 
   var checkScroll = function () {
     /*
      ** Find the direction of scroll
      ** 0 - initial, 1 - up, 2 - down
      */
-    //set transparent by default
+    //set
 
     curScroll = w.scrollY || doc.scrollTop || pageYOffset;
     if (curScroll > prevScroll) {

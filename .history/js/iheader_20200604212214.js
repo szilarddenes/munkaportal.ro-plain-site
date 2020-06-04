@@ -17,6 +17,7 @@
      */
     //set transparent by default
 
+
     curScroll = w.scrollY || doc.scrollTop || pageYOffset;
     if (curScroll > prevScroll) {
       //scrolled up
