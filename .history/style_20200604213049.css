@@ -541,17 +541,11 @@ button.navbar-toggler {
     margin-top: 200px;
     font-weight: 500;
 }
-#CarouselMobile{
-    display:none !important;
-}
 }
 @media (max-width: 767px){
 #welcomeText{
     margin-top: 120px;
     font-weight: 500;
-}
-#CarouselDesktop{
-    display:none !important;
 }
 }
 /* end basic queries */
@@ -588,7 +582,6 @@ button.navbar-toggler {
     border-radius: 50%;
     background: 0 0;
     border: 2px solid #393939;
-    padding: 0.3;
 }
 
 .carousel-indicators .active {
