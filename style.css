@@ -524,14 +524,13 @@ button.navbar-toggler {
 
 /* start divider1 */
 
-#divider1 {
+#divider12 {
     background-image: url(/img/elvalaszto_szurke.svg);
-    background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
 }
 
-#divider2 {
+#divider12 {
     background-image: url(/img/elvalaszto_kek.svg);
     background-repeat: no-repeat;
     background-position: 100%;
@@ -832,6 +831,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 
 /* No media query since this is the default in Bootstrap */
+
+
+/*============END BOOTSTRAP BREAK POINTS RESPONSIVE PADDING OF NAVBAR ============*/
 
 
 /*============END BOOTSTRAP BREAK POINTS RESPONSIVE PADDING OF NAVBAR ============*/
