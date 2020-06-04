@@ -537,12 +537,6 @@ button.navbar-toggler {
 /*============ START LANDING PAGE CSS: ===*/
 @media (min-width: 768px){
 #welcomeText{
-    margin-top: 200px;
-    font-weight: 500;
-}
-}
-@media (max-width: 767px){
-#welcomeText{
     margin-top: 100px;
     font-weight: 500;
 }

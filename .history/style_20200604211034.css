@@ -543,7 +543,7 @@ button.navbar-toggler {
 }
 @media (max-width: 767px){
 #welcomeText{
-    margin-top: 100px;
+    margin-top: 200px;
     font-weight: 500;
 }
 }

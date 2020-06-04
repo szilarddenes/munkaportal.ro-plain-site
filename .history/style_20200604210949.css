@@ -541,12 +541,6 @@ button.navbar-toggler {
     font-weight: 500;
 }
 }
-@media (max-width: 767px){
-#welcomeText{
-    margin-top: 100px;
-    font-weight: 500;
-}
-}
 
 /* start divider */
 
