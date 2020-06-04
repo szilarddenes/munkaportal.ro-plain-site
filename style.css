@@ -537,6 +537,24 @@ button.navbar-toggler {
 /*============ START LANDING PAGE CSS: ===*/
 
 
+/* start divider */
+
+.jumbotron#divider1 {
+    background-image: url(img/elvalaszto_szurke.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron#divider2 {
+    background-image: url(img/elvalaszto_kek.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* end divider */
+
+
 /*============ START POSTJOB CSS: ===*/
 
 #postjobcontainer {
