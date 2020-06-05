@@ -545,13 +545,12 @@ button.navbar-toggler {
 /* start basic queries  */
 @media (min-width: 768px){
 #welcomeText{
-    margin-top: 200px;
+    margin-top: 130px;
     font-weight: 500;
 }
 #CarouselMobile{
     display:none !important;
 }
-
 }
 @media (max-width: 767px){
 #welcomeText{

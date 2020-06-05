@@ -102,8 +102,8 @@ div#plane-bcg{
    * Clouds
    */
   .clouds {
-    position: absolute;
-    top: -10%;
+    position: relative;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -111,7 +111,6 @@ div#plane-bcg{
     transform: translateZ(0);
     z-index: 0;
     overflow: visible;
-    min-width: 100vw;
   }
   
   .cloud {

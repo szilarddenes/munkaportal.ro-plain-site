@@ -551,7 +551,6 @@ button.navbar-toggler {
 #CarouselMobile{
     display:none !important;
 }
-
 }
 @media (max-width: 767px){
 #welcomeText{
