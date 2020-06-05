@@ -19,10 +19,10 @@
 // tl
 // .add
 const myAnimation = anime({
-    // easing: 'linear',
-    // direction: 'forward',
-    // duration: 1000,
-    // loop: true,
+    easing: 'linear',
+    direction: 'forward',
+    duration: 1000,
+    loop: true,
     targets: '#svgFacebookwhiteHeart',
     translateY: [
         { value: 250, duration: 150 },
