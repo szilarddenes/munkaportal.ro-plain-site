@@ -23,7 +23,7 @@ div#plane-bcg{
   /*Paper Plane: Container*/
   .plane-container {
     width: 200px;
-    margin: 20px auto;
+    margin: 0px auto;
     z-index: 3;
   }
    /*Paper Plane: Image*/
