@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>jobP by Munkaportal.ro</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" href="css/paperplane.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- <link rel="stylesheet" href="/css/svg.css"> -->
+</head>
+<body>
+    <form name="submit-to-google-sheet">
+    <div class="container">
+        <form>
+          <h2>Post your Job</h2>
+<!--start row1 -->
+        <div class="row"> 
+    <!-- Email -->
+            <div class="col-md-6">
+
+              <div class="form-group">
+                    <i class="fa fa-envelope fa-lg"></i> 
+                <label for="email">E-mail Address</label>
+                <input type="email" class="form-control" id="email" placeholder="email" name="Email" required>
+              </div>
+            </div>
+             <!--  col-md-6   --> 
+    <!-- Jobcategory -->
+              <div class="col-md-6">
+                <div class="form-group">
+                    <i class="fa fa-user-md fa-lg"></i> 
+                    <label for="JobCategories"> Job Category</label>
+                    <select class="custom-select custom-select-lg mb-3" id="JobCategory" name="Jobcategory" required>
+                        <option selected>select job categories</option>
+                        <option value="Adminisztráció, Irodai munka">Adminisztráció, Irodai munka</option>
+                        <option value="Bank, Biztosítás, Bróker">Bank, Biztosítás, Bróker</option>
+                        <option value="Cégvezetés, Menedzsment">Cégvezetés, Menedzsment</option>
+                        <option value="Egészségügy, Gyógyszeripar">Egészségügy, Gyógyszeripar</option>
+                        <option value="Építőipar, Ingatlan">Építőipar, Ingatlan</option>
+                        <option value="Értékesítés, Kereskedelem">Értékesítés, Kereskedelem</option>
+                        <option value="Fizikai, Segéd, Betanított munkás">Fizikai, Segéd, Betanított munkás</option>
+                        <option value="Gyártás, Termelés">Gyártás, Termelés</option>
+                        <option value="HR, Munkaügy">HR, Munkaügy</option>
+                        <option value="IT programozás, Fejlesztés">IT programozás, Fejlesztés</option>
+                        <option value="IT üzemeltetés, Telekom">IT üzemeltetés, Telekom</option>
+                        <option value="Jog, Jogi tanácsadás">Jog, Jogi tanácsadás</option>
+                        <option value="Közigazgatás">Közigazgatás</option>
+                        <option value="Marketing, Média, PR">Marketing, Média, PR</option>
+                        <option value="Mérnök">Mérnök</option>
+                        <option value="Mezőgazdaság, Környezet">Mezőgazdaság, Környezet</option>
+                        <option value="Oktatás, Kutatás, Tudomány">Oktatás, Kutatás, Tudomány</option>
+                        <option value="Pénzügy, Könyvelés">Pénzügy, Könyvelés</option>
+                        <option value="Szakmunka">Szakmunka</option>
+                        <option value="Szállítás, Beszerzés, Logisztika">Szállítás, Beszerzés, Logisztika</option>
+                        <option value="Ügyfélszolgálat, Vevőszolgálat">Ügyfélszolgálat, Vevőszolgálat</option>
+                        <option value="Üzleti támogató központok">Üzleti támogató központok</option>
+                        <option value="Vendéglátás, Idegenforgalom">Vendéglátás, Idegenforgalom</option>
+                      </select>
+                </div>
+              </div>
+        <!--  col-md-6   --> 
+        </div>
+<!-- end row1 -->
+
+<!--start row2 -->
+        <div class="row">
+    <!-- Jobtype -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fa fa-clock fa-lg"></i> 
+                        <label for="JobType"> Job Type</label>
+                        <select class="custom-select custom-select-lg mb-3" id="JobType" name="Jobtype" required>
+                            <option selected>select job type</option>
+                            <option value="Teljes munkaidős">Teljes munkaidős</option>
+                            <option value="Részmunkaidős">Részmunkaidős</option>
+                            <option value="Diákmunka">Diákmunka</option>
+                            <option value="Szezon/idény munka">Szezon/idény munka</option>
+                            
+                        </select>
+                    </div>
+                </div>
+            <!--  col-md-6   -->  
+
+    <!-- Joblocation -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <i class="fa fa-map-marker-alt fa-lg"></i> 
+                <label for="JobLocation">Job Location</label>
+                <input type="text" class="form-control" id="joblocation" placeholder="country, county, city" name="Joblocation" required>
+              </div>
+            </div>
+            <!--  col-md-6   -->
+            </div>
+<!--end row2 -->
+
+<!-- start row3 -->
+    <div class="row">
+<!-- Company -->
+        <div class="col-md-6">
+        <div class="form-group">
+            <i class="fas fa-copyright fa-lg"></i> 
+        <label for="company">Company</label>
+        <input type="text" class="form-control" placeholder="company name or website" id="company" name="Company" required>
+        </div>
+    </div>
+    <!--  col-md-6   -->
+
+    <div class="col-md-6">
+<!-- Phone -->
+    <div class="form-group">
+        <i class="fas fa-phone-square-alt fa-lg"></i>
+      <label for="phone">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" placeholder="phone" name="Phone" required>
+    </div>
+  </div>
+  <!--  col-md-6   -->
+    </div>
+<!-- end row3 -->
+
+<!-- start row4   -->
+    <div class="row">
+<!-- Deadline -->
+             <div class="col-md-6">
+                <div class="form-group">  <i class="fas fa-hourglass-half fa-lg"></i>
+                    <label for="Deadline">Job Deadline</label>
+                      <input class="form-control" type="date" value="2020-06-06" id="deadline" name="Deadline" required>
+                  </div>
+            </div>  
+        <!-- col md-6 -->
+    
+<!-- How U Find us? -->
+<div class="col-md-6">
+    <div class="form-group">  <i class="fas fa-search fa-lg"></i>
+    <label for="form-check">How did you find us?</label>
+                  <div class="form-check justify-content-center text">
+                    
+                    <input class="form-check-input" type="checkbox" value="yes" id="CheckFacebook" name="chkFacebook">
+                    <label class="form-check-label" for="CheckFacebook">
+                      Facebook
+                    </label>
+                    <br>
+                  <!-- </div> -->
+                  <!-- <div class="form-check"> -->
+                    <input class="form-check-input" type="checkbox" value="yes" id="CheckInstagram" name="chkInstagram">
+                    <label class="form-check-label" for="CheckInstagram">
+                      Instagram
+                    </label>
+                    <br>
+                  <!-- </div> -->
+                  <!-- <div class="form-check"> -->
+                    <input class="form-check-input" type="checkbox" value="yes" id="CheckWebSearch" name="chkWebSearch">
+                    <label class="form-check-label" for="CheckWebSearch">
+                      Web Search
+                    </label>
+                    <br>
+                  <!-- </div> -->
+                  <!-- <div class="form-check"> -->
+                    <input class="form-check-input" type="checkbox" value="yes" id="CheckElse" name="chkElse">
+                    <label class="form-check-label" for="CheckElse">
+                      Else
+                    </label>
+                  <!-- </div> -->
+                </div>
+             </div>
+            </div>
+    
+</div>
+<!-- end  row4 -->   
+
+<!-- start row5 -->
+
+<!-- Jobannouncement -->
+<div class="row justify-content-center text-center">
+             <div class="col">
+              <div class="form-group">
+                <i class="fas fa-keyboard fa-lg"></i>
+                <label for="jobAnnouncement">Describe Your Job Opportunity</label>
+                
+                <textarea class="form-control" id="jobAnnouncement" rows="8" placeholder="paste your job description" name="Jobannouncement" required></textarea>
+              </div>
+            </div>  
+              <!-- col md-6 -->
+
+</div>
+<!-- end row 5 -->
+    
+
+
+<!-- Terms And Conditions -->
+<div class="row justify-content-center text-center">
+    <i class="fas fa-user-check fa-lg"></i>     
+    <label for="TermsConditions">I read and accept the Terms and Conditions.   
+
+    </label>
+    
+    <div class="row"></div>
+          <div class="checkbox">
+           <label>
+              <input type="checkbox" value="I Agree!" id="TermsConditions" name="Termsandconditions" required> Accept
+            </label>
+          </div>
+    </div>
+</div>
+      
+<div class="row justify-content-center text-center">
+    <div class="col-md-6">
+          <button type="submit" class="btn btn-success btn-lg">Submit</button> 
+        <button type="button" class="btn btn-warning btn-lg" href="mailto:hello@jobp.eu">E-mail Us</button>
+</div>
+</form>
+<!-- End FORM -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLcct6zTG82ECD9tt0fM6W8sRjmNHFfgT69DZr71kPeDlC1m4/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+      
+     
+
+
+      <!--- Script Source Files -->
+      <script src="js/jquery-3.3.1.min.js "></script>
+      <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js "></script>
+      <script src="js/main.js "></script>
+      <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js "></script>
+      <script src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js "></script>
+      <script src="js/iheader.js "></script>
+      <script src="js/carouselnrm.js "></script> 
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+</body>
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbxLcct6zTG82ECD9tt0fM6W8sRjmNHFfgT69DZr71kPeDlC1m4/exec -->
+
+
