@@ -618,7 +618,7 @@ button.navbar-toggler {
 #facebookcontainer {
   width: 100%;
   max-width: 100%;
-  background-color: #25231f;
+  background-color: #31344bf;
 }
 
 #facebookdescription {
@@ -762,7 +762,6 @@ button.navbar-toggler {
 .card-body {
   flex: 1 1 auto;
   padding: 1.5rem;
-  width:100%;
 }
 .card {
   position: relative;
@@ -812,8 +811,8 @@ color: #31344b;
 margin: .5rem !important;
 padding: .5rem !important;
 }
-span.fab{color: #31344b;
-  color: #31344b;
+span.fab{color: #31344bf;
+  color: #31344bf;
   margin: .5rem !important;
   padding: .5rem !important;
 
@@ -831,10 +830,6 @@ span.fab{color: #31344b;
   background-clip: border-box;
   border: .0625rem solid rgba(243,247,250,.05);
   border-radius: .55rem;
-}
-
-#accordionContainer{
-  margin-bottom: 3rem;
 }
 
 /* END ACCORDION */

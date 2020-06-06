@@ -762,7 +762,6 @@ button.navbar-toggler {
 .card-body {
   flex: 1 1 auto;
   padding: 1.5rem;
-  width:100%;
 }
 .card {
   position: relative;
@@ -831,10 +830,6 @@ span.fab{color: #31344b;
   background-clip: border-box;
   border: .0625rem solid rgba(243,247,250,.05);
   border-radius: .55rem;
-}
-
-#accordionContainer{
-  margin-bottom: 3rem;
 }
 
 /* END ACCORDION */

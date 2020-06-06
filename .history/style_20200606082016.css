@@ -120,8 +120,8 @@ body {
   .jumbotron,
   .jumbotron-fluid,
   .customJumbotron {
-    margin: 5rem 1.7rem 5rem 1.7rem !important;
-    padding: 1.4rem;
+    margin: 5rem 2rem 5rem 2rem !important;
+    padding: 1.7rem;
     display: flex;
     align-items: center;
   }
@@ -762,7 +762,6 @@ button.navbar-toggler {
 .card-body {
   flex: 1 1 auto;
   padding: 1.5rem;
-  width:100%;
 }
 .card {
   position: relative;
@@ -803,21 +802,16 @@ button.navbar-toggler {
   user-select: none;
 }
 span.icon-title, span.fab{
-  color: #31344b;
-  margin: .5rem !important;
-  padding: .5rem !important;
+color: #25231f;
+margin: .5rem;
+padding: .5rem;
 }
 span.fab::before{
-color: #31344b;
-margin: .5rem !important;
-padding: .5rem !important;
+color: #25231f;
+margin: .5rem;
+padding: .5rem;
 }
-span.fab{color: #31344b;
-  color: #31344b;
-  margin: .5rem !important;
-  padding: .5rem !important;
-
-}
+span.fab, 
 .accordion-panel-header[aria-expanded=true]>.icon {
   transform: rotateZ(45deg);
 }
@@ -831,10 +825,6 @@ span.fab{color: #31344b;
   background-clip: border-box;
   border: .0625rem solid rgba(243,247,250,.05);
   border-radius: .55rem;
-}
-
-#accordionContainer{
-  margin-bottom: 3rem;
 }
 
 /* END ACCORDION */

@@ -762,7 +762,6 @@ button.navbar-toggler {
 .card-body {
   flex: 1 1 auto;
   padding: 1.5rem;
-  width:100%;
 }
 .card {
   position: relative;
@@ -782,7 +781,7 @@ button.navbar-toggler {
 }
 
 .accordion-panel-header .icon {
-  color: #31344b;
+  color: #313;
   transition: all .2s ease;
 }
   .accordion-panel-header .icon-title {
@@ -803,17 +802,17 @@ button.navbar-toggler {
   user-select: none;
 }
 span.icon-title, span.fab{
-  color: #31344b;
+  color: #25231f;
   margin: .5rem !important;
   padding: .5rem !important;
 }
 span.fab::before{
-color: #31344b;
+color: #25231f;
 margin: .5rem !important;
 padding: .5rem !important;
 }
-span.fab{color: #31344b;
-  color: #31344b;
+span.fab{color: #25231f;
+  color: #25231f;
   margin: .5rem !important;
   padding: .5rem !important;
 
@@ -831,10 +830,6 @@ span.fab{color: #31344b;
   background-clip: border-box;
   border: .0625rem solid rgba(243,247,250,.05);
   border-radius: .55rem;
-}
-
-#accordionContainer{
-  margin-bottom: 3rem;
 }
 
 /* END ACCORDION */
