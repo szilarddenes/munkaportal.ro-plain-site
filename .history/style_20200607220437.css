@@ -896,7 +896,7 @@ textarea {
 }
 
 /* start submit button */
-.buttonSubmit {
+.buttonSubmut {
   background: #2B2D2F;
   height: 80px;
   width: 200px;
@@ -911,7 +911,7 @@ textarea {
   border-radius: 4px;
 }
 
-.textSubmit {
+.text {
   font: bold 1.25rem/1 poppins;
   color: #71DFBE;
   position: absolute;
@@ -921,7 +921,7 @@ textarea {
   right: 0;
 }
 
-.progress-barSubmit {
+.progress-bar {
   position: absolute;
   height: 10px;
   width: 0;
@@ -933,7 +933,7 @@ textarea {
   background: #505357;
 }
 
-#svgSubmit {
+svg {
   width: 30px;
   position: absolute;
   top: 50%;
@@ -942,7 +942,7 @@ textarea {
   right: 0;
 }
 
-.checkSubmit {
+.check {
   fill: none;
   stroke: #FFFFFF;
   stroke-width: 3;

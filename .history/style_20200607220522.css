@@ -933,7 +933,7 @@ textarea {
   background: #505357;
 }
 
-#svgSubmit {
+svgSubmit {
   width: 30px;
   position: absolute;
   top: 50%;

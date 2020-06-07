@@ -14,6 +14,7 @@
 
 // });
 
+
 // // Add children
 // tl
 // .add
@@ -37,7 +38,10 @@
 
 //         { value: 25, duration: 150 },
 
+
+
 //         { value: -25, duration: 250 },
+
 
 //         { value: 0, duration: 400 },
 
@@ -48,22 +52,18 @@
 //         { value: 1, duration: 400 },
 //         { value: 1, duration: 400 },
 
+
 //     ],
+
 
 // }, '+=' + 1000)
 
 // end
 
-function randomValues() {
-  anime({
-    targets: '#svgFacebookwhiteHeart',
-    translateX: function () {
-      return anime.random(0, 270);
-    },
-    easing: 'easeInOutQuad',
-    duration: 750,
-    complete: randomValues,
+anime({
+    targets: 'svgFacebookwhiteHeart',
+    left: '240px',
+    backgroundColor: '#FFF',
+    borderRadius: ['0%', '50%'],
+    easing: 'easeInOutQuad'
   });
-}
-
-randomValues();
