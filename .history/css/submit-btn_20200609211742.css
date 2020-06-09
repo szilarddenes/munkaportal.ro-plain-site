@@ -1,0 +1,106 @@
+            #buttonSubmit {
+                font-weight: bold;
+                outline: none;
+                width: 244px;
+                height: 50px;
+                background: #085ff7;
+                color: #fff;
+                text-align: center;
+                font-size: 15px;
+                border-radius: 40px;
+                border-color: #085ff7;
+                transition: all .25s ease;
+            }
+            
+            #buttonSubmit:after {
+                content: "Feedback";
+            }
+            
+           .grey-button {
+                width: 35px;
+                height: 35px;
+                background-color: #EEEEED;
+                border-color: #CACAC9;
+                border-top-color: #00B887;
+                border-width: 4px;
+                border-radius: 50%;
+                margin-left: 7px;
+                animation: rotate 1s .25s infinite;
+            }
+            
+            .grey-button:after {
+                content: "";
+            }
+            
+            .grey-outline {
+                width: 50px;
+                height: 50px;
+                background-color: #EEEEED;
+                border-width: 4px;
+                border-radius: 50%;
+                z-index: -1;
+                position: relative;
+                bottom: 42px;
+                right: 0;
+            }
+            
+            .grey-outline:after {
+                content: "";
+            }
+            
+            #confirm {
+                background-color: #E6FFF6;
+                max-width: 20%;
+                padding: 15px;
+                border-radius: 24px 24px 24px 0;
+                margin-left: 55px;
+                height: 106px;
+            }
+            
+            #confirm h1 {
+                color: #00825f;
+                font-size: 16px;
+            }
+            
+            #confirm p {
+                font-size: 12px;
+            }
+            
+            #confirm .column {
+                line-height: 20px;
+                margin-left: 16px;
+            }
+            
+            #finish {
+                width: 50px;
+                height: 50px;
+                background-color: #00B887;
+                border-color: #00B887;
+            }
+            
+            #finish i {
+                font-size: 25px;
+            }
+            
+            #finish:after {
+                content: "";
+            }
+            
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            
+            .disappear {
+                display: none;
+            }
+            
+            .redalert {
+                background-color: red !important;
+                color: black;
+            }
+            .basic
