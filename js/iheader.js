@@ -32,7 +32,7 @@
         if (window.pageYOffset <= 5) {
             header.classList.add('transpp');
             // prevDirection = direction;
-        } else if (window.pageYOffset >= 5) {
+        } else if (window.pageYOffset >= 30) {
             header.classList.remove('transpp');
             // prevDirection = direction;
         }
