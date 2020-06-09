@@ -7,6 +7,7 @@
     <title>jobP by Munkaportal.ro</title>
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/submit-btn.css" />
     <link rel="stylesheet" href="css/fixed.css" />
     <link rel="stylesheet" href="css/paperplane.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
@@ -707,16 +708,28 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-md-6">
                         <button type="submit" class="btn btn-success btn-lg" style="margin: 0.5rem;">Submit</button>
-                        <button type="button" class="btn btn-warning btn-lg" style="margin: 0.5rem;" href="            mailto:hello@jobp.eu">E-mail Us</button>
+                        <!-- <button type="button" class="btn btn-warning btn-lg" style="margin: 0.5rem;" href="            mailto:hello@jobp.eu">E-mail Us</button> -->
                     </div>
-                    <div class="button" id="buttonSubmit">
-                        <button type="submit" class="" style="margin: 0.5rem;" id="buttonSubmit"><div class="text" id="textSubmit">Submit</div></button>
-                        <div class="text" id="textSubmit">Submit</div>
-                    </div>
-                    <div class="progress-barSubmit"></div>
-                    <svg id="svgSubmit" x="0px" y="0px" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
-                        <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                    <!-- start codepen submit button -->
+                    <div id="button-wrapper">
+                        <button class="submit" href="#">Submit</button>
+                        <div class="loader-wrapper">
+                            <span class="loader yellow"></span>
+                            <span class="loader pink"></span>
+                        </div>
+                        <span class="loader orange"></span>
+
+                        <div class="check-wrapper">
+                            <svg version="1.1" width="65px" height="38px" viewBox="0 0 64.5 37.4">
+                      <polyline class="check" points="5,13 21.8,32.4 59.5,5 "/>
                       </svg>
+                        </div>
+
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">  <defs>    <filter id="goo">      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />      <feBlend in="SourceGraphic" in2="goo" />    </filter>  </defs></svg>
+                    <!-- end codepen submit button -->
+
                 </div>
             </div>
         </form>
