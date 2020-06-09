@@ -35,6 +35,6 @@ $(".carousel").carousel({
     // percent-per-second
     // default is 50
     // false = disable touch swipe
-    swipe: 30
+    swipe: 80
 
 });
