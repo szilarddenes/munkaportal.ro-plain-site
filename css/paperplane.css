@@ -6,7 +6,7 @@
                 .frame {
                     width: 500px;
                     height: auto;
-                    margin: 15% auto 0;
+                    margin: 20% auto 0;
                     position: relative;
                     width: 100%;
                 }
@@ -31,6 +31,7 @@
                 .plane {
                     width: 100%;
                     height: 50px;
+                    margin-top: 1.5rem;
                 }
                 /*Paper Plane: Animation*/
                 
