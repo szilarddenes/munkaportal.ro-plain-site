@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>jobP by Munkaportal.ro</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/submit-btn.css" />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" href="css/paperplane.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- <link rel="stylesheet" href="/css/svg.css"> -->
+
+    <!-- -------------SVG------------ -->
+    <div class="clouds">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant super-slow massive">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud slower">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+    </div>
+    <!-- -------------SVG------------ -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarSupportedContent">
+
+    <!--- Start Home section -->
+    <div id="home">
+        <!---Navigation-->
+        <!-- navbar-light navbar-transparent headroom--not-bottom headroom--pinned headroom--top -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="site-header">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="10%" height="100%" viewBox="0 0 512 512" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                    <ellipse cx="249.847" cy="255.084" rx="249.847" ry="255.084" style="fill:#393939;" />
+                    <path
+                        d="M285.816,339.282l0,98.895l-56.763,0l0,-281.256l107.455,0c20.664,0 38.875,3.89 54.567,11.604c15.692,7.714 27.768,18.724 36.227,32.965c8.46,14.24 12.657,30.459 12.657,48.656c0,27.558 -9.235,49.315 -27.703,65.27c-18.469,15.889 -44.041,23.866 -76.717,23.866l-49.723,0l0,0Zm0,-47.074l50.692,0c14.982,0 26.412,-3.625 34.355,-10.812c7.879,-7.186 11.817,-17.471 11.817,-30.855c0,-13.779 -4.004,-24.921 -11.947,-33.426c-7.942,-8.505 -18.92,-12.856 -32.933,-13.12l-51.984,0l0,88.213Z"
+                        style="fill:#d29420;fill-rule:nonzero;" />
+                    <path
+                        d="M224.768,145.524c6.893,-0.097 15.699,-0.097 19.624,4.398c3.925,4.496 2.968,13.488 2.872,38.116c-0.096,24.629 0.67,64.895 0.67,89.328c0,24.433 -0.766,33.034 -2.297,40.657c-1.532,7.624 -3.829,14.269 -6.721,19.058c-2.891,4.789 -6.377,7.721 -9.057,11.142c-2.68,3.421 -4.556,7.33 -8.174,10.848c-3.618,3.519 -8.978,6.646 -11.276,2.248c-2.297,-4.398 -1.531,-16.321 -1.244,-51.212c0.287,-34.891 0.096,-92.749 -0.192,-123.926c-0.287,-31.177 -0.67,-35.672 1.627,-38.018c2.298,-2.346 7.276,-2.541 14.168,-2.639l0,0Z"
+                        style="fill:#393939;" />
+                    <path
+                        d="M176.791,277.023l0,-195.928c9.5,-5.43 18.62,-8.147 28.5,-8.147c20.141,0 33.061,13.579 33.061,32.977l0,183.512c0,44.617 -27.36,70.611 -73.342,70.611c-20.14,0 -37.241,-3.491 -53.201,-10.474l7.601,-46.557c9.499,5.043 21.28,7.372 31.16,7.372c17.1,0 26.221,-12.803 26.221,-33.366l0,0Z"
+                        style="fill:#71b9d3;fill-rule:nonzero;" />
+                    <g transform="matrix(0.0151001,0.999886,-0.999876,0.0157396,278.399,-99.2964)"><text x="189.574px"
+                            y="91.699px"
+                            style="font-family:'Poppins-ExtraBold', 'Poppins';font-weight:800;font-size:45.368px;fill:#d29421;stroke:#393939;stroke-width:2px;">J
+                            <tspan x="215.976px 252.521px 283.509px 312.875px 324.779px 350.069px "
+                                y="91.699px 91.699px 91.699px 91.699px 91.699px 91.699px ">OBP.EU</tspan></text></g>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+
+            <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav md-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="facebook" style="background-color: #71b9d3; border-radius: 25px;">Facebook</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="postajob" style="background-color: #d29320; border-radius: 25px;">Post a
+                            JOB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bottom</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!---End Navigation-->
+
+
+
+    <!-- Spacer 1-->
+    <!-- <p class="p-1"></p> -->
+
+    <!-- start Cloud Animation -->
+    <div class="jumbotron-fluid frame" id="plane-bcg">
+        <div class="plane-container">
+            <a href="#" target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304" xml:space="preserve" class="plane">
+                    <polygon fill="#D8D8D8"
+                        points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  " />
+                    <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   " />
+                </svg></a>
+
+        </div>
+    </div>
+    <!-- end Cloud Animation -->
+
+
+    <!-- start Jumobtron Desktop -->
+    <div class="jumbotron-fluid text-center shadow-soft margin" id="CarouselDesktop">
+        <!-- Start Carousel -->
+        <div id="CarouseDesk" class="carousel slide rounded" data-ride="carousel" data-interval="9000">
+            <ol class="carousel-indicators" style="bottom: -6rem;">
+                <li data-target="#CarouseDesk" data-slide-to="0" class="active"></li>
+                <li data-target="#CarouseDesk" data-slide-to="1" class=""></li>
+                <li data-target="#CarouseDesk" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner rounded">
+                <!--start carousel item1 -->
+                <div class="carousel-item active">
+                    <!-- start row1 -->
+                    <div class="row">
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                    Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/agro.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+                    </div>
+                    <!-- end row1 -->
+
+                    <br />
+                    <!-- start row2 -->
+                    <div class="row">
+                        <!-- start  rov2 column1 Image -->
+                        <div class="d-inline-flex justify-content-start">
+                            <div class="d-flex justify-content-center align-items-center" id="hidebelowSM">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/hegeszto.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end  rov2 column1 Image -->
+                            <!-- start  rov2 column2 -->
+                            <div class="col-md-6">
+                                <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                    Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek.
+                                </div>
+                            </div>
+                            <!-- end  rov2 column2 -->
+                        </div>
+                    </div>
+                    <!-- end start row2 -->
+                </div>
+                <!-- end carousel item 1 -->
+
+                <!--start carousel item2 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <div class="row">
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                    Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod.
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/szakacs.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+                    </div>
+                    <!-- end row1 -->
+
+                    <br />
+                    <!-- start row2 -->
+                    <div class="row">
+                        <!-- start  rov2 column1 Image -->
+                        <div class="d-inline-flex justify-content-start">
+                            <div class="d-flex justify-content-center align-items-center" id="hidebelowSM">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/pincer.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end  rov2 column1 Image -->
+                            <!-- start  rov2 column2 -->
+                            <div class="col-md-6">
+                                <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                    Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások és a nagyvállalatok számára egyaránt.
+                                </div>
+                            </div>
+                            <!-- end  rov2 column2 -->
+                        </div>
+                    </div>
+                    <!-- end start row2 -->
+                </div>
+                <!-- end carousel item 2 -->
+
+                <!--start carousel item3 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <div class="row">
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                    Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal.
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/epitomunkas.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+                    </div>
+                    <!-- end row1 -->
+
+                    <br />
+                    <!-- start row2 -->
+                    <div class="row">
+                        <!-- start  rov2 column1 Image -->
+                        <div class="d-inline-flex justify-content-start">
+                            <div class="d-flex justify-content-center align-items-center" id="hidebelowSM">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/mernok.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end  rov2 column1 Image -->
+                            <!-- start  rov2 column2 -->
+                            <div class="col-md-6">
+                                <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                    Ha kéred egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br>
+                                </div>
+                            </div>
+                            <!-- end  rov2 column2 -->
+                        </div>
+                    </div>
+                    <!-- end start row2 -->
+                </div>
+                <!-- end carousel item 3 -->
+            </div>
+            <!-- end carousel Inner Rounded -->
+        </div>
+        <!-- end Carousel -->
+    </div>
+    <!-- end Jumbotron Desktop -->
+
+
+    <!-- start Jumobtron Mobile -->
+    <div class="jumbotron-fluid text-center shadow-soft margin" id="CarouselMobile">
+        <!-- Start Carousel -->
+        <div id="CarouseMob" class="carousel slide rounded" data-ride="carousel" data-interval="9000">
+            <ol class="carousel-indicators" style="bottom: -6rem;">
+                <li data-target="#CarouseMob" data-slide-to="0" class="active"></li>
+                <li data-target="#CarouseMob" data-slide-to="1" class=""></li>
+                <li data-target="#CarouseMob" data-slide-to="2" class=""></li>
+                <li data-target="#CarouseMob" data-slide-to="3" class=""></li>
+                <li data-target="#CarouseMob" data-slide-to="4" class=""></li>
+                <li data-target="#CarouseMob" data-slide-to="5" class=""></li>
+            </ol>
+            <div class="carousel-inner rounded">
+                <!--start carousel item1 -->
+                <div class="carousel-item active">
+                    <!-- start row1 -->
+                    <div class="row">
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/agro.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-md-start" id="paragraph1" style="
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      text-align:center;
+                    ">
+                                    Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+                    </div>
+                    <!-- end row1 -->
+                </div>
+                <!-- end carousel item 1 -->
+
+                <!--start carousel item2 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <!-- start  rov1 column1 -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-md-start" id="paragraph1" style="
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    text-align:center;
+                  ">
+                                Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row1column1 -->
+                    <div class="row">
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/hegeszto.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+                    </div>
+                    <!-- end row1 -->
+                </div>
+                <!-- end carousel item 2 -->
+
+                <!--start carousel item3 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <div class="row">
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/szakacs.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-md-start" id="paragraph1" style="
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      text-align:center;
+                    ">
+                                    Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod.
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+                    </div>
+                    <!-- end row1 -->
+                </div>
+                <!-- end carousel item 3 -->
+
+                <!--start carousel item4 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <!-- start  rov1 column1 -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-md-start" id="paragraph1" style="
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    text-align:center;
+                  ">
+                                Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások és a nagyvállalatok számára egyaránt.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row1column1 -->
+                    <div class="row">
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/pincer.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+                    </div>
+                    <!-- end row1 -->
+                </div>
+                <!-- end carousel item 4 -->
+
+                <!--start carousel item5 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <div class="row">
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/epitomunkas.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="text-md-start" id="paragraph1" style="
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      text-align:center;
+                    ">
+                                    Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal.
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+                    </div>
+                    <!-- end row1 -->
+                </div>
+                <!-- end carousel item 5 -->
+
+                <!--start carousel item6 -->
+                <div class="carousel-item">
+                    <!-- start row1 -->
+                    <!-- start  rov1 column1 -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-md-start" id="paragraph1" style="
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    text-align:center;
+                  ">
+                                Ha kéred egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row1column1 -->
+                    <div class="row">
+                        <!-- start row1 column2 Image -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="img/mernok.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                            </div>
+                        </div>
+                        <!-- end row1 column2 Image -->
+                    </div>
+                    <!-- end row1 -->
+                </div>
+                <!-- end carousel item 6 -->
+            </div>
+            <!-- end carousel Inner Rounded -->
+        </div>
+        <!-- end Carousel -->
+    </div>
+    <!-- end Jumbotron Mobile -->
+
+    <!--- End Landing Page Section-->
+
+
+    <!-- start Divider 1-->
+    <div class="jumbotron" id="divider2">
+
+    </div>
+    <!-- end Divider 1-->
+
+    <!-- Announce 2 POST A JOB-->
+    <p class="p-1"></p>
+    <h2 class="text-center">Post a Job</h2>
+
+    <!-- start Post a Job Jumbotron Container -->
+    <div class="jumbotron-fluid shadow-soft margin" id="PostaJob">
+        <!-- START FORM -->
+        <form name="submit-to-google-sheet" id="gsheetForm" class="needs-validation">
+            <h2>Post your Job, Baby</h2>
+            <p class="p-2"></p>
+            <!--start row1 -->
+            <div class="row">
+                <!-- Email -->
+                <div class="col-md-6">
+
+                    <div class="form-group error" >
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <label for="email">E-mail Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="email" name="Email" required>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                </div>
+                <!--  col-md-6   -->
+                <!-- Jobcategory -->
+                <div class="col-md-6">
+                    <div class="form-group" >
+                        <i class="fa fa-user-md fa-lg"></i>
+                        <label for="JobCategories"> Job Category</label>
+                        <select class="custom-select custom-select-lg mb-3" id="JobCategory" name="Jobcategory" required>
+                            <option selected>select a job categories</option>
+                            <option value="Adminisztráció, Irodai munka">Adminisztráció, Irodai munka</option>
+                            <option value="Bank, Biztosítás, Bróker">Bank, Biztosítás, Bróker</option>
+                            <option value="Cégvezetés, Menedzsment">Cégvezetés, Menedzsment</option>
+                            <option value="Egészségügy, Gyógyszeripar">Egészségügy, Gyógyszeripar</option>
+                            <option value="Építőipar, Ingatlan">Építőipar, Ingatlan</option>
+                            <option value="Értékesítés, Kereskedelem">Értékesítés, Kereskedelem</option>
+                            <option value="Fizikai, Segéd, Betanított munkás">Fizikai, Segéd, Betanított munkás</option>
+                            <option value="Gyártás, Termelés">Gyártás, Termelés</option>
+                            <option value="HR, Munkaügy">HR, Munkaügy</option>
+                            <option value="IT programozás, Fejlesztés">IT programozás, Fejlesztés</option>
+                            <option value="IT üzemeltetés, Telekom">IT üzemeltetés, Telekom</option>
+                            <option value="Jog, Jogi tanácsadás">Jog, Jogi tanácsadás</option>
+                            <option value="Közigazgatás">Közigazgatás</option>
+                            <option value="Marketing, Média, PR">Marketing, Média, PR</option>
+                            <option value="Mérnök">Mérnök</option>
+                            <option value="Mezőgazdaság, Környezet">Mezőgazdaság, Környezet</option>
+                            <option value="Oktatás, Kutatás, Tudomány">Oktatás, Kutatás, Tudomány</option>
+                            <option value="Pénzügy, Könyvelés">Pénzügy, Könyvelés</option>
+                            <option value="Szakmunka">Szakmunka</option>
+                            <option value="Szállítás, Beszerzés, Logisztika">Szállítás, Beszerzés, Logisztika</option>
+                            <option value="Ügyfélszolgálat, Vevőszolgálat">Ügyfélszolgálat, Vevőszolgálat</option>
+                            <option value="Üzleti támogató központok">Üzleti támogató központok</option>
+                            <option value="Vendéglátás, Idegenforgalom">Vendéglátás, Idegenforgalom</option>
+                        </select>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <!-- end row1 -->
+
+            <!--start row2 -->
+            <div class="row">
+                <!-- Jobtype -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fa fa-clock fa-lg"></i>
+                        <label for="JobType"> Job Type</label>
+                        <select class="custom-select custom-select-lg mb-3" id="JobType" name="Jobtype" required>
+                            <option selected>select job type</option>
+                            <option value="Teljes munkaidős">Teljes munkaidős</option>
+                            <option value="Részmunkaidős">Részmunkaidős</option>
+                            <option value="Diákmunka">Diákmunka</option>
+                            <option value="Szezon/idény munka">Szezon/idény munka</option>
+                        </select>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <!-- Joblocation -->
+                <div class="col-md-6">
+                    <div class="form-group success">
+                        <i class="fa fa-map-marker-alt fa-lg"></i>
+                        <label for="JobLocation">Job Location</label>
+                        <input type="text" class="form-control" id="joblocation" placeholder="country, county, city" name="Joblocation" required>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <!--end row2 -->
+
+            <!-- start row3 -->
+            <div class="row">
+                <!-- Company -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fas fa-copyright fa-lg"></i>
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" placeholder="company name or website" id="company" name="Company" required>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <i class="fas fa-phone-square-alt fa-lg"></i>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="phone" name="Phone" required>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <!-- end row3 -->
+
+            <!-- start row4   -->
+            <div class="row">
+                <!-- Deadline -->
+                <div class="col-md-6">
+                    <div class="form-group"> <i class="fas fa-hourglass-half fa-lg"></i>
+                        <label for="Deadline">Job Deadline</label>
+                        <input class="form-control" type="date" value="2020-06-06" id="deadline" name="Deadline" required>
+                        <i id="errori" class="fas fa-check-circle"></i>
+                        <i id="errori" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!-- col md-6 -->
+
+                <!-- How U Find us? -->
+                <div class="col-md-6">
+                    <div class="form-group justify-content-md-center"> <i class="fas fa-search fa-lg"></i>
+                        <label for="form-check">How did you find us?</label>
+                        <div class="form-check text-left">
+
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckFacebook" name="chkFacebook">
+                            <label class="form-check-label" for="CheckFacebook">
+                                Facebook
+                            </label>
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div class="form-check"> -->
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckInstagram" name="chkInstagram">
+                            <label class="form-check-label" for="CheckInstagram">
+                                Instagram
+                            </label>
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div class="form-check"> -->
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckWebSearch" name="chkWebSearch">
+                            <label class="form-check-label" for="CheckWebSearch">
+                                Web Search
+                            </label>
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div class="form-check"> -->
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckElse" name="chkElse">
+                            <label class="form-check-label" for="CheckElse">
+                                Else
+                            </label>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end  row4 -->
+
+            <!-- start row5 -->
+
+            <!-- Jobannouncement -->
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="form-group">
+                        <i class="fas fa-keyboard fa-lg"></i>
+                        <label for="jobAnnouncement">Describe Your Job</label>
+
+                        <textarea class="form-control" id="jobAnnouncement" rows="8" placeholder="paste your job description" name="Jobannouncement" required></textarea>
+                        <i id="errori" class="fas fa-check-circle"></i>
+                        <i id="errori" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!-- col md-6 -->
+
+            </div>
+            <!-- end row 5 -->
+
+            <!-- Terms And Conditions -->
+            <div class="row justify-content-center text-center">
+
+                <label for="TermsConditions">
+                    <i class="fas fa-user-check fa-lg" style="margin-right: .5rem;"></i> I read and accept the <a
+                        href="popupurl">Terms and Conditions</a>.
+
+                </label>
+
+
+                <div class="row justify-content-center">
+                    <div class="checkbox text-center">
+                        <label>
+                            <input type="checkbox" value="I Agree!" id="TermsConditions" name="Termsandconditions"
+                                required> Accept
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success btn-lg" id="buttonBS" style="margin: 0.5rem;">Submit</button>
+                        <button type="button" class="btn btn-warning btn-lg" id="buttonBSW" style="margin: 0.5rem;" href="            mailto:hello@jobp.eu">E-mail Us</button>
+                    </div>
+                    <!-- start codepen submit button -->
+                    <!-- form submission -->
+                    <!-- <form id="form">
+                        <p>How can we improve this email?</p>
+                        <input placeholder="Give us an earful!" type="text" name="comment">
+                    </form> -->
+
+
+                    <!-- confirmation bubble -->
+                    <div id="confirm" class="disappear">
+                        <div class="column">
+                            <h1>Thank you for your time!</h1>
+                            <p>Your feedback helps us make our communications better for everyone.</p>
+                        </div>
+                    </div>
+
+                    <!-- submit button -->
+                    <button id="buttonSubmit" type="submit" class="basic"></button>
+
+                    <button class="disappear" id="finish" type="button"><i class="fa fa-check" aria-hidden="true"></i>
+                    </button>
+
+                    <!-- dark grey bg of loading circle -->
+                    <div id="circle"></div>
+
+
+
+
+
+                    <!-- end codepen submit button -->
+
+                </div>
+            </div>
+        </form>
+        <!-- End FORM -->
+
+    </div>
+    <!-- </div> -->
+    <!-- end Post a Job Jumbotron Container -->
+
+    <!-- start Divider 2-->
+    <div class="jumbotron" id="divider1">
+
+    </div>
+    <!-- end Divider 2-->
+
+    <!-- Announce 2 FACEBOOK GROUP-->
+    <p class="p-1"></p>
+    <h2 class="text-center">Facebook Community</h2>
+
+    <!-- start FACEBOOK Container -->
+
+    <div class="jumbotron-fluid text-center shadow-soft margin " id="PostaJob ">
+
+        <!-- start  column1 -->
+        <div class="row justify-content-center">
+            <div class="d-flex justify-content-center align-items-center" id="facebookHeart">
+                <svg version="1.1" id="svgFacebookHeart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;width:fit-content; height:fit-content" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: url(#bgRed_1_);}
+
+                        .st1 {
+                            fill: #FFFFFF;}
+                    </style>
+                    <linearGradient id="bgRed_1_" gradientUnits="userSpaceOnUse" x1="500" y1="1002" x2="500" y2="2"
+                        gradientTransform="matrix(1 0 0 -1 0 1002)">
+                        <stop offset="0" style="stop-color:#FF6680" />
+                        <stop offset="1" style="stop-color:#E61739" />
+                    </linearGradient>
+                    <path id="bgRed" class="st0" d="M500,0C367.4,0,240.2,52.7,146.4,146.4C52.7,240.2,0,367.4,0,500c0,132.6,52.7,259.8,146.4,353.6
+              C240.2,947.3,367.4,1000,500,1000c132.6,0,259.8-52.7,353.6-146.4c93.8-93.8,146.4-221,146.4-353.6c0-132.6-52.7-259.8-146.4-353.6
+              C759.8,52.7,632.6,0,500,0L500,0z" />
+                    <path id="svgFacebookwhiteHeart" class="st1" d="M654.6,250C517.2,250,500,364,500,364s-17.1-114-154.5-114C213.4,250,174.9,388.9,191,463.1
+              c42.5,196.3,309,333.8,309,333.8s266.6-137.5,309.1-333.8C825.1,388.9,786.6,250,654.6,250z" />
+                </svg>
+            </div>
+            <!-- <div class="col"> -->
+            <!-- <div class="d-flex justify-content-center align-items-center "> -->
+
+            <div class="embed-responsive embed-responsive-1by1 justify-content-center align-items-center ">
+                <!-- <style>
+                  ._2p3a {
+                      min-width: 100% !important;
+                      width: 100% !important;
+                  }
+              </style> -->
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmunkaportal%2F&amp;tabs=timeline&amp;width=500&amp;height=600&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=true&amp;appId
+              " width="500 " height="600 " style="border: none; padding: 0rem; overflow: hidden; " scrolling="no " frameborder="0 " allowtransparency="true "></iframe>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+        <!-- end column1 -->
+
+    </div>
+    <!-- end FACEBOOK Container -->
+
+
+
+
+
+
+    <!--- Start Social section -->
+
+    <div class="container-md mx-lg-auto ">
+        <div class="mx-auto " style="width: fit-content; ">
+            <!-- MODEL 3D -->
+            <ul class="social-nav model-3d-0 ">
+                <li>
+                    <a class="twitter shade-hard " href=" https://twitter.com/ ">
+                        <div class="front "><i class="fa fa-twitter "></i></div>
+                        <div class="back "><i class="fa fa-twitter "></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="facebook shade-hard " href="https://www.facebook.com/ ">
+                        <div class="fornt "><i class="fa fa-facebook ">
+                            </i></i>
+                        </div>
+                        <div class="back "><i class="fa fa-facebook ">
+                            </i></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="google-plus shade-hard " href="https://plus.google.com/u ">
+                        <div class="front "><i class="fa fa-google-plus "></i></div>
+                        <div class="back "><i class="fa fa-google-plus "></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="linkedin shade-hard ">
+                        <div class="front "><i class="fa fa-linkedin "></i></div>
+                        <div class="back "><i class="fa fa-linkedin "></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pinterest shade-hard ">
+                        <div class="front "><i class="fa fa-pinterest-p "></i></div>
+                        <div class="back "><i class="fa fa-pinterest-p "></i></div>
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <!-- End Model Section -->
+        </div>
+    </div>
+    <!-- End Social Section -->
+
+    <!-- start gdpr and terms -->
+
+
+    <div class="container flex-column" id="accordionContainer">
+        <div class="accordion shadow-soft rounded">
+            <div class="card card-sm card-body bg-primary border-light mb-0">
+                <a href="#panel-4" data-target="#panel-4" class="accordion-panel-header collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                    <span class="icon-title h6 mb-0 font-weight-bold">
+                    <span class="fab fa-leanpub">
+
+                    </span> ASZF</span>
+                    <span class="icon">
+                    <span class="fas fa-plus">
+
+                    </span>
+                    </span>
+                </a>
+                <div class="collapse" id="panel-4">
+                    <div class="pt-3">
+                        <p class="mb-0">A MunkaPortal.ro/Jobp.eu működési szabályzata A jelen felhasználási feltételek (a továbbiakban: Szabályzat) a Hottentotta Betéti Társaság: 1000 Budapest, Seholsincs út, adószáma: 12345678-9-10; elektronikus levelezési címe: support@jobp.eu,
+                            telefon: + 36 20 123 654, a továbbiakban: Üzemeltető) Jelen ÁSZF hatályba lépésének időpontja: 2020. Június 01.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-5" data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="icon-title h6 mb-0 font-weight-bold"><span
+                        class="fas fa-box-open"></span>Pixel Components</span> <span class="icon"><span
+                        class="fas fa-plus"></span></span></a>
+                <div class="collapse" id="panel-5">
+                    <div class="pt-3">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make
+                            better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-6" data-target="#panel-6" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="icon-title h6 mb-0 font-weight-bold"><span
+                        class="fas fa-donate"></span>Licenses</span> <span class="icon"><span
+                        class="fas fa-plus"></span></span></a>
+                <div class="collapse" id="panel-6">
+                    <div class="pt-3">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make
+                            better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end gdpr and terms -->
+
+    <!-- start form scripts -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLcct6zTG82ECD9tt0fM6W8sRjmNHFfgT69DZr71kPeDlC1m4/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+
+    <!-- end form scripts -->
+
+    <!--- Script Source Files -->
+    <!-- <script src="/js/anime.min.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js "></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script> -->
+    <script src="js/main.js "></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js "></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js "></script>
+    <script src="js/iheader.js "></script>
+    <script src="js/carouselnrm.js "></script>
+    <script src="js/fbheart.js"></script>
+    <script src="js/submit.js"></script>
+    <!-- <script src="js/carousel-swipe.js"></script> -->
+    <script defer crossorigin="anonymous " src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0 "></script>
+
+
+    <!--- End of Script Source Files -->
+
+</body>
+
+</html>
+
+<footer>
