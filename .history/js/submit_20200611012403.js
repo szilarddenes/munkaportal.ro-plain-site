@@ -190,7 +190,6 @@ function isEmail(email) {
   );
 }
 
-function submitButtonAnimation(){
+function submitButtonAnimation{
     document.getElementById('buttonSubmit').style.color ='red';
-    // return true;
 }
