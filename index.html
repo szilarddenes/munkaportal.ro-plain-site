@@ -513,7 +513,7 @@
     <!-- start Post a Job Jumbotron Container -->
     <div class="jumbotron-fluid shadow-soft margin" id="PostaJob">
         <!-- START FORM -->
-        <form name="submit-to-google-sheet" id="gsheetForm" class="needs-validation">
+        <form name="submit-to-google-sheet" id="gsheetForm">
             <h2>Post your Job, Baby</h2>
             <p class="p-2"></p>
             <!--start row1 -->
@@ -521,10 +521,10 @@
                 <!-- Email -->
                 <div class="col-md-6">
 
-                    <div class="form-group error" >
+                    <div class="form-group">
                         <i class="fa fa-envelope fa-lg"></i>
                         <label for="email">E-mail Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="email" name="Email" required>
+                        <input type="email" class="form-control" id="email" placeholder="email" name="Email">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -534,11 +534,11 @@
                 <!--  col-md-6   -->
                 <!-- Jobcategory -->
                 <div class="col-md-6">
-                    <div class="form-group" >
+                    <div class="form-group">
                         <i class="fa fa-user-md fa-lg"></i>
                         <label for="JobCategories"> Job Category</label>
-                        <select class="custom-select custom-select-lg mb-3" id="JobCategory" name="Jobcategory" required>
-                            <option selected>select a job categories</option>
+                        <select class="custom-select custom-select-lg mb-3" id="JobCategory" name="Jobcategory">
+                            <option selected>select a job category</option>
                             <option value="Adminisztráció, Irodai munka">Adminisztráció, Irodai munka</option>
                             <option value="Bank, Biztosítás, Bróker">Bank, Biztosítás, Bróker</option>
                             <option value="Cégvezetés, Menedzsment">Cégvezetés, Menedzsment</option>
@@ -579,7 +579,7 @@
                     <div class="form-group">
                         <i class="fa fa-clock fa-lg"></i>
                         <label for="JobType"> Job Type</label>
-                        <select class="custom-select custom-select-lg mb-3" id="JobType" name="Jobtype" required>
+                        <select class="custom-select custom-select-lg mb-3" id="JobType" name="Jobtype">
                             <option selected>select job type</option>
                             <option value="Teljes munkaidős">Teljes munkaidős</option>
                             <option value="Részmunkaidős">Részmunkaidős</option>
@@ -595,10 +595,10 @@
 
                 <!-- Joblocation -->
                 <div class="col-md-6">
-                    <div class="form-group success">
+                    <div class="form-group">
                         <i class="fa fa-map-marker-alt fa-lg"></i>
                         <label for="JobLocation">Job Location</label>
-                        <input type="text" class="form-control" id="joblocation" placeholder="country, county, city" name="Joblocation" required>
+                        <input type="text" class="form-control" id="joblocation" placeholder="country, county, city" name="Joblocation">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -615,7 +615,7 @@
                     <div class="form-group">
                         <i class="fas fa-copyright fa-lg"></i>
                         <label for="company">Company</label>
-                        <input type="text" class="form-control" placeholder="company name or website" id="company" name="Company" required>
+                        <input type="text" class="form-control" placeholder="company name or website" id="company" name="Company">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -628,7 +628,7 @@
                     <div class="form-group">
                         <i class="fas fa-phone-square-alt fa-lg"></i>
                         <label for="phone">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="phone" name="Phone" required>
+                        <input type="tel" class="form-control" id="phone" placeholder="phone" name="Phone">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -644,7 +644,7 @@
                 <div class="col-md-6">
                     <div class="form-group"> <i class="fas fa-hourglass-half fa-lg"></i>
                         <label for="Deadline">Job Deadline</label>
-                        <input class="form-control" type="date" value="2020-06-06" id="deadline" name="Deadline" required>
+                        <input class="form-control" type="date" value="<?php echo $today; ?>" id="deadline" name="Deadline">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -656,7 +656,7 @@
                 <div class="col-md-6">
                     <div class="form-group justify-content-md-center"> <i class="fas fa-search fa-lg"></i>
                         <label for="form-check">How did you find us?</label>
-                        <div class="form-check text-left">
+                        <div class="form-check text-left" id="findUS">
 
                             <input class="form-check-input" type="checkbox" value="yes" id="CheckFacebook" name="chkFacebook">
                             <label class="form-check-label" for="CheckFacebook">
@@ -685,6 +685,9 @@
                             </label>
                             <!-- </div> -->
                         </div>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
                     </div>
                 </div>
 
@@ -700,7 +703,7 @@
                         <i class="fas fa-keyboard fa-lg"></i>
                         <label for="jobAnnouncement">Describe Your Job</label>
 
-                        <textarea class="form-control" id="jobAnnouncement" rows="8" placeholder="paste your job description" name="Jobannouncement" required></textarea>
+                        <textarea class="form-control" rows="8" placeholder="paste your job description" name="Jobannouncement" id="JobAnnouncement"></textarea>
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small id="textarea">Error message</small>
@@ -717,17 +720,22 @@
                 <label for="TermsConditions">
                     <i class="fas fa-user-check fa-lg" style="margin-right: .5rem;"></i> I read and accept the <a
                         href="popupurl">Terms and Conditions</a>.
-
-                </label>
+                 </label>
 
 
                 <div class="row justify-content-center">
-                    <div class="checkbox text-center">
+                    <div class="checkbox text-center" id="TermsCondi">
                         <label>
                             <input type="checkbox" value="I Agree!" id="TermsConditions" name="Termsandconditions"
-                                required> Accept
+                                > Accept
                         </label>
+                        <br>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small id="textarea">Error message</small>
+
                     </div>
+
                 </div>
                 <div class="row justify-content-center text-center">
                     <div class="col-md-6">
@@ -949,35 +957,33 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
+    <!-- <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script> -->
 
 
     <!-- end form scripts -->
 
     <!--- Script Source Files -->
-    <!-- <script src="/js/anime.min.js"></script> -->
     <script src="js/jquery-3.3.1.min.js "></script>
     <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js "></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script> -->
     <script src="js/main.js "></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js "></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js "></script>
@@ -985,9 +991,7 @@
     <script src="js/carouselnrm.js "></script>
     <script src="js/fbheart.js"></script>
     <script src="js/submit.js"></script>
-    <!-- <script src="js/carousel-swipe.js"></script> -->
     <script defer crossorigin="anonymous " src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0 "></script>
-
 
     <!--- End of Script Source Files -->
 
