@@ -602,11 +602,10 @@ button.navbar-toggler {
 
 /* start logo img */
 #innerLogoCol {
-  padding: 0rem 19rem 0rem 19rem;
-  /* background-image: url(/img/logo_H384.png);
+  padding: 0rem 19rem 2rem 19rem;
+  background-image: url(/img/mernok.svg);
   background-position: center;
-  /* background-size: contain; */
-  background-repeat: no-repeat !important; */
+  background-size: cover;
 }
 
 /* end logo img */
