@@ -157,7 +157,7 @@ body {
   .jumbotron,
   .jumbotron-fluid,
   .customJumbotron {
-    margin: 2rem 2rem 5rem 2rem !important;
+    margin: 5rem 2rem 5rem 2rem !important;
     padding: 1.9rem;
     display: flex;
     align-items: center;
@@ -181,7 +181,7 @@ body {
   .jumbotron,
   .jumbotron-fluid,
   .customJumbotron {
-    margin: 0rem 2rem 5rem 1rem !important;
+    margin: 20vw 2vw 5vw 2vw !important;
     padding: 1.9rem;
     display: flex;
     align-items: center;
@@ -575,13 +575,11 @@ button.navbar-toggler {
 .jumbotron#divider1 {
   background-image: url(img/elvalaszto_szurke.png);
   background-position: center;
-  opacity: .6;
   background-size: cover;
 }
 
 .jumbotron#divider2 {
   background-image: url(img/elvalaszto_kek.png);
-  opacity: .6;
   background-position: center;
   background-size: cover;
 }

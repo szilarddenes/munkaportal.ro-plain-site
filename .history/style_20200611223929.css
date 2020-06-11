@@ -157,7 +157,7 @@ body {
   .jumbotron,
   .jumbotron-fluid,
   .customJumbotron {
-    margin: 2rem 2rem 5rem 2rem !important;
+    margin: 5rem 2rem 5rem 2rem !important;
     padding: 1.9rem;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ body {
   .jumbotron,
   .jumbotron-fluid,
   .customJumbotron {
-    margin: 2rem 2rem 5rem 2rem !important;
+    margin: 0rem 2rem 5rem 2rem !important;
     padding: 1.9rem;
     display: flex;
     align-items: center;

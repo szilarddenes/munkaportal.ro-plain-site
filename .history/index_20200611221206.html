@@ -556,7 +556,7 @@
     </div>
 
     <!-- Announce 2 POST A JOB-->
-    <!-- <p class="p-1"></p> -->
+    <p class="p-1"></p>
     <div class="jumbotron-fluid shadow-soft margin text-center-md ">
         <p class="para1" id="para1"> Vadonatúj weboldalunk hamarosan elindul a www.jobp.eu címen, de addig is fogadjuk
             az álláshirdetéseket, melyeket ingyen közzéteszünk a közösségi média oldalainkon.
@@ -822,19 +822,34 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-md-6">
                         <!-- start submit button -->
-                        <!-- Inspired by this dribbble post by Colin Garvin https://dribbble.com/shots/1426764-Submit-Button -->
-<div class="loading-dock">
-    <svg id="load-b" x="0px" y="0px" viewBox="0 0 150 150">
-    <circle class="loading-inner" cx="75" cy="75" r="60"/>
- </svg>
-  <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
-    <circle class="loading-inner" cx="75" cy="75" r="60"/>
- </svg>
- <button class="submit">Submit</button>
-  <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
-    <path fill="#FFFFFF" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
-</svg>
-</div>
+                        <!-- progress button -->
+                        <div id="progress-button" class="progress-button">
+                            <!-- button with text -->
+                            <button><span>Submit</span></button>
+
+                            <!-- svg circle for progress indication -->
+                            <svg class="progress-circle" width="70" height="70">
+                                <path
+                                    d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+                            </svg>
+
+                            <!-- checkmark to show on success -->
+                            <svg class="checkmark" width="70" height="70">
+                                <path d="m31.5,46.5l15.3,-23.2" />
+                                <path d="m31.5,46.5l-8.5,-7.1" />
+                            </svg>
+
+                            <!-- cross to show on error -->
+                            <svg class="cross" width="70" height="70">
+                                <path d="m35,35l-9.3,-9.3" />
+                                <path d="m35,35l9.3,9.3" />
+                                <path d="m35,35l-9.3,9.3" />
+                                <path d="m35,35l9.3,-9.3" />
+                            </svg>
+
+                        </div>
+                        <!-- /progress-button -->
+
                         <!-- end submit button -->
 
 
@@ -871,7 +886,7 @@
     <!-- end Divider 2-->
 
     <!-- Announce 2 FACEBOOK GROUP-->
-    <!-- <p class="p-1"></p> -->
+    <p class="p-1"></p>
 
 
     <!-- start FACEBOOK Container -->
