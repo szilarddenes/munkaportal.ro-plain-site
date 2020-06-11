@@ -39,9 +39,6 @@ form.addEventListener('submit', (e) => {
       .then((response) => console.log('Success!', response))
       .catch((error) => console.error('Error!', error.message));
       submitButtonA();
-      console.log('submitButton',submit.value);
-      console.log('clicked?',clicked.value);
-  
   }
 });
 
@@ -256,6 +253,5 @@ function submitButtonA() {
         }, 5300);
       }
     });
-
 }
 
