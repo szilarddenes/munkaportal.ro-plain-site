@@ -129,7 +129,7 @@ function checkInputs() {
     setSuccessFor(deaDline);
   }
   console.log("deadlineValue", deadlineValue);
-  console.log("dealine", deaDline);
+  console.log("deaDline", deaDline);
   console.log("Today is:",date);
   console.log("comparison",date < date);
   
@@ -177,14 +177,14 @@ function checkInputs() {
 function setErrorFor(input, message) {
   const formGroup = input.parentElement;
   const small = formGroup.querySelector('small');
-  formGroup.className = 'form-group error';
+  formGroup.classList.add('error'); = 'form-group error';
   small.innerText = message;
   messages.push('common error');
 }
 
 function setSuccessFor(input) {
   const formGroup = input.parentElement;
-  formGroup.className = 'form-group success';
+  formGroup.classlist.add('success'); //= 'form-group success';
 }
 
 function isEmail(email) {

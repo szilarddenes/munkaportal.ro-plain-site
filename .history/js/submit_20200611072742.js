@@ -8,7 +8,7 @@ const JobType = document.getElementById('JobType');
 const joblocation = document.getElementById('joblocation');
 const company = document.getElementById('company');
 const phone = document.getElementById('phone');
-const deaDline = document.getElementById('deaDline');
+const deadline = document.getElementById('deadline');
 const TermsConditions = document.getElementById('TermsConditions');
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -51,7 +51,7 @@ function checkInputs() {
   const joblocationValue = joblocation.value;
   const companyValue = company.value;
   const phoneValue = phone.value;
-  const deadlineValue = deaDline.value;
+  const deadlineValue = deadline.value;
   const JobAnnouncementValue = JobAnnouncement;
   const TermsConditionsValue = TermsConditions.value;
 
@@ -121,16 +121,15 @@ function checkInputs() {
   //deadline
   
 
-  if ((deadlineValue < date) || (deadlineValue == "")) {
+  if ((deadlineValue < date) || (deadlineValue === "")) {
     //show error
     //add error class
-    setErrorFor(deaDline, `Enter a valid date.`);
+    setErrorFor(deadline, `Enter a valid date.`);
   } else {
-    setSuccessFor(deaDline);
+    setSuccessFor(deadline);
   }
-  console.log("deadlineValue", deadlineValue);
-  console.log("dealine", deaDline);
-  console.log("Today is:",date);
+  console.log("message", deadlineValue);
+  console.log("message",date);
   console.log("comparison",date < date);
   
 

@@ -51,7 +51,7 @@ function checkInputs() {
   const joblocationValue = joblocation.value;
   const companyValue = company.value;
   const phoneValue = phone.value;
-  const deadlineValue = deaDline.value;
+  const deadlineValue = deadline.value;
   const JobAnnouncementValue = JobAnnouncement;
   const TermsConditionsValue = TermsConditions.value;
 
@@ -121,7 +121,7 @@ function checkInputs() {
   //deadline
   
 
-  if ((deadlineValue < date) || (deadlineValue == "")) {
+  if ((deadlinValue < date) || (deadlinValue == "")) {
     //show error
     //add error class
     setErrorFor(deaDline, `Enter a valid date.`);
@@ -129,7 +129,7 @@ function checkInputs() {
     setSuccessFor(deaDline);
   }
   console.log("deadlineValue", deadlineValue);
-  console.log("dealine", deaDline);
+  console.log("deadline", deaDline);
   console.log("Today is:",date);
   console.log("comparison",date < date);
   
