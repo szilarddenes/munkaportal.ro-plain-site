@@ -602,9 +602,7 @@ button.navbar-toggler {
   text-align: center !important;
 }
 
-.paraHighlightOrange {
-  color: #e01a0c;
-}
+.paraHighlightOrangeŐ
 /*end urlap policy*/
 
 /* start logo img */
@@ -617,17 +615,6 @@ button.navbar-toggler {
 }
 
 /* end logo img */
-
-/* start Rolunk para */
-.para2{
-    font-weight: 500 !important;
-  font-size: 0.9rem !important;
-  text-align: justify;
-  margin: 0.5rem !important;
-  padding: 0.5rem !important;
-
-}
-/* end Rolunk para */
 
 /* start carousel indicator*/
 

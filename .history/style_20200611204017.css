@@ -593,19 +593,20 @@ button.navbar-toggler {
 /* end divider */
 
 /* start bejelentes */
+#para1 {
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  text-align: center !important;
+}
 /* end bejelentes */
 
-/*start urlap policy*/
+/*urlap policy*/
 .para1 {
   font-weight: 700 !important;
   font-size: 0.9rem !important;
   text-align: center !important;
 }
 
-.paraHighlightOrange {
-  color: #e01a0c;
-}
-/*end urlap policy*/
 
 /* start logo img */
 #innerLogoCol {
@@ -613,21 +614,10 @@ button.navbar-toggler {
   /* background-image: url(/img/logo_H384.png);
   background-position: center;
   /* background-size: contain; */
-  background-repeat: no-repeat !important;
+  background-repeat: no-repeat !important; 
 }
 
 /* end logo img */
-
-/* start Rolunk para */
-.para2{
-    font-weight: 500 !important;
-  font-size: 0.9rem !important;
-  text-align: justify;
-  margin: 0.5rem !important;
-  padding: 0.5rem !important;
-
-}
-/* end Rolunk para */
 
 /* start carousel indicator*/
 
