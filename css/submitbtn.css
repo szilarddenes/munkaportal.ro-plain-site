@@ -1,113 +1,125 @@
-/* start submit button css */
+/* start submit button */
 
-#buttonSubmit {
-    font-weight: bold;
-    outline: none;
-    width: 8rem;
-    height: 3rem;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 40px;
-    border-color: #085ff7;
-    transition: all 0.25s ease;
-}
-
-#buttonSubmit:after {
-    content: 'SubMit?';
-}
-
-.grey-button {
-    width: 35px;
-    height: 35px;
-    background-color: #eeeeed;
-    border-color: #cacac9;
-    border-top-color: #00b887;
-    border-width: 4px;
-    border-radius: 50%;
-    margin-left: 7px;
-    animation: rotate 1s 0.25s infinite;
-}
-
-.grey-button:after {
-    content: '';
-}
-
-.grey-outline {
-    width: 50px;
-    height: 50px;
-    background-color: #eeeeed;
-    border-width: 4px;
-    border-radius: 50%;
-    z-index: -1;
+.progress-button {
     position: relative;
-    bottom: 42px;
-    right: 0;
+    display: inline-block;
+    text-align: center;
 }
 
-.grey-outline:after {
-    content: '';
+.progress-button button {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 250px;
+    height: 70px;
+    border: 2px solid #1ECD97;
+    border-radius: 40px;
+    background: transparent;
+    color: #1ECD97;
+    letter-spacing: 1px;
+    font-size: 18px;
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
 }
 
-#confirm {
-    background-color: #e6fff6;
-    max-width: 20%;
-    padding: 15px;
-    border-radius: 24px 24px 24px 0;
-    margin-left: 55px;
-    height: 106px;
+.progress-button button:hover {
+    background-color: #1ECD97;
+    color: #fff;
 }
 
-#confirm h1 {
-    color: #00825f;
-    font-size: 16px;
+.progress-button button:focus {
+    outline: none;
 }
 
-#confirm p {
-    font-size: 12px;
+.progress-button svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 
-#confirm .column {
-    line-height: 20px;
-    margin-left: 16px;
+.progress-button svg path {
+    opacity: 0;
+    fill: none;
 }
 
-#finish {
-    width: 50px;
-    height: 50px;
-    background-color: #00b887;
-    border-color: #00b887;
+.progress-button svg.progress-circle path {
+    stroke: #1ECD97;
+    stroke-width: 5;
 }
 
-#finish i {
-    font-size: 25px;
+.progress-button svg.checkmark path,
+.progress-button svg.cross path {
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-width: 4;
+    -webkit-transition: opacity 0.1s;
+    transition: opacity 0.1s;
 }
 
-#finish:after {
-    content: '';
+.loading.progress-button button {
+    width: 70px;
+    /* make a circle */
+    border-width: 5px;
+    border-color: #ddd;
+    background-color: transparent;
+    color: #fff;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.loading.progress-button span {
+    -webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
 }
 
-.disappear {
-    display: none;
-}
-
-.redalert {
-    background-color: red !important;
-    color: black;
-}
-
-.basic {
-    background-color: yellow !important;
-    color: black !important;
+.loading.progress-button span,
+.success.progress-button span,
+.error.progress-button span {
+    opacity: 0;
+    /* keep it hidden in all states */
 }
 
 
-/* end submit button css */
+/* Transition for when returning to default state */
+
+.progress-button button span {
+    -webkit-transition: opacity 0.3s 0.1s;
+    transition: opacity 0.3s 0.1s;
+}
+
+.success.progress-button button,
+.error.progress-button button {
+    -webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+    transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+}
+
+.success.progress-button button {
+    border-color: #1ECD97;
+    background-color: #1ECD97;
+}
+
+.error.progress-button button {
+    border-color: #FB797E;
+    background-color: #FB797E;
+}
+
+.loading.progress-button svg.progress-circle path,
+.success.progress-button svg.checkmark path,
+.error.progress-button svg.cross path {
+    opacity: 1;
+    -webkit-transition: stroke-dashoffset 0.3s;
+    transition: stroke-dashoffset 0.3s;
+}
+
+.elastic.progress-button button {
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1), border-width 0.3s, border-color 0.3s;
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.25, 0.25, 0.4, 1.6), border-width 0.3s, border-color 0.3s;
+}
+
+.loading.elastic.progress-button button {
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, 0, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s cubic-bezier(0.6, -0.6, 0.75, 0.75), border-width 0.3s, border-color 0.3s;
+}

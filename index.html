@@ -7,7 +7,7 @@
     <title>jobP by Munkaportal.ro</title>
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="/css/submitbtn.css" /> -->
+    <link rel="stylesheet" href="/css/submitbtn.css" />
     <link rel="stylesheet" href="css/fixed.css" />
     <link rel="stylesheet" href="css/paperplane.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
@@ -745,12 +745,49 @@
                 </div>
                 <div class="row justify-content-center text-center">
                     <div class="col-md-6">
-                        <!-- <button type="submit" class="btn btn-success btn-lg" id="buttonBS" style="margin: 0.5rem;">Submit</button> -->
+                        <!-- start submit button -->
+                        <!-- progress button -->
+                        <div id="progress-button" class="progress-button">
+                            <!-- button with text -->
+                            <button><span>Submit</span></button>
+
+                            <!-- svg circle for progress indication -->
+                            <svg class="progress-circle" width="70" height="70">
+		<path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
+	</svg>
+
+                            <!-- checkmark to show on success -->
+                            <svg class="checkmark" width="70" height="70">
+		<path d="m31.5,46.5l15.3,-23.2"/>
+		<path d="m31.5,46.5l-8.5,-7.1"/>
+	</svg>
+
+                            <!-- cross to show on error -->
+                            <svg class="cross" width="70" height="70">
+		<path d="m35,35l-9.3,-9.3"/>
+		<path d="m35,35l9.3,9.3"/>
+		<path d="m35,35l-9.3,9.3"/>
+		<path d="m35,35l9.3,-9.3"/>
+	</svg>
+
+                        </div>
+                        <!-- /progress-button -->
+
+                        <!-- end submit button -->
+
+
+
+                        <!-- email us start -->
                         <button type="button" class="btn btn-warning btn-lg" id="buttonBSW" style="margin: 0.5rem;" href="            mailto:hello@jobp.eu">E-mail Us</button>
+                        <!-- email us end -->
+
+
                     </div>
 
                     <!-- submit button -->
-                    <button id="buttonSubmit" type="submit" class="basic"></button>
+
+                    <!-- 
+                    <button id="buttonSubmit" type="submit" class="basic"></button> -->
 
 
                     <!-- end codepen submit button -->
@@ -939,6 +976,8 @@
     <script src="js/carouselnrm.js "></script>
     <script src="js/fbheart.js"></script>
     <script src="js/submit.js"></script>
+    <script src="js/submitBtn.js"></script>
+
     <script defer crossorigin="anonymous " src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0 "></script>
 
     <!--- End of Script Source Files -->

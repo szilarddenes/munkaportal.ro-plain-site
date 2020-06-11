@@ -122,7 +122,7 @@ function checkInputs() {
     //deadline
 
 
-    if ((deadlineUNIX < today) || (deadlineUNIX.toString() == "")) {
+    if ((deadlineUNIX < today) || (deadlineValue.toString() == "")) {
         //show error
         //add error class
         setErrorForDeadline(deadlineDiv, `Enter a valid date.`);
