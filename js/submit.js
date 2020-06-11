@@ -10,8 +10,8 @@ const company = document.getElementById('company');
 const phone = document.getElementById('phone');
 const deaDline = document.getElementById('deaDline');
 const TermsConditions = document.getElementById('TermsConditions');
-var today = new Date();
-var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+var today = Math.floor(new Date().getTime() / 1000.0)
+    //var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
 const checkFacebook = document.getElementById('CheckFacebook');
 const CheckInstagram = document.getElementById('CheckInstagram');
@@ -52,6 +52,7 @@ function checkInputs() {
     const companyValue = company.value;
     const phoneValue = phone.value;
     const deadlineValue = deaDline.value;
+    const deadlineUNIX = new Date(deadlineValue.toString()).getTime() / 1000.0;
     const JobAnnouncementValue = JobAnnouncement;
     const TermsConditionsValue = TermsConditions.value;
 
@@ -121,7 +122,7 @@ function checkInputs() {
     //deadline
 
 
-    if ((deadlineValue < date) || (deadlineValue == "")) {
+    if ((deadlineUNIX < today) || (deadlineUNIX.toString() == "")) {
         //show error
         //add error class
         setErrorForDeadline(deadlineDiv, `Enter a valid date.`);
@@ -129,25 +130,30 @@ function checkInputs() {
     } else {
         setSuccessForDeadline(deadlineDiv);
     }
-    console.log("deadlineValue", deadlineValue);
+    console.log("deadlineUNIX", deadlineUNIX);
     console.log("deadline", deaDline);
-    console.log("Today is:", date);
-    console.log("comparison", deadlineValue < date);
+    console.log("Today is:", today);
+    console.log("elso ag", deadlineUNIX < today);
     console.log("deadlineDiv", deadlineDiv);
+    console.log("string", deadlineUNIX == "");
+    console.log("masodik ag:", deadlineUNIX.toString() == "");
 
 
     //   FindUS
     if (
-        checkFacebook != '' ||
-        CheckInstagram != '' ||
-        CheckWebSearch != '' ||
-        CheckElse != ''
+        checkFacebook.checked === true ||
+        CheckInstagram.checked === true ||
+        CheckWebSearch.checked === true ||
+        CheckElse.checked === true
     ) {
         setSuccessFor(findUS);
     } else {
         setErrorFor(findUS, `Please select at least one option.`);
     }
-
+    console.log("checkFacebook", checkFacebook.checked);
+    console.log("CheckInstagram", CheckInstagram.value);
+    console.log("CheckWebSearch", CheckWebSearch.value);
+    console.log("CheckElse", CheckElse.value);
 
 
     //jobannouncement
