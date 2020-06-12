@@ -243,8 +243,8 @@ function submitButtonA() {
           submit.innerHTML = "";
           setTimeout(function(){
           document.getElementById('check').style.display = "block";
-          }, 500);
-        },2000);
+          }, 300);
+        }, 3600);
     
         //reset all
         setTimeout(function(){
@@ -253,7 +253,7 @@ function submitButtonA() {
           submit.innerHTML = "Submit";
           document.getElementById('check').style.display = "none";
           clicked = false;
-        }, 6000);
+        }, 5300);
       // }
    // });
 

@@ -1,8 +1,8 @@
 .loading-dock{
   /* background-color: white;
   width: 300px;
-  height: 200px;*/
-  display: flex; 
+  height: 200px;
+  display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -37,7 +37,7 @@
     color: white;
   }
   button.submit.popout {
-    animation: circle-to-button .4s linear forwards;
+    animation: circle-to-button .5s linear forwards;
   }
   button.submit.return {
     animation: fade-to-original .3s linear;
@@ -49,12 +49,12 @@
   
   .loaded button.submit {
     background-color: #41AB62;
-    animation: button-to-circle .3s linear forwards;
+    animation: button-to-circle .5s linear forwards;
     animation-delay: .3s;
   }
   .loaded #load {
     animation: loading-circle 3s linear forwards;
-    animation-delay: .3s;
+    animation-delay: 1s;
   }
   
   #load, #load-b {
@@ -66,10 +66,10 @@
   }
   #load .loading-inner, #load-b .loading-inner {
     stroke-dasharray: 900;
-    stroke-width: 10;
+    stroke-width: 8;
     stroke-miterlimit: 10;
     stroke-linecap: round;
-    stroke:#E5E7EE;
+    stroke: #c3c3c3;
     fill: transparent;
   }
   

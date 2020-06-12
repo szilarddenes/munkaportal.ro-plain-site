@@ -1,31 +1,28 @@
-.loading-dock{
-  /* background-color: white;
-  width: 300px;
-  height: 200px;*/
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
+.loading-dock {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   button.submit {
     cursor: pointer;
-    width: 10rem;
-    height: 3.2rem;
-    font-size: .9rem;
+    width: 160px;
+    height: 50px;
+    font-size: 17px;
     font-weight: 600;
-    color: #fefffe;
-    background-color: #41AB62;
+    color: #58c996;
+    background-color: white;
     border-radius: 40px;
-    border: 2px solid #41AB62;
+    border: 2px solid #58c996;
     transition: all .2s;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
-  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-family: 'Helvetica Neue', sans-serif;
   }
   button.submit:hover {
-    background: #41AB62;
+    background: #58c996;
     color: white;
   }
   button.submit:active {
@@ -33,28 +30,28 @@
   }
   button.submit:focus {
     outline: none;
-    background: #41AB62;
+    background: #58c996;
     color: white;
   }
   button.submit.popout {
-    animation: circle-to-button .4s linear forwards;
+    animation: circle-to-button .5s linear forwards;
   }
   button.submit.return {
     animation: fade-to-original .3s linear;
   }
   button.submit.return:hover {
-    background: #41AB62;
+    background: #58c996;
     color: white;
   }
   
   .loaded button.submit {
-    background-color: #41AB62;
-    animation: button-to-circle .3s linear forwards;
+    background-color: #58c996;
+    animation: button-to-circle .5s linear forwards;
     animation-delay: .3s;
   }
   .loaded #load {
     animation: loading-circle 3s linear forwards;
-    animation-delay: .3s;
+    animation-delay: 1s;
   }
   
   #load, #load-b {
@@ -66,10 +63,10 @@
   }
   #load .loading-inner, #load-b .loading-inner {
     stroke-dasharray: 900;
-    stroke-width: 10;
+    stroke-width: 8;
     stroke-miterlimit: 10;
     stroke-linecap: round;
-    stroke:#E5E7EE;
+    stroke: #c3c3c3;
     fill: transparent;
   }
   
@@ -77,10 +74,10 @@
     opacity: 0;
   }
   #load-b .loading-inner {
-    stroke: #41AB62;
+    stroke: #58c996;
   }
   
-  #check {
+  svg {
     position: absolute;
     display: none;
   }
@@ -102,9 +99,9 @@
   @keyframes button-to-circle {
     0% {
       width: 160px;
-      color: #41AB62;
-      border-color: #41AB62;
-      background-color: #41AB62;
+      color: #58c996;
+      border-color: #58c996;
+      background-color: #58c996;
     }
     50% {
       color: rgba(255, 255, 255, 0);
@@ -123,8 +120,8 @@
   }
   @keyframes circle-to-button {
     0% {
-      border-color: #41AB62;
-      background-color: #41AB62;
+      border-color: #58c996;
+      background-color: #58c996;
       height: 50px;
       width: 50px;
     }
@@ -135,13 +132,13 @@
     100% {
       height: 50px;
       width: 160px;
-      border-color: #41AB62;
-      background-color: #41AB62;
+      border-color: #58c996;
+      background-color: #58c996;
     }
   }
   @keyframes fade-to-original {
     0% {
-      background-color: #41AB62;
+      background-color: #58c996;
     }
     100% {
       background-color: white;

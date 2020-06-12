@@ -228,10 +228,10 @@ function submitButtonA() {
         document.getElementById('load-b').style.display= 'initial';
         setTimeout(function(){
           document.getElementById('load').style.opacity = 1;
-        }, 550);
+        }, 750);
         setTimeout(function(){
           document.getElementById('load-b').style.opacity = 1;
-        }, 700);
+        }, 900);
         setTimeout(function(){
           document.querySelector('.loading-dock').classList.remove('loaded');
           document.getElementById('load').style.display = 'none';
@@ -243,17 +243,17 @@ function submitButtonA() {
           submit.innerHTML = "";
           setTimeout(function(){
           document.getElementById('check').style.display = "block";
-          }, 500);
-        },2000);
+          }, 300);
+        }, 3600);
     
         //reset all
         setTimeout(function(){
           submit.classList.remove("popout");
           submit.classList.add("return");
-          submit.innerHTML = "Submit";
+          submit.innerHTML = "Beküldés";
           document.getElementById('check').style.display = "none";
           clicked = false;
-        }, 6000);
+        }, 5300);
       // }
    // });
 

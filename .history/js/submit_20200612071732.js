@@ -244,7 +244,7 @@ function submitButtonA() {
           setTimeout(function(){
           document.getElementById('check').style.display = "block";
           }, 500);
-        },2000);
+        },4500);
     
         //reset all
         setTimeout(function(){
