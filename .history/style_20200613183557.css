@@ -210,13 +210,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-
 }
-#facebookEmbed{
-}
-
 
 /* 4x3 Aspect Ratio */
 
@@ -820,7 +814,13 @@ input:focus:-ms-input-placeholder {
 #facebookHeart{
   padding: 5rem;
 }
+#facebookEmbed{
+  position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
 
+}
 
 /*============ END FACEBOOKSECTION CSS: ===*/
 

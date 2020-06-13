@@ -206,17 +206,11 @@ body {
 .iframe-container iframe {
   border: 0;
   height: 100%;
-  left: 0;
+  /* left: 0; */
   position: absolute;
   top: 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-
 }
-#facebookEmbed{
-}
-
 
 /* 4x3 Aspect Ratio */
 

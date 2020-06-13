@@ -209,14 +209,14 @@ body {
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 50%;
   align-items: center;
   justify-content: center;
 
 }
 #facebookEmbed{
+left:20%;
 }
-
 
 /* 4x3 Aspect Ratio */
 
