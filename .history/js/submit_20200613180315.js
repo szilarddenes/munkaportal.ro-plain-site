@@ -262,7 +262,7 @@ function submitButtonA() {
 
 }
 
-//deadline checkbox 
+//deadline checkbox
 
 var checkboxDeadline = document.getElementById("DeadlineContInp");
   var deadline = document.getElementById("deaDline");

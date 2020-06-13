@@ -120,7 +120,7 @@ function checkInputs() {
   }
 
   //deadline
-if (checkboxDeadline.checked === false){
+
   if (deadlineUNIX < today || deadlineValue.toString() == '') {
     //show error
     //add error class
@@ -128,7 +128,6 @@ if (checkboxDeadline.checked === false){
   } else {
     setSuccessForDeadline(deadlineDiv);
   }
-}
   // console.log('deadlineUNIX', deadlineUNIX);
   // console.log('deadline', deaDline);
   // console.log('Today is:', today);
@@ -262,22 +261,20 @@ function submitButtonA() {
 
 }
 
-//deadline checkbox 
+var checkboxDeadline = document.querySelector("input[DeadlineCont]");
+  var deadline = document.querySelector("input[deaDline]");
 
-var checkboxDeadline = document.getElementById("DeadlineContInp");
-  var deadline = document.getElementById("deaDline");
-
-    document.getElementById('DeadlineContInp').onclick = function() {
+  document.addEventListener("DOMContentLoaded", function (event) {
+  checkboxDeadline.addEventListener( 'change', function(event) {
      if(checkboxDeadline.checked) {
-        deaDline.setAttribute("disabled", "disabled");
-    //    setSuccessFor(DeadlineCont);
+  deadline.setAttribute("disabled", "disabled");
+       setSuccessFor(DeadlineCont);
      } else {
-        deaDline.removeAttribute("disabled");
+       deadline.removeAttribute("disabled");
      }
- };
+ });
 console.log ('checkboxDeadline',checkboxDeadline);
 console.log ('checkboxDeadline.checked',checkboxDeadline.checked);
 console.log ('deadline',deadline);
-
-
+});}
 

@@ -120,7 +120,7 @@ function checkInputs() {
   }
 
   //deadline
-if (checkboxDeadline.checked === false){
+
   if (deadlineUNIX < today || deadlineValue.toString() == '') {
     //show error
     //add error class
@@ -128,15 +128,17 @@ if (checkboxDeadline.checked === false){
   } else {
     setSuccessForDeadline(deadlineDiv);
   }
-}
-  // console.log('deadlineUNIX', deadlineUNIX);
-  // console.log('deadline', deaDline);
-  // console.log('Today is:', today);
-  // console.log('elso ag', deadlineUNIX < today);
-  // console.log('deadlineDiv', deadlineDiv);
-  // console.log('string', deadlineUNIX == '');
-  // console.log('masodik ag:', deadlineUNIX.toString() == '');
+  console.log('deadlineUNIX', deadlineUNIX);
+  console.log('deadline', deaDline);
+  console.log('Today is:', today);
+  console.log('elso ag', deadlineUNIX < today);
+  console.log('deadlineDiv', deadlineDiv);
+  console.log('string', deadlineUNIX == '');
+  console.log('masodik ag:', deadlineUNIX.toString() == '');
 
+  //DeadlineContinuous
+
+  var ifContDeadline = document.getElementById("deadlineCont");
   
 
   //   FindUS
@@ -150,10 +152,10 @@ if (checkboxDeadline.checked === false){
   } else {
     setErrorFor(findUS, `Please select at least one option.`);
   }
-  // console.log('checkFacebook', checkFacebook.checked);
-  // console.log('CheckInstagram', CheckInstagram.value);
-  // console.log('CheckWebSearch', CheckWebSearch.value);
-  // console.log('CheckElse', CheckElse.value);
+  console.log('checkFacebook', checkFacebook.checked);
+  console.log('CheckInstagram', CheckInstagram.value);
+  console.log('CheckWebSearch', CheckWebSearch.value);
+  console.log('CheckElse', CheckElse.value);
 
   //jobannouncement
 
@@ -261,23 +263,4 @@ function submitButtonA() {
    // });
 
 }
-
-//deadline checkbox 
-
-var checkboxDeadline = document.getElementById("DeadlineContInp");
-  var deadline = document.getElementById("deaDline");
-
-    document.getElementById('DeadlineContInp').onclick = function() {
-     if(checkboxDeadline.checked) {
-        deaDline.setAttribute("disabled", "disabled");
-    //    setSuccessFor(DeadlineCont);
-     } else {
-        deaDline.removeAttribute("disabled");
-     }
- };
-console.log ('checkboxDeadline',checkboxDeadline);
-console.log ('checkboxDeadline.checked',checkboxDeadline.checked);
-console.log ('deadline',deadline);
-
-
 

@@ -120,7 +120,7 @@ function checkInputs() {
   }
 
   //deadline
-if (checkboxDeadline.checked === false){
+
   if (deadlineUNIX < today || deadlineValue.toString() == '') {
     //show error
     //add error class
@@ -128,7 +128,6 @@ if (checkboxDeadline.checked === false){
   } else {
     setSuccessForDeadline(deadlineDiv);
   }
-}
   // console.log('deadlineUNIX', deadlineUNIX);
   // console.log('deadline', deaDline);
   // console.log('Today is:', today);
@@ -137,7 +136,22 @@ if (checkboxDeadline.checked === false){
   // console.log('string', deadlineUNIX == '');
   // console.log('masodik ag:', deadlineUNIX.toString() == '');
 
-  
+  var checkboxDeadline = document.querySelector("input[DeadlineCont]");
+  var deadline = document.querySelector("input[deaDline]");
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+  checkboxDeadline.addEventListener( 'change', function(event) {
+     if(checkboxDeadline.checked) {
+  deadline.setAttribute("disabled", "disabled");
+       setSuccessFor(DeadlineCont);
+     } else {
+       deadline.removeAttribute("disabled");
+     }
+ });
+console.log ('checkboxDeadline',checkboxDeadline);
+console.log ('checkboxDeadline.checked',checkboxDeadline.checked);
+console.log ('deadline',deadline);
+});
 
   //   FindUS
   if (
@@ -262,22 +276,11 @@ function submitButtonA() {
 
 }
 
-//deadline checkbox 
-
-var checkboxDeadline = document.getElementById("DeadlineContInp");
-  var deadline = document.getElementById("deaDline");
-
-    document.getElementById('DeadlineContInp').onclick = function() {
-     if(checkboxDeadline.checked) {
-        deaDline.setAttribute("disabled", "disabled");
-    //    setSuccessFor(DeadlineCont);
-     } else {
-        deaDline.removeAttribute("disabled");
-     }
- };
-console.log ('checkboxDeadline',checkboxDeadline);
-console.log ('checkboxDeadline.checked',checkboxDeadline.checked);
-console.log ('deadline',deadline);
-
-
+// function handleChange(DeadlineCont) {
+//   if(DeadlineCont.checked == false){
+//       document.getElementById("deaDline").removeAttribute("disabled");
+//   }else{
+//       document.getElementById("deaDline").setAttribute("disabled", "disabled");
+//       setSuccessFor(DeadlineCont);
+//  }
 
