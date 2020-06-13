@@ -382,7 +382,7 @@ body {
 #postajob,
 #postajob:hover {
   color: white;
-  background-color: #41ab62 !important; /*#0DDAB6*/
+  background-color:#41AB62  !important; /*#0DDAB6*/
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
   transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 25px;
@@ -576,13 +576,13 @@ button.navbar-toggler {
 .jumbotron#divider1 {
   background-image: url(img/elvalaszto_szurke.png);
   background-position: center;
-  opacity: 0.6;
+  opacity: .6;
   background-size: cover;
 }
 
 .jumbotron#divider2 {
   background-image: url(img/elvalaszto_kek.png);
-  opacity: 0.6;
+  opacity: .6;
   background-position: center;
   background-size: cover;
 }
@@ -622,12 +622,13 @@ button.navbar-toggler {
 /* end logo img */
 
 /* start Rolunk para */
-.para2 {
-  font-weight: 500 !important;
+.para2{
+    font-weight: 500 !important;
   font-size: 0.9rem !important;
   text-align: justify;
   margin: 0.5rem !important;
   padding: 0.5rem !important;
+
 }
 /* end Rolunk para */
 
@@ -730,7 +731,7 @@ button.navbar-toggler {
   .form-group #igoodFind {
     position: absolute;
     top: 1.2rem;
-    right: 5.2rem;
+    margin-right: 0.1rem;
     visibility: hidden;
   }
 }
