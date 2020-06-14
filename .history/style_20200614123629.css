@@ -216,17 +216,10 @@ body {
 #embedResponsive1by1{
   justify-content: center !important;
   align-items: center !important;
-  padding-bottom: 5rem;
-  
  }
- .embed-responsive-1by1::before{
-   padding-top: 0rem;
-   }
+ .embed-responsive-1by1::before
  
-  .embed-responsive iframe{
-  border: 20px solid #393939 !important;
-  border-radius: 25px;
-}
+
 
 /* 4x3 Aspect Ratio */
 

@@ -200,7 +200,7 @@ body {
 
 .iframe-container {
   overflow: hidden;
-  padding-top: 2%;
+  padding-top: 30%;
 }
 
 .iframe-container iframe {
@@ -216,17 +216,16 @@ body {
 #embedResponsive1by1{
   justify-content: center !important;
   align-items: center !important;
-  padding-bottom: 5rem;
-  
- }
- .embed-responsive-1by1::before{
-   padding-top: 0rem;
-   }
- 
-  .embed-responsive iframe{
-  border: 20px solid #393939 !important;
-  border-radius: 25px;
+  border: 0;
+  height: 100%;
+  position: absolute;
+  /* left: 0;
+  right: 0; */
+  top: 0;
+  margin: auto;
+  width: 100%;
 }
+
 
 /* 4x3 Aspect Ratio */
 

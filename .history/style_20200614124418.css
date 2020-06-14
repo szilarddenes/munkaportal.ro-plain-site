@@ -223,9 +223,8 @@ body {
    padding-top: 0rem;
    }
  
-  .embed-responsive iframe{
-  border: 20px solid #393939 !important;
-  border-radius: 25px;
+   .embed-responsive iframe{
+  border: 5px solid black !important;
 }
 
 /* 4x3 Aspect Ratio */

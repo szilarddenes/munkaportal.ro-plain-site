@@ -224,7 +224,7 @@ body {
    }
  
   .embed-responsive iframe{
-  border: 20px solid #393939 !important;
+  border: 20px solid # !important;
   border-radius: 25px;
 }
 
