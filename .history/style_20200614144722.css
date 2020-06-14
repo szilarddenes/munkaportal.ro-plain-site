@@ -224,9 +224,9 @@ body {
    }
  
   .embed-responsive iframe{
-  border:2px solid #393939 !important;
+  /* border: 20px solid #393939 !important; */
   border-radius: 35px;
- 
+  /* max-width: 100%; */
 
 }
 
@@ -254,8 +254,7 @@ body {
 }
 
 #gradientContainer{
-  max-width: 25rem;
-  min-width: 25rem;
+  max-width: %;
 
 }
 

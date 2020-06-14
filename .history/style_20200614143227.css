@@ -224,9 +224,8 @@ body {
    }
  
   .embed-responsive iframe{
-  border:2px solid #393939 !important;
-  border-radius: 35px;
- 
+  /* border: 20px solid #393939 !important; */
+  border-radius: 25px;
 
 }
 
@@ -237,7 +236,7 @@ body {
           align-items: center;
   width: 100%;
   margin: auto;
-  /* max-width: 40vw; */
+  max-width:20rem;
   position: relative;
   /* padding: 30% 2em; */
   box-sizing: border-box;
@@ -251,12 +250,6 @@ body {
   animation: gradient 3s ease infinite;
   padding:2rem;
   background-size: 500% 500%;
-}
-
-#gradientContainer{
-  max-width: 25rem;
-  min-width: 25rem;
-
 }
 
 /* 4x3 Aspect Ratio */
