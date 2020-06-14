@@ -213,48 +213,50 @@ body {
   margin: auto;
   width: 100%;
 }
-#embedResponsive1by1 {
+#embedResponsive1by1{
   justify-content: center !important;
   align-items: center !important;
   padding-bottom: 5rem;
-}
-.embed-responsive-1by1::before {
-  padding-top: 0rem;
-}
-
-.embed-responsive iframe {
-  border: 2px solid #393939 !important;
+  
+ }
+ .embed-responsive-1by1::before{
+   padding-top: 0rem;
+   }
+ 
+  .embed-responsive iframe{
+  border:2px solid #393939 !important;
   border-radius: 35px;
+ 
+
 }
 
-.gradient-box {
+.gradient-box  {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   margin: auto;
   /* max-width: 40vw; */
   position: relative;
   /* padding: 30% 2em; */
   box-sizing: border-box;
-  background: linear-gradient(
-    -45deg,
-    #b4bfc9,
-    #8ab0ca,
-    rgb(42, 46, 163),
-    #936030,
-    #7a2727
-  );
+  background: linear-gradient(-45deg,
+  #b4bfc9,
+  #8ab0ca,
+  rgb(42, 46, 163),
+  #936030,
+  #7a2727);
   border-radius: 50px;
   animation: gradient 3s ease infinite;
-  padding: 2rem;
+  padding:2rem;
   background-size: 500% 500%;
 }
 
-#gradientContainer {
+#gradientContainer{
   max-width: 24rem;
   min-width: 24rem;
+
 }
 
 /* 4x3 Aspect Ratio */
@@ -856,9 +858,10 @@ input:focus:-ms-input-placeholder {
   transform-origin: 250px 250px;
 }
 
-#facebookHeart {
+#facebookHeart{
   padding: 5rem;
 }
+
 
 /*============ END FACEBOOKSECTION CSS: ===*/
 
