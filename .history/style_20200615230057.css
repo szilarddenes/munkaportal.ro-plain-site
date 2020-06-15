@@ -1224,8 +1224,8 @@ input:focus:-ms-input-placeholder {
     background: #00aced;
 }
 .model-3d-0 .instagram .back {
-    background: linear-gradient( -45deg,#8435A1,#CF2E7D, #F4A055);
-    background-size: 100% 100%;
+    background: linear-gradient( -45deg,#CF2E7D, #F4A055);
+    background-size: 100% 50%;
 }
 
 .model-3d-0 .facebook .back {

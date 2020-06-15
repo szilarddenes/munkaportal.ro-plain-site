@@ -221,7 +221,12 @@ body {
         margin: 0rem 2rem 5rem 1rem !important;
         padding: 1.9rem;
     }
-
+    #asterisk{
+        font-size: 2rem !important;
+    }
+    #hirlevel{
+        
+    }
 }
 
 #accordionContainer{
@@ -1223,10 +1228,6 @@ input:focus:-ms-input-placeholder {
 .model-3d-0 .twitter .back {
     background: #00aced;
 }
-.model-3d-0 .instagram .back {
-    background: linear-gradient( -45deg,#8435A1,#CF2E7D, #F4A055);
-    background-size: 100% 100%;
-}
 
 .model-3d-0 .facebook .back {
     background: #3b579d;
@@ -1244,9 +1245,6 @@ input:focus:-ms-input-placeholder {
     background: #cb2026;
 }
 
-#followus{
-margin: 1rem 0rem 3rem 0rem;
-}
 
 /* END SOCIAL ICONS */
 
@@ -1370,16 +1368,6 @@ span.fab {
     letter-spacing: .1rem !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24) !important;
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    text-align: center !important;
-}
-#mc_embed_signup .clear, #mc_embed_signup div#mce-responses, #mc_embed_signup #mce-success-response {
-    text-align: center !important;
-}
-#asterisk{
-    font-size: .85rem !important;
-}
-#hirlevel{
-    text-align: center;
 }
 /* End Mailchimp */
 
