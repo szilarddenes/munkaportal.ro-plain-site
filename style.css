@@ -237,7 +237,7 @@ body {
 }
 
 .embed-responsive iframe {
-    border: 2px solid #393939 !important;
+    border: 20px solid #393939 !important;
     border-radius: 35px;
 }
 
@@ -248,15 +248,13 @@ body {
     align-items: center;
     width: 100%;
     margin: auto;
-    /* max-width: 40vw; */
     position: relative;
-    /* padding: 30% 2em; */
     box-sizing: border-box;
-    background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
+    /* background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
     border-radius: 50px;
     animation: gradient 3s ease infinite;
     padding: 2rem;
-    background-size: 500% 500%;
+    background-size: 500% 500%; */
 }
 
 #gradientContainer {
@@ -273,6 +271,54 @@ body {
 
 
 /* END IFRAME RESPONSIVENESS */
+
+
+/* start counterjs */
+
+#countCol {
+    text-align: center;
+    padding-bottom: 50px;
+    /* border-right: 1px dashed black; */
+}
+
+#countCol:last-child {
+    /* border-right: 0px solid black; */
+}
+
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+i {
+    font-size: 5rem;
+}
+
+@media (max-width: 991px) {
+    #countCol {
+        /* border-right: 0px dashed black;
+        border-bottom: 1px dashed black; */
+        width: 50%;
+        margin: auto auto;
+    }
+    #countCol:last-child {
+        /* border-bottom: 0px dashed black; */
+    }
+}
+
+#feliratkozo,
+#lajk,
+#kavescsesze,
+#count1,
+#count2,
+#count3 {
+    font-size: 2rem !important;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(42, 41, 41, 0.411);
+    padding: .2rem;
+}
+
+
+/* end counterjs */
 
 
 /* SCROLLBAR */
