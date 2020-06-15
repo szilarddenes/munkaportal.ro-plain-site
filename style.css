@@ -237,7 +237,7 @@ body {
 }
 
 .embed-responsive iframe {
-    border: 20px solid #393939 !important;
+    border: 1.3rem solid #393939 !important;
     border-radius: 35px;
 }
 
@@ -248,13 +248,14 @@ body {
     align-items: center;
     width: 100%;
     margin: auto;
-    position: relative;
+    /*position: relative;
     box-sizing: border-box;
-    /* background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
+    background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
     border-radius: 50px;
     animation: gradient 3s ease infinite;
     padding: 2rem;
-    background-size: 500% 500%; */
+    background-size: 500% 500%;
+    */
 }
 
 #gradientContainer {
@@ -278,7 +279,7 @@ body {
 #countCol {
     text-align: center;
     padding-bottom: 50px;
-    /* border-right: 1px dashed black; */
+    margin: .1rem;
 }
 
 #countCol:last-child {
@@ -290,16 +291,14 @@ body {
     animation-delay: 0s;
 }
 
-i {
-    font-size: 5rem;
-}
-
 @media (max-width: 991px) {
     #countCol {
         /* border-right: 0px dashed black;
         border-bottom: 1px dashed black; */
-        width: 50%;
+        width: 100%;
         margin: auto auto;
+        padding-bottom: 50px;
+        margin: .1rem;
     }
     #countCol:last-child {
         /* border-bottom: 0px dashed black; */
@@ -312,9 +311,9 @@ i {
 #count1,
 #count2,
 #count3 {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     text-shadow: 0.1rem 0.1rem 0.3rem rgba(42, 41, 41, 0.411);
-    padding: .2rem;
+    margin: .5rem;
 }
 
 
