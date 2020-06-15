@@ -447,7 +447,7 @@ body {
 #postajob,
 #postajob:hover {
     color: white;
-    background-color: #41ab62 !important;
+    background-color: #15DEA5 !important;
     /*#0DDAB6*/
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -638,14 +638,19 @@ button.navbar-toggler {
     background-image: url(img/elvalaszto_szurke.png);
     background-position: center;
     opacity: 0.6;
-    background-size: cover;
+    background-size: contain;
 }
 
 .jumbotron#divider2 {
     background-image: url(img/elvalaszto_kek.png);
     opacity: 0.6;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+}
+
+#dividerLogo {
+    max-width: 100%;
+    max-height: 5rem;
 }
 
 @media (max-width: 576px) {
@@ -665,6 +670,10 @@ button.navbar-toggler {
     height: 4vh;
     display: flex;
     justify-content: space-evenly;
+}
+
+.load2 {
+    margin-bottom: 30px;
 }
 
 .load__bar {
@@ -847,15 +856,15 @@ button.navbar-toggler {
 /* start form */
 
 .form-group.success input {
-    border-color: #2ecc71 !important;
+    border-color: #15DEA5 !important;
 }
 
 .form-group.success select {
-    border-color: #2ecc71 !important;
+    border-color: #15DEA5 !important;
 }
 
 .form-group.success textarea {
-    border-color: #2ecc71 !important;
+    border-color: #15DEA5 !important;
 }
 
 
