@@ -20,7 +20,3 @@ function normalizeSlideHeights() {
 }
 
 $(window).on('load resize orientationchange', normalizeSlideHeights);
-
-$('.navbar-nav>li>a').on('click', function() {
-    $('.navbar-collapse').collapse('hide');
-});
