@@ -96,8 +96,6 @@ body {
 
 .shade-hard {
     box-shadow: 6px 6px 12px #787b86;
-    /* border-style: -6px -6px 12px #fff!important; */
-    border-radius: 0.55rem !important;
     box-sizing: border-box;
 }
 
@@ -279,7 +277,6 @@ body {
 #countCol {
     text-align: center;
     padding-bottom: 50px;
-    margin: .1rem;
 }
 
 #countCol:last-child {
@@ -297,7 +294,6 @@ body {
         border-bottom: 1px dashed black; */
         width: 100%;
         margin: auto auto;
-        margin: .1rem;
     }
     #countCol:last-child {
         /* border-bottom: 0px dashed black; */
