@@ -224,8 +224,8 @@ body {
 }
 
 #accordionContainer{
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
+    padding-left: 15px;
+    padding-right: 5px;
     /* padding:0; */
 }
 
