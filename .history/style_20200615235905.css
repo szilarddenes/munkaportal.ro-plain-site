@@ -12,7 +12,7 @@ body {
     background-color: #e5e7ee;
     margin: auto;
     justify-content: center;
-    max-width: 960px;
+    max-width: 1024px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
