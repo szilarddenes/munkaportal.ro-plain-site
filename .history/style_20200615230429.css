@@ -55,8 +55,8 @@ body {
 
 .navbar.nyitva {
     border-radius: 0 0 10px 10px;
-    /* padding-bottom: 3rem !important;
-    padding-top: 0.8rem !important; */
+    padding-bottom: 3rem !important;
+    padding-top: 0.8rem !important;
     box-shadow: #0e0d0d 0 0 0.9rem 0;
 }
 
@@ -1152,7 +1152,7 @@ input:focus:-ms-input-placeholder {
     /* float: left; */
     width: 3.5rem;
     height: 3.5rem;
-    font-size: 1.85rem;
+    font-size: 1.6rem;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -1210,7 +1210,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .model-3d-0 .back {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
     -moz-transform: rotateX(90deg) translateZ(0.85rem);
     -ms-transform: rotateX(90deg) translateZ(0.85rem);
     -webkit-transform: rotateX(90deg) translateZ(0.85rem);

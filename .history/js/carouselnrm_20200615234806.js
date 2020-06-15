@@ -20,8 +20,7 @@ function normalizeSlideHeights() {
 }
 
 $(window).on('load resize orientationchange', normalizeSlideHeights);
- 
-// Close Bootstrap 3 navbar when a nav item is clicked
-$('.navbar-collapse ul li a:not(.dropdown-toggler)').bind('click touchstart', function () {
-  $('.navbar-toggler:visible').click();
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('do');
 });

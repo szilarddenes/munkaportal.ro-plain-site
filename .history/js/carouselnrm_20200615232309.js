@@ -20,8 +20,14 @@ function normalizeSlideHeights() {
 }
 
 $(window).on('load resize orientationchange', normalizeSlideHeights);
- 
-// Close Bootstrap 3 navbar when a nav item is clicked
-$('.navbar-collapse ul li a:not(.dropdown-toggler)').bind('click touchstart', function () {
-  $('.navbar-toggler:visible').click();
+
+$('.nav a').on('click', function() {
+    $('.navbar-toggler').click(); //bootstrap 4.x
+});
+
+$('.navbar-collapse.nyitva').on('click', function() {
+    $('.navbar-collapse').click(); //bootstrap 4.x
+});
+$('.navbar-collapse.nyitva').on('click', function() {
+    $('.navbar-collapse').click(); //bootstrap 4.x
 });
