@@ -297,11 +297,11 @@ body {
         border-bottom: 1px dashed black; */
         width: 100%;
         margin: auto auto;
-        padding-bottom: 50px;
         margin: .1rem;
     }
     #countCol:last-child {
         /* border-bottom: 0px dashed black; */
+        padding-bottom: 50px;
     }
 }
 
