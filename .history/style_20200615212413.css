@@ -73,7 +73,7 @@ body {
 
 .jumbotron,
 .jumbotron-fluid,
-.customJumbotron{
+.customJumbotron,{
     background-color: #e5e7ee;
     display: flex;
     align-items: center;
@@ -184,10 +184,6 @@ body {
         display: flex;
         align-items: center;
     }
-    .mailchimp {
-        margin: 2rem 2rem 5rem 2rem !important;
-        padding: 1.9rem;
-    }
 }
 
 
@@ -202,10 +198,6 @@ body {
         display: flex;
         align-items: center;
     }
-    .mailchimp {
-        margin: 2rem 2rem 5rem 2rem !important;
-        padding: 1.9rem;
-    }
 }
 
 @media (min-width: 1920px) {
@@ -217,16 +209,6 @@ body {
         display: flex;
         align-items: center;
     }
-    .mailchimp {
-        margin: 0rem 2rem 5rem 1rem !important;
-        padding: 1.9rem;
-    }
-}
-
-#accordionContainer{
-    /* padding-left: 15px;
-    padding-right: 15px; */
-    padding:0;
 }
 
 .body {
@@ -1343,27 +1325,6 @@ span.fab {
 
 
 /* END ACCORDION */
-
-/* Start Mailchimp */
-/* mailchimp container set at jumbotron media queries */
-#imaichimp{
-    margin:0 .5rem 0 .5rem;
-}
-#mc-embedded-subscribe{
-    width: 12rem !important;
-    height: 3.2rem !important;
-    font-size: .9rem !important;
-    font-weight: 600 !important;
-    color: #fefffe !important;
-    background-color: #15DEA5 !important;
-    border-radius: 40px !important;
-    border: 2px solid #15DEA5 !important;
-    text-transform: uppercase !important;
-    letter-spacing: .1rem !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24) !important;
-    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-}
-/* End Mailchimp */
 
 
 /* START FOOTER */

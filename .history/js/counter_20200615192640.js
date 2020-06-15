@@ -1,7 +1,7 @@
 let start // set on the first step to the timestamp provided
-const el1 = document.getElementById('count1') // get the element
-const el2 = document.getElementById('count2') // get the element
-const el3 = document.getElementById('count3') // get the element
+const el1 = document.getElementsByClassName(@count1@) // get the element
+const el2 = document.getElementsByClassName(@count2@) // get the element
+const el3 = document.getElementsByClassName(@count3@) // get the element
 const final1 = parseInt(el1.textContent, 10) // parse out the final number
 const final2 = parseInt(el2.textContent, 10) // parse out the final number
 const final3 = parseInt(el3.textContent, 10) // parse out the final number

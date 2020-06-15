@@ -1350,18 +1350,18 @@ span.fab {
     margin:0 .5rem 0 .5rem;
 }
 #mc-embedded-subscribe{
-    width: 12rem !important;
-    height: 3.2rem !important;
-    font-size: .9rem !important;
-    font-weight: 600 !important;
-    color: #fefffe !important;
-    background-color: #15DEA5 !important;
-    border-radius: 40px !important;
-    border: 2px solid #15DEA5 !important;
-    text-transform: uppercase !important;
-    letter-spacing: .1rem !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24) !important;
-    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+width: 10rem;
+    height: 3.2rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #fefffe;
+    background-color: #15DEA5;
+    border-radius: 40px;
+    border: 2px solid #15DEA5;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 /* End Mailchimp */
 
