@@ -268,7 +268,7 @@ function submitButtonA() {
 function submitDenied(){
   var submit = document.querySelector('.submit');
   submit.classList.add('denied');
-  document.getElementById('xMark').style.visibility = "visible";
+  document.getElementById('xMark').style.visibil = "block";
   document.getElementById('xMark').style.marginRight = ".5rem";
   submit.innerHTML = "Sikertelen";
 

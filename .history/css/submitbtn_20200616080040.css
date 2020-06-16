@@ -33,11 +33,8 @@
             /* margin-right: .5rem; */
             padding-top: .3rem;
             font-size: 1.4rem;
-            visibility: visible;
-            position: absolute;
-            right:0;
-
-            
+            visibility: hidden;
+            display: none;
             
         }
         
