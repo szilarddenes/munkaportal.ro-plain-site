@@ -269,7 +269,7 @@ function submitDenied(){
   var submit = document.querySelector('.submit');
   submit.classList.add('denied');
   // document.getElementById('xMark').style.visibility = "visible";
-  // document.getElementById('xMark').style.marginRight = ".5rem";
+  document.getElementById('xMark').style.marginRight = ".5rem";
   submit.innerHTML = "Sikertelen";
 
    //reset all
