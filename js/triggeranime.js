@@ -83,20 +83,38 @@ var soc3 = document.getElementById('socIN');
 window.addEventListener('scroll', function(event) {
     if (isInViewport(soc1)) {
         setTimeout(flash(soc1, 2000));
-        setTimeout(flash(soc2, 2000));
-        setTimeout(flash(soc3, 2000));
+        // setTimeout(flash(soc2, 2000));
+        // setTimeout(flash(soc3, 2000));
+        console.log(`soci in VP`);
+        flash(soc1);
 
         // console.log(`in viewport`);
     } else {
-        // console.log(`NOT in viewport`);
+        console.log(`soci NOT in viewport`);
     }
+    console.log(`soc1`, soc1);
+    console.log(`soc2`, soc2.classList);
+    // console.log(`soc3`, soc3);
 });
 
 function flash(input) {
-    input.classList.add("model-3d-0");
-    input.classList.add("back");
-    input.classList.add("model-3d-0");
-    input.classList.remove("back");
+    const soci = document.getElementById('socIG');
+    soci.classList.add('model-3d-0');
+    soci.classList.add('back');
+    soci.classList.add('instagram');
+    soci.classList.add('a:hover');
+    // soci.classList.add('model-3d-0');
+    // soci.classList.remove('back');
+    console.log(soci.classList);
+}
+
+function uflash(input) {
+    const soci = document.getElementById('socIG');
+    soci.classList.add('model-3d-0');
+    soci.classList.add('back');
+    // soci.classList.add('model-3d-0');
+    // soci.classList.remove('back');
+    console.log(soci.classList);
 }
 
 // social end
