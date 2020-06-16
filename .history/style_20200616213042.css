@@ -530,7 +530,7 @@ body {
 }
 
 .embed-responsive iframe {
-    border: .5rem solid #31344B !important; /*71B9D3 -- D29420 */
+    /* border: .5rem solid #31344B !important; 71B9D3 -- D29420 */
     border-radius: 50px;
 }
 
