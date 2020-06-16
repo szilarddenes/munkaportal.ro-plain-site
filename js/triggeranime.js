@@ -77,44 +77,35 @@ function countUp() {
 //counter end
 
 // social start
-var soc1 = document.getElementById('socIG');
+// var soc1 = document.getElementById('socIG');
 var soc2 = document.getElementById('socFB');
 var soc3 = document.getElementById('socIN');
 window.addEventListener('scroll', function(event) {
     if (isInViewport(soc1)) {
-        setTimeout(flash(soc1, 2000));
-        // setTimeout(flash(soc2, 2000));
-        // setTimeout(flash(soc3, 2000));
-        console.log(`soci in VP`);
-        flash(soc1);
+        setTimeout(function() {
+            flash(soc1);
+        }, 2000);
+        setTimeout(function() { unflash(soc1); }, 2000);
 
-        // console.log(`in viewport`);
+        console.log(`soci in VP`, soc1);
     } else {
         console.log(`soci NOT in viewport`);
     }
     console.log(`soc1`, soc1);
-    console.log(`soc2`, soc2.classList);
-    // console.log(`soc3`, soc3);
+
 });
 
 function flash(input) {
-    const soci = document.getElementById('socIG');
-    soci.classList.add('model-3d-0');
-    soci.classList.add('back');
-    soci.classList.add('instagram');
-    soci.classList.add('a:hover');
-    // soci.classList.add('model-3d-0');
-    // soci.classList.remove('back');
-    console.log(soci.classList);
+    const soci = input;
+    // soci.classList.add('instagram');
+    soci.classList.add('flush');
+    console.log(`in flush function`, soci.classList);
 }
 
-function uflash(input) {
-    const soci = document.getElementById('socIG');
-    soci.classList.add('model-3d-0');
-    soci.classList.add('back');
-    // soci.classList.add('model-3d-0');
-    // soci.classList.remove('back');
-    console.log(soci.classList);
+function unflash(input) {
+    const soci = input;
+    soci.classList.add('flushBack');
+    console.log(`in UNflush function`, soci.classList);
 }
 
 // social end

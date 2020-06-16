@@ -1511,6 +1511,24 @@ input:focus:-ms-input-placeholder {
     margin: 1rem 0rem 3rem 0rem;
 }
 
+.flush {
+    -moz-transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -moz-backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.flushback {
+    -moz-transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 
 /* END SOCIAL ICONS */
 
