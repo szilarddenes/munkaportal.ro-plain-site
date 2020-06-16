@@ -80,33 +80,40 @@ function countUp() {
 var soc1 = document.getElementById('socIG');
 var soc2 = document.getElementById('socFB');
 var soc3 = document.getElementById('socIN');
+var rotatedUp = 0;
 window.addEventListener('scroll', function(event) {
-    if (isInViewport(soc1)) {
-        // setTimeout(function() {
-        //     flash(soc1);
-        // }, 2000);
+    if ((isInViewport(soc1)) && (rotatedUp == 0)) {
+        // loop
+        let soc1T = 1000;
+        setTimeout(function() {
+            flash(soc1);
+        }, soc1T);
 
-        // setTimeout(function() { unflash(soc1); }, 2000);
+        let soc2T = 2000;
+        setTimeout(function() {
+            flash(soc2);
+        }, soc2T);
 
-        console.log(`soci in VP`, soc1);
+        let soc3T = 3000;
+        setTimeout(function() {
+            flash(soc3);
+        }, soc3T);
+        var rotatedUp = 1;
+
+
+        console.log(`rotatedUp`, rotatedUp);
     } else {
         console.log(`soci NOT in viewport`);
     }
-    console.log(`soc1`, soc1);
+    // console.log(`soc1`, soc1);
 
 });
 
 function flash(input) {
     const soci = input;
-    // soci.classList.add('instagram');
-    soci.classList.add('flush');
-    console.log(`in flush function`, soci.classList);
+    soci.focus();
+    setTimeout(function() { soci.blur(); }, 1000);
 }
 
-function unflash(input) {
-    const soci = input;
-    soci.classList.add('flushBack');
-    console.log(`in UNflush function`, soci.classList);
-}
 
 // social end

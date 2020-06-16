@@ -1437,19 +1437,22 @@ input:focus:-ms-input-placeholder {
     transform-style: preserve-3d;
 }
 
-.model-3d-0 a:hover {
+.model-3d-0 a:hover,
+a:focus {
     -moz-transform: rotateX(-90deg);
     -webkit-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
 }
 
-.model-3d-0 a:hover .fornt {
+.model-3d-0 a:hover,
+a:focus .fornt {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.model-3d-0 a:hover .back {
+.model-3d-0 a:hover,
+a:focus .back {
     -moz-backface-visibility: visible;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
@@ -1509,24 +1512,6 @@ input:focus:-ms-input-placeholder {
 
 #followus {
     margin: 1rem 0rem 3rem 0rem;
-}
-
-.flush {
-    -moz-transform: rotateX(-90deg);
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -moz-backface-visibility: visible;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-}
-
-.flushback {
-    -moz-transform: rotateX(-90deg);
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 
