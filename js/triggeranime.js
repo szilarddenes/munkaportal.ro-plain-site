@@ -77,15 +77,16 @@ function countUp() {
 //counter end
 
 // social start
-// var soc1 = document.getElementById('socIG');
+var soc1 = document.getElementById('socIG');
 var soc2 = document.getElementById('socFB');
 var soc3 = document.getElementById('socIN');
 window.addEventListener('scroll', function(event) {
     if (isInViewport(soc1)) {
-        setTimeout(function() {
-            flash(soc1);
-        }, 2000);
-        setTimeout(function() { unflash(soc1); }, 2000);
+        // setTimeout(function() {
+        //     flash(soc1);
+        // }, 2000);
+
+        // setTimeout(function() { unflash(soc1); }, 2000);
 
         console.log(`soci in VP`, soc1);
     } else {
