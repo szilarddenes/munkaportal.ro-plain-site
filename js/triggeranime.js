@@ -80,40 +80,39 @@ function countUp() {
 var soc1 = document.getElementById('socIG');
 var soc2 = document.getElementById('socFB');
 var soc3 = document.getElementById('socIN');
-var rotatedUp = 0;
+var rotatedUp = false;
 window.addEventListener('scroll', function(event) {
-    if ((isInViewport(soc1)) && (rotatedUp == 0)) {
-        // loop
-        let soc1T = 1000;
-        setTimeout(function() {
-            flash(soc1);
-        }, soc1T);
+    if ((isInViewport(soc1)) && (rotatedUp === false)) {
 
-        let soc2T = 2000;
-        setTimeout(function() {
-            flash(soc2);
-        }, soc2T);
-
-        let soc3T = 3000;
-        setTimeout(function() {
-            flash(soc3);
-        }, soc3T);
-        var rotatedUp = 1;
-
+        delayedRotate(soc1, 500);
+        delayedRotate(soc2, 1500);
+        delayedRotate(soc3, 2500);
+        delayedRotate(soc2, 3500);
+        delayedRotate(soc1, 4500);
+        var rotatedUp = true;
 
         console.log(`rotatedUp`, rotatedUp);
     } else {
+        var rotatedUp = false;
         console.log(`soci NOT in viewport`);
     }
     // console.log(`soc1`, soc1);
 
 });
 
-function flash(input) {
-    const soci = input;
-    soci.focus();
-    setTimeout(function() { soci.blur(); }, 1000);
+//src: https://www.sitepoint.com/delay-sleep-pause-wait/
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function delayedRotate(input, t) {
+    var soci = input;
+    var timing = t;
+    await sleep(t);
+    soci.focus();
+    await sleep(1000);
+    soci.blur();
+}
 
+//endsitepoint
 // social end
