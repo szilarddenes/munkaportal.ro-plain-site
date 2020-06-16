@@ -25,17 +25,8 @@
             transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        .denied{
-            background-color: #e74c3c !important;
-            border: 2px solid#e74c3c !important;
-        }
-        #xMark{
-            /* margin-right: .5rem; */
-            padding-top: .3rem;
-            font-size: 1.4rem;
-            /* visibility: hidden; */
-            display: none;
-            
+        button.denied{
+
         }
         
         button.submit:hover {

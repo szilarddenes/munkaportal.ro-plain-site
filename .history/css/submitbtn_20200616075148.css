@@ -33,9 +33,8 @@
             /* margin-right: .5rem; */
             padding-top: .3rem;
             font-size: 1.4rem;
-            /* visibility: hidden; */
+            visibility: hidden;
             display: none;
-            
         }
         
         button.submit:hover {

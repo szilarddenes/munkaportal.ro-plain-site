@@ -30,12 +30,9 @@
             border: 2px solid#e74c3c !important;
         }
         #xMark{
-            /* margin-right: .5rem; */
+            margin-right: .5rem;
+            font-size: large;
             padding-top: .3rem;
-            font-size: 1.4rem;
-            /* visibility: hidden; */
-            display: none;
-            
         }
         
         button.submit:hover {

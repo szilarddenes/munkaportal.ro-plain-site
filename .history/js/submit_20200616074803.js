@@ -254,7 +254,6 @@ function submitButtonA() {
         //reset all
         setTimeout(function(){
           submit.classList.remove("popout");
-          submit.classList.remove("denied");
           submit.classList.add("return");
           submit.innerHTML = "Beküldés";
           document.getElementById('check').style.display = "none";
@@ -268,8 +267,7 @@ function submitButtonA() {
 function submitDenied(){
   var submit = document.querySelector('.submit');
   submit.classList.add('denied');
-  document.getElementById('xMark').style.display = "block";
-  document.getElementById('xMark').style.marginRight = ".5rem";
+  document.getElementById('xMark').style.display = "visible";
   submit.innerHTML = "Sikertelen";
 
    //reset all
@@ -277,10 +275,9 @@ function submitDenied(){
     submit.classList.remove("popout");
     submit.classList.remove("denied");
     submit.classList.add("return");
-        submit.innerHTML = "Beküldés";
+    
+    submit.innerHTML = "Beküldés";
     document.getElementById('check').style.display = "none";
-    document.getElementById('xMark').style.display = "none";
-  document.getElementById('xMark').style.marginRight = "0rem";
         clicked = false;
   }, 3000);
 

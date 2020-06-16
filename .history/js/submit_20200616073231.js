@@ -30,9 +30,8 @@ form.addEventListener('submit', (e) => {
   console.log(messages);
   if (messages.length > 0) {
     console.log('Too many messages.');
-    submitDenied();
     return false;
-    
+    submitDenied();
   } else {
     fetch(scriptURL, {
       method: 'POST',
@@ -254,12 +253,11 @@ function submitButtonA() {
         //reset all
         setTimeout(function(){
           submit.classList.remove("popout");
-          submit.classList.remove("denied");
           submit.classList.add("return");
           submit.innerHTML = "Beküldés";
           document.getElementById('check').style.display = "none";
           clicked = false;
-        }, 4500);
+        }, 6000);
       // }
    // });
 
@@ -268,21 +266,16 @@ function submitButtonA() {
 function submitDenied(){
   var submit = document.querySelector('.submit');
   submit.classList.add('denied');
-  document.getElementById('xMark').style.display = "block";
-  document.getElementById('xMark').style.marginRight = ".5rem";
-  submit.innerHTML = "Sikertelen";
+  submit.innerHTML = "Denied";
 
    //reset all
    setTimeout(function(){
     submit.classList.remove("popout");
-    submit.classList.remove("denied");
     submit.classList.add("return");
-        submit.innerHTML = "Beküldés";
+    submit.innerHTML = "Beküldés";
     document.getElementById('check').style.display = "none";
-    document.getElementById('xMark').style.display = "none";
-  document.getElementById('xMark').style.marginRight = "0rem";
-        clicked = false;
-  }, 3000);
+    clicked = false;
+  }, 4500);
 
 }
 
