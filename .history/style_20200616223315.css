@@ -506,7 +506,7 @@ body {
 #embedResponsive1by1 {
   justify-content: center !important;
   align-items: center !important;
-  padding: 0.5rem;
+  padding-bottom: 5rem;
   border-radius: 50px;
 }
 
@@ -534,9 +534,9 @@ body {
   align-items: center;
   width: 100%;
   margin: auto;
- /*  position: relative;
+  position: relative;
   box-sizing: border-box;
-  background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
+  /* background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727);
     border-radius: 50px;
     animation: gradient 3s ease infinite;
     padding: 2rem;
