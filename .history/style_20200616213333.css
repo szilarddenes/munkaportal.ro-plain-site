@@ -521,7 +521,7 @@ body {
 #embedResponsive1by1 {
     justify-content: center !important;
     align-items: center !important;
-    padding: .5rem;
+    padding: .5fdmrem;
     border-radius: 50px;
 }
 
