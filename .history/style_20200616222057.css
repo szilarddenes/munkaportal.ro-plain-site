@@ -520,12 +520,12 @@ body {
   /* padding: 2rem; */
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .fb-page {
     width: 290px;
-    max-width: 290px;
+    max-width: 300px;
   }
-} */
+}
 
 .gradient-box {
   display: -webkit-box;
