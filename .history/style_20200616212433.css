@@ -852,10 +852,10 @@ body {
 
 .icon-bar {
     width: 30px;
-    height: 4px;
+    height: 3px;
     background-color: #393939;
     /* background: linear-gradient( -45deg, #b4bfc9, #8ab0ca, rgb(42, 46, 163), #936030, #7a2727); */
-    background-size: 350% 350%;
+    background-size: 200% 200%;
     animation: gradient 10s ease infinite;
     display: block;
     transition: all 0.2s;
