@@ -11,6 +11,12 @@
     header.classList.add('transpp');
 
     var checkScroll = function() {
+        /*
+         ** Find the direction of scroll
+         ** 0 - initial, 1 - up, 2 - down
+         */
+        //set transparent by default
+
         curScroll = w.scrollY || doc.scrollTop || pageYOffset;
         if (curScroll > prevScroll) {
             //scrolled up
@@ -49,3 +55,24 @@
     window.addEventListener('scroll', checkScroll);
 })();
 
+// What it does
+// First, we calculate the initial scroll position and assign it to the variable prevScroll.Also, we initiate a variable direction with value zero.
+
+// The
+
+// function checkScroll()
+// The
+
+// function checks the current scroll position and saves it to the variable curScroll Then we check its value against the previous scroll position to find whether the user has scrolled up or down.We assign the value to the variable direction.
+
+// For better performance, we want to toggle the visibility of the header only
+// if the direction of scrolling has changed.So we compare the current direction against the previous direction and call the
+
+// function toggleHeader accordingly.
+
+// The
+
+// function toggleHeader()
+// This
+
+// function receives the direction and scroll amount as parameters.It adds the class hide when the direction is down and scroll amount is greater than 52 px(the header height).Otherwise, it removes the class hide.

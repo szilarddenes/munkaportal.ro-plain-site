@@ -1190,6 +1190,13 @@
 
 
     <!--- Script Source Files -->
+<script>
+    //Start Close Bootstrap 3 navbar when a nav item is clicked
+$('.navbar-collapse ul li a:not(.dropdown-toggler)').bind('click', function () {
+  $('.navbar-toggler:visible').click();
+});
+//End Close Bootstrap 3 navbar when a nav item is clicked
+</script>
 
     <script defer src="js/jquery-3.3.1.min.js"></script>
     <script defer src="bootstrap-4.5.0-dist/js/bootstrap.min.js "></script>

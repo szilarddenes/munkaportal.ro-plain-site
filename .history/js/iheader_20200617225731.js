@@ -11,6 +11,8 @@
     header.classList.add('transpp');
 
     var checkScroll = function() {
+
+
         curScroll = w.scrollY || doc.scrollTop || pageYOffset;
         if (curScroll > prevScroll) {
             //scrolled up
