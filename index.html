@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>jobP by Munkaportal.ro</title>
+    <title>jobP by Munkaportal.ro | állás, munka, álláshirdetés, önéletrajz, álláskeresés</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/submitbtn.css" />
@@ -13,7 +14,9 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">#
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/mailchimpClassic.css" rel="stylesheet" type="text/css">
 
     <!-- -------------SVG------------ -->
     <div class="clouds">
@@ -279,7 +282,7 @@
                                 <!-- start  rov2 column2 -->
                                 <div class="col-md-6">
                                     <div class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
-                                        Ha kéred egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br>
+                                        Ha kéred, egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br>
                                     </div>
                                 </div>
                                 <!-- end  rov2 column2 -->
@@ -488,7 +491,7 @@
                     font-size: 0.9rem;
                     text-align:center;
                   ">
-                                    Ha kéred egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br />
+                                    Ha kéred, egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br />
                                 </div>
                             </div>
                         </div>
@@ -537,7 +540,7 @@
     <!-- <p class="p-1"></p> -->
     <div class="jumbotron-fluid shadow-soft margin text-center-md ">
         <p class="para1" id="para1"> Vadonatúj weboldalunk hamarosan elindul a www.jobp.eu címen, de addig is fogadjuk az álláshirdetéseket, melyeket ingyen közzéteszünk a közösségi média oldalainkon.
-            <br> <br> Ha egy komplex reklámkampányra van szükséged, vedd fel a kapcsolatot velünk a hello@jobp.eu e-mail címen és személyre szabott hirdetési csomagot állítunk össze Neked. Keress minket bizalommal.</p>
+            <br> <br> Ha egy komplex reklámkampányra van szükséged, vedd fel a kapcsolatot velünk a hello@jobp.eu e-mail címen és személyre szabott hirdetési csomagot állítunk össze Neked. Keress minket bizalommal!</p>
     </div>
 
     <!-- start Divider 1-->
@@ -556,6 +559,11 @@
 
 
         <form name="submit-to-google-sheet" id="gsheetForm" onsubmit="return checkInputs()">
+            <!-- start heading -->
+            <h2 id="H2Title">Hirdetésfeladás<i class="fas fa-user-check" id="imaichimp"></i></h2>
+
+
+            <!-- end heading -->
             <!--start divider loader -->
             <div class="d-md-flex justify-content-center">
                 <div class="d-flex justify-content-center">
@@ -596,8 +604,8 @@
 
                     <div class="form-group">
                         <i class="fa fa-envelope fa-lg"></i>
-                        <label for="email">E-mail Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="email" name="Email">
+                        <label for="email">E-mail cím</label>
+                        <input type="email" class="form-control" id="email" placeholder="e-mail" name="Email">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -609,9 +617,9 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <i class="fa fa-user-md fa-lg"></i>
-                        <label for="JobCategories"> Job Category</label>
+                        <label for="JobCategories"> Állás kategória</label>
                         <select class="custom-select custom-select-lg mb-3" id="JobCategory" name="Jobcategory">
-                            <option selected>select a job category</option>
+                            <option selected>válassz</option>
                             <option value="Adminisztráció, Irodai munka">Adminisztráció, Irodai munka</option>
                             <option value="Bank, Biztosítás, Bróker">Bank, Biztosítás, Bróker</option>
                             <option value="Cégvezetés, Menedzsment">Cégvezetés, Menedzsment</option>
@@ -651,9 +659,9 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <i class="fa fa-clock fa-lg"></i>
-                        <label for="JobType"> Job Type</label>
+                        <label for="JobType"> Állás típusa</label>
                         <select class="custom-select custom-select-lg mb-3" id="JobType" name="Jobtype">
-                            <option selected>select job type</option>
+                            <option selected>válassz</option>
                             <option value="Teljes munkaidős">Teljes munkaidős</option>
                             <option value="Részmunkaidős">Részmunkaidős</option>
                             <option value="Diákmunka">Diákmunka</option>
@@ -670,8 +678,8 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <i class="fa fa-map-marker-alt fa-lg"></i>
-                        <label for="JobLocation">Job Location</label>
-                        <input type="text" class="form-control" id="joblocation" placeholder="country, county, city" name="Joblocation">
+                        <label for="JobLocation">Munkavégzés helye</label>
+                        <input type="text" class="form-control" id="joblocation" placeholder="ország, város" name="Joblocation">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -687,8 +695,8 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <i class="fas fa-copyright fa-lg"></i>
-                        <label for="company">Company</label>
-                        <input type="text" class="form-control" placeholder="details" id="company" name="Company">
+                        <label for="company">Cég/szervezet neve</label>
+                        <input type="text" class="form-control" placeholder="név" id="company" name="Company">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -700,8 +708,8 @@
                     <!-- Phone -->
                     <div class="form-group">
                         <i class="fas fa-phone-square-alt fa-lg"></i>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="phone" name="Phone">
+                        <label for="phone">Telefonszám</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="+00-000-0000" name="Phone">
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -716,7 +724,7 @@
                 <!-- Deadline -->
                 <div class="col-md-6">
                     <div class="form-group" id="deadlineDiv"> <i class="fas fa-hourglass-half fa-lg"></i>
-                        <label for="Deadline">Job Deadline</label>
+                        <label for="Deadline">Jelentkezési határidő</label>
                         <input class="form-control" type="date" id="deaDline" name="Deadline">
                         <i id="igoodDate" class="fas fa-check-circle"></i>
                         <i id="ierrorDate" class="fas fa-exclamation-circle"></i>
@@ -727,7 +735,7 @@
                         <label>
                             <input type="checkbox" id="DeadlineContInp" value="Folyamatos a MKB-ig"
                                 name="DeadlineContInp">
-                            Folyamatos a munkakör betöltéséig
+                            Folyamatos a munkakör betöltéséig.
                         </label>
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
@@ -738,7 +746,7 @@
                 <!-- How U Find us? -->
                 <div class="col-md-6">
                     <div class="form-group justify-content-md-center"> <i class="fas fa-search fa-lg"></i>
-                        <label for="form-check">How did you find us? <i id="igoodFind"
+                        <label for="form-check">Hol találtál ránk?<i id="igoodFind"
                                 class="fas fa-check-circle"></i><i id="ierrorFind"
                                 class="fas fa-exclamation-circle"></i></label>
 
@@ -761,14 +769,14 @@
                             <!-- <div class="form-check"> -->
                             <input class="form-check-input" type="checkbox" value="yes" id="CheckWebSearch" name="chkWebSearch">
                             <label class="form-check-label" for="CheckWebSearch">
-                                Web Search
+                                Webes keresés
                             </label>
                             <br>
                             <!-- </div> -->
                             <!-- <div class="form-check"> -->
                             <input class="form-check-input" type="checkbox" value="yes" id="CheckElse" name="chkElse">
                             <label class="form-check-label" for="CheckElse">
-                                Else
+                                Egyéb
                             </label>
                             <!-- </div> -->
 
@@ -789,9 +797,9 @@
                 <div class="col" id="jobAdiv">
                     <div class="form-group">
                         <i class="fas fa-keyboard fa-lg"></i>
-                        <label for="jobAnnouncement">Describe Your Job</label>
+                        <label for="jobAnnouncement">Álláshirdetés leírása</label>
 
-                        <textarea class="form-control" rows="8" placeholder="paste your job description" name="Jobannouncement" id="JobAnnouncement"></textarea>
+                        <textarea class="form-control" rows="8" placeholder="maximum 2000 karakter" name="Jobannouncement" id="JobAnnouncement"></textarea>
                         <i id="igood" class="fas fa-check-circle"></i>
                         <i id="ierror" class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -806,8 +814,7 @@
             <div class="row justify-content-center text-center">
 
                 <label for="TermsConditions">
-                    <i class="fas fa-user-check fa-lg" style="margin-right: .5rem;"></i> I read and accept the <a
-                        href="popupurl">Terms and Conditions</a>.
+                    <i class="fas fa-user-check fa-lg" style="margin-right: .5rem;"></i> <a id="ASZFAccept"> A hirdetés beküldésével hozzájárulok, hogy a fentiekben megadott adatok nyilvánosan közzétételre kerüljenek.</a>
                 </label>
 
 
@@ -816,13 +823,13 @@
                         <div class="checkbox text-center" id="TermsCondi">
                             <label>
                                 <input type="checkbox" id="TermsConditions" value="yes" name="Termsandconditions">
-                                Accept
+                               <a id="accept"> Elfogadom a feltételeket.</a>
                             </label>
                             <i id="igood" class="fas fa-check-circle"></i>
                             <i id="ierror" class="fas fa-exclamation-circle"></i>
                         </div>
 
-                        <div id="chkMessage">Can't proceed as you didn't agree to the terms!</div>
+                        <div id="chkMessage">Kérjük, fogadd el az adatkezelési szabályzatot.</div>
 
 
                     </div>
@@ -888,11 +895,12 @@
         <!-- start  row1 -->
 
         <div class="row justify-content-center">
+            <div>
+                <h2 id="KovessMinket">Kövess minket!<i class="fas fa-thumbs-up" id="imaichimp"></i></h2>
 
-            <div class="d-flex justify-content-center align-items-center" id="facebookHeart">
-
-                <!-- SVG heart -->
-                <svg version="1.1" id="svgFacebookHeart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;width:fit-content; height:fit-content" xml:space="preserve">
+                <div class="d-flex justify-content-center align-items-center" id="facebookHeart">
+                    <!-- SVG heart -->
+                    <svg version="1.1" id="svgFacebookHeart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
                     <style type="text/css">
                         .st0 {
                             fill: url(#bgRed_1_);
@@ -913,7 +921,22 @@
                     <path id="svgFacebookwhiteHeart" class="st1" d="M654.6,250C517.2,250,500,364,500,364s-17.1-114-154.5-114C213.4,250,174.9,388.9,191,463.1
               c42.5,196.3,309,333.8,309,333.8s266.6-137.5,309.1-333.8C825.1,388.9,786.6,250,654.6,250z" />
                 </svg>
-                <!-- SVG HEart -->
+                    <!-- SVG HEart -->
+                </div>
+            </div>
+
+
+
+            <div class="embed-responsive embed-responsive-1by1" id="embedResponsive1by1">
+                <!-- <div class="justify-content-center gradient-box" id="gradientContainer"> -->
+                <div class="fb-page" data-href="https://www.facebook.com/munkaportal/" data-tabs="timeline" data-width="296" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/munkaportal/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/munkaportal/">MunkaPortal.ro - állás, munka, karrier</a></blockquote>
+                </div>
+                <!-- </div> -->
+
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="7352TWtX"></script>
+
             </div>
 
             <!-- start counter -->
@@ -921,43 +944,81 @@
                 <div class="row">
                     <div class="col-md-4" id="countCol">
                         <h1>
-                            <span class="" id="count1">2523</span>
+                            <span id="plusz">+</span>
+                            <span class="" id="count1">1700</span>
                         </h1>
-                        <h3 id="feliratkozo">Feliratkozó</h3>
+                        <h3 id="feliratkozo">Feliratkozó#</h3>
                         <i class="fa fa-users" id="feliratkozo"></i>
                     </div>
                     <div class="col-md-4" id="countCol">
-                        <h1>
-                            <span class="" id="count2">63075</span>
+                        <h1><span id="plusz">+</span>
+                            <span class="" id="count2">5800</span>
                         </h1>
-                        <h3 id="lajk">Lájk</h3>
+                        <h3 id="lajk">Követő</h3>
                         <i class="fa fa-thumbs-up" id="lajk"></i>
                     </div>
                     <div class="col-md-4" id="countCol">
-                        <h1>
-                            <span class="" id="count3">12218</span>
+                        <h1><span id="plusz">+</span>
+                            <span class="" id="count3">5400</span>
                         </h1>
-                        <h3 id="kavescsesze">Csésze kávé</h3>
+                        <h3 id="kavescsesze">Bögre kávé</h3>
                         <i class="fa fa-coffee" id="kavescsesze"></i>
                     </div>
                 </div>
             </div>
             <!-- end counter -->
+            <!--- Start Social section -->
 
-
-            <div class="embed-responsive embed-responsive-1by1" id="embedResponsive1by1">
-                <!-- <div class="justify-content-center gradient-box" id="gradientContainer"> -->
-                <div class="fb-page " data-href="https://www.facebook.com/munkaportal/" data-tabs="timeline" data-width="289" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/munkaportal/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/munkaportal/">MunkaPortal.ro - állás, munka, karrier</a>
-                    </blockquote>
+            <div class="container-md mx-lg-auto " id="followus">
+                <div class="mx-auto" style="width: fit-content; ">
+                    <!-- MODEL 3D -->
+                    <ul class="social-nav model-3d-0 ">
+                        <!-- <li>
+                    <a class="twitter shade-hard " href=" https://twitter.com/ ">
+                        <div class="front "><i class="fa fa-twitter "></i></div>
+                        <div class="back "><i class="fa fa-twitter "></i></div>
+                    </a>
+                </li> -->
+                        <li>
+                            <a class="instagram shade-hard " href=" https://www.instagram.com/jobp.eu/" id="socIG">
+                                <div class="front "><i class="fa fa-instagram "></i></div>
+                                <div class="back "><i class="fa fa-instagram "></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook shade-hard " href="https://www.facebook.com/munkaportal/" id="socFB">
+                                <div class="fornt "><i class="fa fa-facebook ">
+                            </i>
+                                </div>
+                                <div class="back "><i class="fa fa-facebook ">
+                            </i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                    <a class="google-plus shade-hard " href="https://plus.google.com/u ">
+                        <div class="front "><i class="fa fa-google-plus "></i></div>
+                        <div class="back "><i class="fa fa-google-plus "></i></div>
+                    </a>
+                </li> -->
+                        <li>
+                            <a class="linkedin shade-hard " href="https://www.linkedin.com/company/jobp/" id="socIN">
+                                <div class="front "><i class="fa fa-linkedin "></i></div>
+                                <div class="back "><i class="fa fa-linkedin "></i></div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                    <a class="pinterest shade-hard ">
+                        <div class="front "><i class="fa fa-pinterest-p "></i></div>
+                        <div class="back "><i class="fa fa-pinterest-p "></i></div>
+                    </a>
+                </li> -->
+                    </ul>
+                    <br />
+                    <!-- End Model Section -->
                 </div>
-                <!-- </div> -->
-
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="UwPGexPd"></script>
-
             </div>
-
+            <!-- End Social Section -->
 
         </div>
         <!-- end row1 -->
@@ -973,119 +1034,8 @@
 
 
 
-    <!--- Start Social section -->
-
-    <div class="container-md mx-lg-auto " id="followus">
-        <div class="mx-auto " style="width: fit-content; ">
-            <!-- MODEL 3D -->
-            <ul class="social-nav model-3d-0 ">
-                <!-- <li>
-                    <a class="twitter shade-hard " href=" https://twitter.com/ ">
-                        <div class="front "><i class="fa fa-twitter "></i></div>
-                        <div class="back "><i class="fa fa-twitter "></i></div>
-                    </a>
-                </li> -->
-                <li>
-                    <a class="instagram shade-hard " href=" https://www.instagram.com/jobp.eu/" id="socIG">
-                        <div class="front "><i class="fa fa-instagram "></i></div>
-                        <div class="back "><i class="fa fa-instagram "></i></div>
-                    </a>
-                </li>
-                <li>
-                    <a class="facebook shade-hard " href="https://www.facebook.com/munkaportal/" id="socFB">
-                        <div class="fornt "><i class="fa fa-facebook ">
-                            </i>
-                        </div>
-                        <div class="back "><i class="fa fa-facebook ">
-                            </i>
-                        </div>
-                    </a>
-                </li>
-                <!-- <li>
-                    <a class="google-plus shade-hard " href="https://plus.google.com/u ">
-                        <div class="front "><i class="fa fa-google-plus "></i></div>
-                        <div class="back "><i class="fa fa-google-plus "></i></div>
-                    </a>
-                </li> -->
-                <li>
-                    <a class="linkedin shade-hard " href="https://www.linkedin.com/company/jobp/" id="socIN">
-                        <div class="front "><i class="fa fa-linkedin "></i></div>
-                        <div class="back "><i class="fa fa-linkedin "></i></div>
-                    </a>
-                </li>
-                <!-- <li>
-                    <a class="pinterest shade-hard ">
-                        <div class="front "><i class="fa fa-pinterest-p "></i></div>
-                        <div class="back "><i class="fa fa-pinterest-p "></i></div>
-                    </a>
-                </li> -->
-            </ul>
-            <br />
-            <!-- End Model Section -->
-        </div>
-    </div>
-    <!-- End Social Section -->
-
-    <!-- start gdpr and terms -->
-
-    <!-- start accordion container -->
-    <div class="container flex-column" id="accordionContainer">
-        <div class="accordion shadow-soft rounded">
 
 
-            <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-5" data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="icon-title h6 mb-0 font-weight-bold"><span class="fas fa-users"
-                            style="margin-right: 1rem;"></span> Rólunk</span>
-                    <span class="icon"><span class="fas fa-plus"></span></span></a>
-                <div class="collapse" id="panel-5">
-                    <div class="pt-3">
-                        <p class="para2">
-                            Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában. Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat
-                            annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek. </p>
-                        <p class="para2"> Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod. Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások
-                            és a nagyvállalatok számára egyaránt. Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal. Ha kéred egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra
-                            szánt anyagi erőforrásaidra optimalizálva. </p>
-
-
-
-                        <p class="para2"> Ha egy komplex reklámkampányra van szükséged, vedd fel a kapcsolatot velünk a hello@jobp.eu e-mail címen és személyre szabott hirdetési csomagot állítunk össze Neked. Keress minket bizalommal.
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-sm card-body bg-primary border-light mb-0">
-                <a href="#panel-4" data-target="#panel-4" class="accordion-panel-header collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-                    <span class="icon-title h6 mb-0 font-weight-bold">
-                        <span class="fab fa-leanpub" style="margin-right: 1rem;">
-
-                        </span> ÁSZF és GDPR</span>
-                    <span class="icon">
-                        <span class="fas fa-plus">
-
-                        </span>
-                    </span>
-                </a>
-                <div class="collapse" id="panel-4">
-                    <div class="pt-3">
-                        <p class="mb-0">
-                            <p class="para2">A Munkaportal.ro/Jobp.eu hirdetési felületet biztosít felhasználói számára állásajánlatok hirdetésére, és azok böngészéséhez kapcsolódó egyéb szolgáltatásokat nyújt a fent megnevezett weboldalakon, illetve az üzemeltető által
-                                kezelt közösségi média felületeken.</p>
-                            <p class="para2">Az üzemeltető az adatkezelés során az Európai Parlament és a Tanács (EU) 2016/679 Rendeletében, valamint az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvényben foglaltaknak megfelelően
-                                jár el. A teljes ÁSZF <a href="kutyafasz">itt</a>, az Adatkezelési nyilatkozat pedig <a href="kutyafasz">itt</a> ismerhető meg. </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <!-- end accordion container -->
-
-    <!-- end gdpr and terms -->
 
     <!-- start form scripts -->
     <!-- Begin Mailchimp Signup Form -->
@@ -1095,7 +1045,7 @@
             <div id="mc_embed_signup">
                 <form action="https://munkaportal.us2.list-manage.com/subscribe/post?u=65aca9618e88585663a95015e&amp;id=4d66111564" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
-                        <h2 id="hirlevel">Hírelvél
+                        <h2 id="hirlevel">Hírlevél
                             <i class="fas fa-envelope-open-text" id="imaichimp"></i>
                         </h2>
                         <div class="indicates-required" id="asterisk"><span class="asterisk">*</span> kötelező mezők</div>
@@ -1156,9 +1106,87 @@
         var $mcj = jQuery.noConflict(true);
     </script>
     <!--End mc_embed_signup-->
-
-
     <!-- end form scripts -->
+
+    <!-- start gdpr and terms -->
+
+    <!-- start accordion container -->
+    <div class="container flex-column" id="accordionContainer">
+        <div class="accordion shadow-soft rounded">
+
+
+            <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-5" data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="icon-title h6 mb-0 font-weight-bold"><span class="fas fa-users"
+                            style="margin-right: 1rem;"></span> Rólunk</span>
+                    <span class="icon"><span class="fas fa-plus"></span></span></a>
+                <div class="collapse" id="panel-5">
+                    <div class="pt-3">
+                        <p class="para2">
+                            Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában. Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat
+                            annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek. </p>
+                        <p class="para2"> Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod. Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások
+                            és a nagyvállalatok számára egyaránt. Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal. Ha kéred, egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra
+                            szánt anyagi erőforrásaidra optimalizálva. </p>
+
+
+
+                        <p class="para2"> Ha egy komplex reklámkampányra van szükséged, vedd fel a kapcsolatot velünk a hello@jobp.eu e-mail címen és személyre szabott hirdetési csomagot állítunk össze Neked. Keress minket bizalommal.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-sm card-body bg-primary border-light mb-0">
+                <a href="#panel-4" data-target="#panel-4" class="accordion-panel-header collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                    <span class="icon-title h6 mb-0 font-weight-bold">
+                        <span class="fab fa-leanpub" style="margin-right: 1rem;">
+
+                        </span> ÁSZF és GDPR</span>
+                    <span class="icon">
+                        <span class="fas fa-plus">
+
+                        </span>
+                    </span>
+                </a>
+                <div class="collapse" id="panel-4">
+                    <div class="pt-3">
+                        <p class="mb-0">
+                            <p class="para2">A Munkaportal.ro/Jobp.eu hirdetési felületet biztosít felhasználói számára állásajánlatok hirdetésére, és azok böngészéséhez kapcsolódó egyéb szolgáltatásokat nyújt a fent megnevezett weboldalakon, illetve az üzemeltető által
+                                kezelt közösségi média felületeken.</p>
+                            <p class="para2">Az üzemeltető az adatkezelés során az Európai Parlament és a Tanács (EU) 2016/679 Rendeletében, valamint az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvényben foglaltaknak megfelelően
+                                jár el. A teljes ÁSZF <a href="aszf.html" target="_blank">itt</a>, az Adatkezelési nyilatkozat pedig <a href="gdpr.html" target="_blank">itt</a> ismerhető meg. </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- end accordion container -->
+
+    <!-- end gdpr and terms -->
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-4383973-13', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
 
     <!--- Script Source Files -->
 
