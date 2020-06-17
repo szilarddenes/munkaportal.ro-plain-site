@@ -530,7 +530,7 @@ body {
 }
 
 .embed-responsive iframe {
-    border: .7rem solid #333333 !important;
+    border: 1.2rem solid #333333 !important;
     /*71B9D3 -- D29420 */
     border-radius: 35px;
     /* padding: 2rem; */
