@@ -1,0 +1,16 @@
+{
+  "name": "appsnpm",
+  "version": "1.0.0",
+  "description": "basic npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "szdenes",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-useref": "^4.0.1"
+  },
+  "dependencies": {}
+}
