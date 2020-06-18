@@ -745,8 +745,7 @@
                     ((i =
                         '<' === e.charAt(0) &&
                         '>' === e.charAt(e.length - 1) &&
-                        e.length >= 3 ?
-                        [null, e, null] :
+                        e.length >= 3 ? [null, e, null] :
                         ft.exec(e)), !i || (!i[1] && n))
                 )
                     return !n || n.jquery ?
@@ -932,8 +931,7 @@
                 'boolean' == typeof t && ((n = t), (t = !1)), (t = t || V);
                 var r = pt.exec(e),
                     i = !n && [];
-                return r ?
-                    [t.createElement(r[1])] :
+                return r ? [t.createElement(r[1])] :
                     ((r = st.buildFragment([e], t, i)),
                         i && st(i).remove(),
                         st.merge([], r.childNodes));
@@ -1008,8 +1006,7 @@
 
                 function(e) {
                     return null == e ? '' : at.call(e);
-                } :
-                function(e) {
+                } : function(e) {
                     return null == e ? '' : (e + '').replace(ct, '');
                 },
             makeArray: function(e, t) {
@@ -3222,22 +3219,20 @@
                             );
                         })),
                         (C.attrHandle = o(function(e) {
-                                return (
-                                    (e.innerHTML = "<a href='#'></a>"),
-                                    e.firstChild &&
-                                    typeof e.firstChild.getAttribute !== V &&
-                                    '#' === e.firstChild.getAttribute('href')
-                                );
-                            }) ?
-                            {} :
-                            {
-                                href: function(e) {
-                                    return e.getAttribute('href', 2);
-                                },
-                                type: function(e) {
-                                    return e.getAttribute('type');
-                                },
-                            }),
+                            return (
+                                (e.innerHTML = "<a href='#'></a>"),
+                                e.firstChild &&
+                                typeof e.firstChild.getAttribute !== V &&
+                                '#' === e.firstChild.getAttribute('href')
+                            );
+                        }) ? {} : {
+                            href: function(e) {
+                                return e.getAttribute('href', 2);
+                            },
+                            type: function(e) {
+                                return e.getAttribute('type');
+                            },
+                        }),
                         W.getIdNotName ?
                         ((C.find.ID = function(e, t) {
                                 if (typeof t.getElementById !== V && !M) {
@@ -3257,10 +3252,8 @@
                                     return r ?
                                         r.id === e ||
                                         (typeof r.getAttributeNode !== V &&
-                                            r.getAttributeNode('id').value === e) ?
-                                        [r] :
-                                        t :
-                                        [];
+                                            r.getAttributeNode('id').value === e) ? [r] :
+                                        t : [];
                                 }
                             }),
                             (C.filter.ID = function(e) {
@@ -3994,9 +3987,7 @@
                 return (
                     n && (e = ':not(' + e + ')'),
                     1 === t.length ?
-                    st.find.matchesSelector(t[0], e) ?
-                    [t[0]] :
-                    [] :
+                    st.find.matchesSelector(t[0], e) ? [t[0]] : [] :
                     st.find.matches(e, t)
                 );
             },
@@ -4040,9 +4031,7 @@
             tr: [2, '<table><tbody>', '</tbody></table>'],
             col: [2, '<table><tbody></tbody><colgroup>', '</colgroup></table>'],
             td: [3, '<table><tbody><tr>', '</tr></tbody></table>'],
-            _default: st.support.htmlSerialize ?
-                [0, '', ''] :
-                [1, 'X<div>', '</div>'],
+            _default: st.support.htmlSerialize ? [0, '', ''] : [1, 'X<div>', '</div>'],
         },
         an = p(V),
         sn = an.appendChild(V.createElement('div'));
@@ -4739,8 +4728,7 @@
                             st.isArray(n) ?
                             st.map(n, function(e) {
                                 return { name: t.name, value: e.replace(En, '\r\n') };
-                            }) :
-                            { name: t.name, value: n.replace(En, '\r\n') };
+                            }) : { name: t.name, value: n.replace(En, '\r\n') };
                     })
                     .get();
             },
@@ -5431,8 +5419,7 @@
         (st.speed = function(e, t, n) {
             var r =
                 e && 'object' == typeof e ?
-                st.extend({}, e) :
-                {
+                st.extend({}, e) : {
                     complete: n || (!n && t) || (st.isFunction(e) && e),
                     duration: e,
                     easing: (n && t) || (t && !st.isFunction(t) && t),
@@ -5659,8 +5646,11 @@
  * Dual licensed under the MIT and GPL licenses.
  * https://github.com/malsup/form#copyright-and-license
  */
+
 <<
-<< << < HEAD
+<<
+<
+HEAD
     ! function(e) { "use strict"; "function" == typeof define && define.amd ? define(["jquery"], e) : e("undefined" != typeof jQuery ? jQuery : window.Zepto) }(function(e) {
             "use strict";
 
@@ -5948,7 +5938,8 @@
                         }
                     })
                 }, e.fn.ajaxSubmit.debug = !1 ===
-                === = !(function(e) {
+                ===
+                = !(function(e) {
                     'use strict';
                     'function' == typeof define && define.amd ?
                         define(['jquery'], e) :
@@ -6393,8 +6384,7 @@
                                     success: e.ajaxSettings.success,
                                     type: u || e.ajaxSettings.type,
                                     iframeSrc: /^https/i.test(window.location.href || '') ?
-                                        'javascript:false' :
-                                        'about:blank',
+                                        'javascript:false' : 'about:blank',
                                 },
                                 t
                             ));
@@ -6709,14 +6699,19 @@
                         );
                     }),
                     (e.fn.ajaxSubmit.debug = !1); >>>
-                    >>> > 05 b47aa87e6f681fa1b31bb320b4a427bc89ca32
+                    >>>
+                    >
+                    05 b47aa87e6f681fa1b31bb320b4a427bc89ca32
                 });
 
             /*! jQuery Validation Plugin - v1.12.0 - 4/1/2014
              * http://jqueryvalidation.org/
              * Copyright (c) 2014 JÃƒÂ¶rn Zaefferer; Licensed MIT */
             <<
-            << << < HEAD
+            <<
+            <<
+            <
+            HEAD
                 ! function(a) {
                     a.extend(a.fn, {
                         validate: function(b) {
@@ -7338,7 +7333,8 @@
                 });
 
             }(jQuery)); ===
-            === = !(function(a) {
+            ===
+            = !(function(a) {
                 a.extend(a.fn, {
                         validate: function(b) {
                             if (!this.length)
@@ -8767,4 +8763,6 @@
                     if (keycode == 27 && typeof mc.showPopup != 'undefined') mc.closePopup();
                 });
             })(jQuery); >>>
-            >>> > 05 b47aa87e6f681fa1b31bb320b4a427bc89ca32
+            >>>
+            >
+            05 b47aa87e6f681fa1b31bb320b4a427bc89ca32
