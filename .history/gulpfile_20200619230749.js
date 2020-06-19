@@ -37,20 +37,25 @@ gulp.task('imageMin', () =>
 
 //concat
 gulp.task('concat', function (done) {
-  gulp.src('js/*.js').pipe(concat('conc.js')).pipe(gulp.dest('gdist/js'));
+  gulp.src('./jss/*.js').pipe(concat('conc.js')).pipe(gulp.dest('gdist/js'));
   done();
 });
 
 //minify js --already included in scripts
 gulp.task('minify', function () {
-  gulp.src('./js/*.js').pipe(uglify()).pipe(gulp.dest('gdist/jsss'));
+  gulp.src('./js/submit.js')
+  .pipe(uglify())
+  // .pipe(gulp.dest('gdist/jsss'));
+  gulp.src('./js/main.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('gdist/jsss'));
 });
 
 //compile sass
 
 //scripts
 
-gulp.task('default', gulp.series('copyHtml', 'concat', 'minify'));
+gulp.task('default', gulp.series('copyHtml','concat','minify'));
 
 // gulp.task('watch' function(done){
 // gulp.watch('src/js/*.js', [scripts]);

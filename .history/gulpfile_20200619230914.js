@@ -50,7 +50,7 @@ gulp.task('minify', function () {
 
 //scripts
 
-gulp.task('default', gulp.series('copyHtml', 'concat', 'minify'));
+gulp.task('default', gulp.series('copyHtml','concat','minify'));
 
 // gulp.task('watch' function(done){
 // gulp.watch('src/js/*.js', [scripts]);
