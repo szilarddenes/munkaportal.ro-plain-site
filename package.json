@@ -1,0 +1,30 @@
+{
+  "name": "jobp",
+  "version": "1.0.0",
+  "description": "automatize file and img compression using gulp",
+  "main": "gindex.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szdenes/munkaportalv2.git"
+  },
+  "keywords": [
+    "gulp",
+    "compression"
+  ],
+  "author": "szdenes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szdenes/munkaportalv2/issues"
+  },
+  "homepage": "https://github.com/szdenes/munkaportalv2#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
