@@ -1,8 +1,10 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
 //const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.src('./**/', { cwd: '../' }).pipe(gulp.dest('../gdist'));
 /*
@@ -37,13 +39,22 @@ gulp.task('imageMin', () =>
 
 //concat
 gulp.task('concat', function (done) {
-  gulp.src('js/*.js').pipe(concat('conc.js')).pipe(gulp.dest('gdist/js'));
+  gulp.src('js/*.js')
+  .pipe(concat('conc.js'))
+  .pipe(gulp.dest('gdist/js'));
   done();
 });
 
 //minify js --already included in scripts
-gulp.task('minify', function () {
-  gulp.src('./js/*.js').pipe(uglify()).pipe(gulp.dest('gdist/jsss'));
+gulp.task('uglify', function (minike) {
+  return pipeline(
+  
+    gulp.src('js/*.js')
+    uglify();
+    gulp.dest('gdist/js');
+  
+  );
+  minike();
 });
 
 //compile sass

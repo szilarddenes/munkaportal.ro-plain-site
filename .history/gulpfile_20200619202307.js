@@ -1,8 +1,9 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
-//const sass = require('gulp-sass');
-const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.src('./**/', { cwd: '../' }).pipe(gulp.dest('../gdist'));
 /*
@@ -35,22 +36,35 @@ gulp.task('imageMin', () =>
   gulp.src('img/*').pipe(imagemin()).pipe(gulp.dest('gdist/img'))
 );
 
-//concat
-gulp.task('concat', function (done) {
-  gulp.src('js/*.js').pipe(concat('conc.js')).pipe(gulp.dest('gdist/js'));
-  done();
-});
-
-//minify js --already included in scripts
-gulp.task('minify', function () {
-  gulp.src('./js/*.js').pipe(uglify()).pipe(gulp.dest('gdist/jsss'));
-});
+// minify js --already included in scripts
+// gulp.task('minify', function (minike) {
+//   gulp.src('js/*.js').pipe(uglify()).pipe(gulp.dest('gdist/js'));
+//   minike();
+// });
 
 //compile sass
 
+// gulp.task('sass', function (sas) {
+//   gulp
+//     .src('css/*.scss')
+//     .pipe(sass().on('error', sass.logError))
+//     .pipe(gulp.dest('gdist/css'));
+//   sas();
+// });
+
 //scripts
 
-gulp.task('default', gulp.series('copyHtml','concat','minify'));
+
+gulp.task('scripts', function() {
+    return gulp.src('js/*.js')
+        .pipe(concat('concat.js'))
+        .pipe(gulp.dest('gdist/jsConc')
+        .pipe(rename('concat.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(jsDest));
+});
+
+gulp.task('default', gulp.series('copyHtml', 'imageMin', 'scripts'));
 
 // gulp.task('watch' function(done){
 // gulp.watch('src/js/*.js', [scripts]);

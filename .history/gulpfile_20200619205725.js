@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
+const minify = require('gulp-uglify');
 //const sass = require('gulp-sass');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
 
 gulp.src('./**/', { cwd: '../' }).pipe(gulp.dest('../gdist'));
 /*
@@ -37,20 +37,26 @@ gulp.task('imageMin', () =>
 
 //concat
 gulp.task('concat', function (done) {
-  gulp.src('js/*.js').pipe(concat('conc.js')).pipe(gulp.dest('gdist/js'));
-  done();
+  gulp.src('js/*.js')
+  .pipe(concat('conc.js'))
+  .pipe(gulp.dest('gdist/js'));
+  concat
 });
 
 //minify js --already included in scripts
-gulp.task('minify', function () {
-  gulp.src('./js/*.js').pipe(uglify()).pipe(gulp.dest('gdist/jsss'));
+gulp.task('minify', function (minike) {
+  gulp
+    .src('js/gdist/conc.js')
+    .pipe(minify('conc.min.js'))
+    .pipe(gulp.dest('gdist/js'));
+  minike();
 });
 
 //compile sass
 
 //scripts
 
-gulp.task('default', gulp.series('copyHtml','concat','minify'));
+gulp.task('default', gulp.series('copyHtml', 'imageMin','concat','minify'));
 
 // gulp.task('watch' function(done){
 // gulp.watch('src/js/*.js', [scripts]);
