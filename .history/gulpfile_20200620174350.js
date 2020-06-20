@@ -22,8 +22,10 @@ gulp.watch - watch files and folders for changes */
 //copyhtml file
 
 gulp.task('copyHtml', function (masol) {
-  gulp.src('*.html');
-  gulp.src('*.html').pipe(gulp.dest('gdist'));
+  gulp
+    .src('*.html')
+     gulp.src("*.html")
+    .pipe(gulp.dest('gdist'));
   masol();
 });
 
@@ -35,17 +37,13 @@ gulp.task('imageMin', () =>
 
 //concat
 gulp.task('concat', function (done) {
-  gulp.src('js/*.js').pipe(concat('conc.js')).pipe(gulp.dest('gdist/jsmin'));
+  gulp.src('js/*.js').pipe(concat('conc.js')).pipe(gulp.dest('jsmin'));
   done();
 });
 
 //minify js --already included in scripts
-gulp.task('minify', function (done) {
-  gulp
-    .src('gdist/jsss/*.js')
-    .pipe(uglify('ugly.js'))
-    .pipe(gulp.dest('gdist/jsconcmin'));
-  done();
+gulp.task('minify', function () {
+  gulp.src('gdist/jsss/*.js').pipe(uglify()).pipe(gulp.dest('gdist/jsconcmin'));
 });
 
 //compile sass

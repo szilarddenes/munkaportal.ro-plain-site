@@ -45,7 +45,7 @@ gulp.task('minify', function (done) {
     .src('gdist/jsss/*.js')
     .pipe(uglify('ugly.js'))
     .pipe(gulp.dest('gdist/jsconcmin'));
-  done();
+  done(0);
 });
 
 //compile sass
