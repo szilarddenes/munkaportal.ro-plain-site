@@ -77,39 +77,40 @@ function countUp() {
 //counter end
 
 // social start
-// var soc1 = document.getElementById('socIG');
-// var soc2 = document.getElementById('socFB');
-// var soc3 = document.getElementById('socIN');
-// var rotatedUp = false;
-// window.addEventListener('scroll', function (event) {
-//   if (isInViewport(soc1) && rotatedUp === false) {
-//     delayedRotate(soc1, 500);
-//     delayedRotate(soc2, 1500);
-//     delayedRotate(soc3, 2500);
-//     delayedRotate(soc2, 3500);
-//     delayedRotate(soc1, 4500);
-//     var rotatedUp = true;
+var soc1 = document.getElementById('socIG');
+var soc2 = document.getElementById('socFB');
+var soc3 = document.getElementById('socIN');
+var rotatedUp = false;
+window.addEventListener('scroll', function (event) {
+  if (isInViewport(soc1) && rotatedUp === false) {
+    delayedRotate(soc1, 500);
+    delayedRotate(soc2, 1500);
+    delayedRotate(soc3, 2500);
+    delayedRotate(soc2, 3500);
+    delayedRotate(soc1, 4500);
+    var rotatedUp = true;
 
-//     console.log(`rotatedUp`, rotatedUp);
-//   } else {
-//     var rotatedUp = false;
-//     console.log(`soci NOT in viewport`);
-//   }
-// });
+    console.log(`rotatedUp`, rotatedUp);
+  } else {
+    var rotatedUp = false;
+    console.log(`soci NOT in viewport`);
+  }
+  // console.log(`soc1`, soc1);
+});
 
 //src: https://www.sitepoint.com/delay-sleep-pause-wait/
-// function sleep(ms) {
-//   return new Promise((resolve) => setTimeout(resolve, ms));
-// }
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-// async function delayedRotate(input, t) {
-//   var soci = input;
-//   var timing = t;
-//   await sleep(t);
-//   soci.focus();
-//   await sleep(1000);
-//   soci.blur();
-// }
+async function delayedRotate(input, t) {
+  var soci = input;
+  var timing = t;
+  await sleep(t);
+  soci.focus();
+  await sleep(1000);
+  soci.blur();
+}
 
 //endsitepoint
 // social end

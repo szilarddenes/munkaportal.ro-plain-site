@@ -324,18 +324,9 @@ body {
     box-shadow: none !important;
     background-color: rgba(255, 255, 255, 0);
 }
-#flags{
-    /* margin-top: 0.4rem; */
-    /* padding: 0.75rem; */
-    /* display: inline-block; */
+.flag{
+    max-width: .7rem;
 }
-#flag{
-    margin-top: 0.4rem;
-    padding: 0.75rem;
-    display: inline-block;
-    /* float:left; */
-}
-
 
 
 /* end interactive header */

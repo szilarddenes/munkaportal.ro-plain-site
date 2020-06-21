@@ -327,7 +327,7 @@ body {
 #flags{
     /* margin-top: 0.4rem; */
     /* padding: 0.75rem; */
-    /* display: inline-block; */
+    display: inline-block;
 }
 #flag{
     margin-top: 0.4rem;

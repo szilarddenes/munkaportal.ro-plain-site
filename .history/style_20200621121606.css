@@ -325,15 +325,11 @@ body {
     background-color: rgba(255, 255, 255, 0);
 }
 #flags{
-    /* margin-top: 0.4rem; */
-    /* padding: 0.75rem; */
-    /* display: inline-block; */
-}
-#flag{
     margin-top: 0.4rem;
     padding: 0.75rem;
-    display: inline-block;
-    /* float:left; */
+#flags{
+    margin-top: 0.4rem;
+    padding: 0.75rem;
 }
 
 

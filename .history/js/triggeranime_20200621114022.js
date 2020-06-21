@@ -98,18 +98,18 @@ function countUp() {
 // });
 
 //src: https://www.sitepoint.com/delay-sleep-pause-wait/
-// function sleep(ms) {
-//   return new Promise((resolve) => setTimeout(resolve, ms));
-// }
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-// async function delayedRotate(input, t) {
-//   var soci = input;
-//   var timing = t;
-//   await sleep(t);
-//   soci.focus();
-//   await sleep(1000);
-//   soci.blur();
-// }
+async function delayedRotate(input, t) {
+  var soci = input;
+  var timing = t;
+  await sleep(t);
+  soci.focus();
+  await sleep(1000);
+  soci.blur();
+}
 
 //endsitepoint
 // social end
