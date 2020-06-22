@@ -316,8 +316,6 @@
         }
         
         #flags svg {
-            /* box-shadow: 5px 5px 5px #888;
-            -webkit-box-shadow: 5px 5px 5px #888; */
             border-radius: 5px;
             webkit-filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.5));
             filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.5));
