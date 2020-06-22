@@ -1279,3 +1279,73 @@
 
 </footer>
 
+<div class="col-md" style="margin-top:400px; width: 400px; height: 400px; border: red 2px solid;font-size: 1rem; ">
+    <h1 style="margin-bottom: 50px;"> Forditani valo 1</h1>
+    <h2>Forditani valo 2</h2>
+    <p>alma</p>
+  </div>
+  <script>
+
+    var tnum = 'hu';
+    
+    $(document).ready(function(){
+      
+    
+      // $("#ro").click(function(e){    
+      //   e.stopPropagation();
+    
+      // });
+      
+    
+      /*TRANSLATE*/
+      // translate(tnum);
+      
+      $('#flags > a').click(function(){
+        // $(this).addClass('activetr').siblings().removeClass('activetr');
+        // $('.more_lang').removeClass('activetr');  
+        
+        // var img = $(this).find('img').attr('src');    
+        // var lang = $(this).querySelector("#id");
+        var lang =  $(this).find('a').attr('id');
+        // var lang = 'ro';
+        console.log('lang', lang);
+        var tnum = lang;
+        console.log('tnum', tnum);
+    
+        translate(tnum);
+        
+        $('#ro').text(lang);
+        // $('.current_lang img').attr('src', img);
+        
+    
+        
+      });
+    });
+    
+    function translate(tnum){
+      $('h1').text(trans[0][tnum]);
+      $('h2').text(trans[1][tnum]);
+      $('p').text(trans[2][tnum]);
+    }
+    
+    var trans = [ 
+      { 
+        hu : 'kutyafasz',
+        ro : 'pula de caine',
+        
+      },{ 
+        hu : 'Forditani valo 1',
+        ro : 'text de tradus 1',
+        
+      },{ 
+        hu : 'Forditani valo 2',
+        ro : 'mere',
+      },{ 
+        en : 'Forditani valo 2',
+        ro : 'text de tradus 2',
+      }
+      
+    ];
+    
+    
+        </script>

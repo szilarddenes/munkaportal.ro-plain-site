@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <title>jobP by Munkaportal.ro</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <style>
+      body{
+  margin:0;
+  padding:0;
+  color:#444444;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.translate_wrapper{
+  position:fixed;
+  z-index:1;
+  top:150px;
+  left:100px;
+  font-size:16px;
+  background:#fff;  
+  border-radius:4px;
+}
+
+.current_lang{
+  cursor:pointer;
+  text-transform:uppercase;
+  overflow:hidden;
+}
+
+.lang{
+    padding:10px 15px;
+}
+
+.lang.selected{
+  display:none;
+}
+
+.lang img, 
+.lang span.lang-txt{
+  display:inline-block;
+  margin-left:5px;
+  vertical-align:middle;
+}
+
+.lang span.lang-txt{
+   position:relative;
+  top:-1px;
+  font-weight:700;
+}
+
+.lang img{
+  width:20px;
+  margin-left:0;
+}
+
+.lang span span{
+  color:#999;
+  font-weight:400;
+}
+
+.lang span.fa{
+  font-size:12px;
+  position:relative;
+  top:-1px;
+  margin-left:3px;
+}
+
+
+/*more lang*/
+.more_lang{
+  transform:translateY(-20px);
+  opacity:0;
+  cursor:pointer;
+  display:none;
+   -webkit-transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+	-moz-transition:    all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+	-o-transition:      all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+	-ms-transition:     all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+	transition:         all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+}
+
+.translate_wrapper.active .more_lang{
+  display:block; 
+}
+
+.more_lang.active{
+  opacity:1;
+   transform:translateY(-0px);
+}
+
+.more_lang .lang:hover{
+  background:#5766b2;
+  color:#fff;
+}
+
+.more_lang .lang:hover span{
+  color:#fff;
+}
+
+.translate_wrapper:hover,
+.translate_wrapper.active,
+.content a:hover{
+  box-shadow:rgba(0,0,0,0.2) 0 5px 15px;  
+  -webkit-transition: all 0.3s cubic-bezier(0,.99,.44,.99);
+	-moz-transition:    all 0.3s cubic-bezier(0,.99,.44,.99);
+	-o-transition:      all 0.3s cubic-bezier(0,.99,.44,.99);
+	-ms-transition:     all 0.3s cubic-bezier(0,.99,.44,.99);
+	transition:         all 0.3s cubic-bezier(0,.99,.44,.99);
+  
+}
+
+.translate_wrapper.active .lang{
+  border-bottom:1px solid #eaeaea;
+}
+
+/*CONTENT*/
+.content{
+  width:100%;
+  max-width:400px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius:2px;
+  padding:20px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  
+  text-align:center;
+}
+
+.content h1, 
+.content h2, 
+.content p{
+  margin:0;
+}
+
+.content p{
+   line-height:22px;
+  text-align:left;
+  margin-top:15px;
+}
+
+
+.content div.ct-img{
+  width:150px;
+  height:150px;
+  overflow:hidden;
+  border-radius:50%;
+  margin:0 auto 10px;
+}
+
+.content div img{
+  height:100%;
+  position:relative;
+  left:-30px;
+}
+
+.content a{
+  padding: 8px 15px 10px;
+   border-radius:4px;
+  background:#5766b2;
+  color:#fff;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:25px;
+  position:relative;
+  overflow:hidden;
+}
+
+.content a:active{
+  transform: scale(0.9);
+   -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+}
+
+/*RTL*/
+body[dir="rtl"] .translate_wrapper{
+  right:20px;
+  left:auto;
+}
+
+body[dir="rtl"] .lang span.fa{
+  margin-right:3px;
+  margin-left:0;
+}
+
+body[dir="rtl"] .lang .lang-txt{
+  margin-right:5px;
+  margin-left:0;
+}
+
+body[dir="rtl"] .content div img{
+  left:auto;
+  right:-30px;
+}
+
+
+body[dir="rtl"] .content p{
+  text-align:right;
+}
+
+body[dir="rtl"] .lang span span{
+  float:left;
+  margin-right:5px;
+}
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbarSupportedContent">
+    <!-- Announce 2 FACEBOOK GROUP-->
+    <!-- <p class="p-1"></p> -->
+
+    <!-- start emojis -->
+
+
+    <!--- Start Home section -->
+    <div id="home">
+      <!---Navigation-->
+      <!-- navbar-light navbar-transparent headroom--not-bottom headroom--pinned headroom--top -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="site-header">
+          <a class="navbar-brand" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="10%" height="100%" viewBox="0 0 512 512" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                  <ellipse cx="249.847" cy="255.084" rx="249.847" ry="255.084" style="fill:#393939;" />
+                  <path
+                      d="M285.816,339.282l0,98.895l-56.763,0l0,-281.256l107.455,0c20.664,0 38.875,3.89 54.567,11.604c15.692,7.714 27.768,18.724 36.227,32.965c8.46,14.24 12.657,30.459 12.657,48.656c0,27.558 -9.235,49.315 -27.703,65.27c-18.469,15.889 -44.041,23.866 -76.717,23.866l-49.723,0l0,0Zm0,-47.074l50.692,0c14.982,0 26.412,-3.625 34.355,-10.812c7.879,-7.186 11.817,-17.471 11.817,-30.855c0,-13.779 -4.004,-24.921 -11.947,-33.426c-7.942,-8.505 -18.92,-12.856 -32.933,-13.12l-51.984,0l0,88.213Z"
+                      style="fill:#d29420;fill-rule:nonzero;" />
+                  <path
+                      d="M224.768,145.524c6.893,-0.097 15.699,-0.097 19.624,4.398c3.925,4.496 2.968,13.488 2.872,38.116c-0.096,24.629 0.67,64.895 0.67,89.328c0,24.433 -0.766,33.034 -2.297,40.657c-1.532,7.624 -3.829,14.269 -6.721,19.058c-2.891,4.789 -6.377,7.721 -9.057,11.142c-2.68,3.421 -4.556,7.33 -8.174,10.848c-3.618,3.519 -8.978,6.646 -11.276,2.248c-2.297,-4.398 -1.531,-16.321 -1.244,-51.212c0.287,-34.891 0.096,-92.749 -0.192,-123.926c-0.287,-31.177 -0.67,-35.672 1.627,-38.018c2.298,-2.346 7.276,-2.541 14.168,-2.639l0,0Z"
+                      style="fill:#393939;" />
+                  <path
+                      d="M176.791,277.023l0,-195.928c9.5,-5.43 18.62,-8.147 28.5,-8.147c20.141,0 33.061,13.579 33.061,32.977l0,183.512c0,44.617 -27.36,70.611 -73.342,70.611c-20.14,0 -37.241,-3.491 -53.201,-10.474l7.601,-46.557c9.499,5.043 21.28,7.372 31.16,7.372c17.1,0 26.221,-12.803 26.221,-33.366l0,0Z"
+                      style="fill:#71b9d3;fill-rule:nonzero;" />
+                  <g transform="matrix(0.0151001,0.999886,-0.999876,0.0157396,278.399,-99.2964)"><text x="189.574px"
+                          y="91.699px"
+                          style="font-family:'Poppins-ExtraBold', 'Poppins';font-weight:800;font-size:45.368px;fill:#d29421;stroke:#393939;stroke-width:2px;">J
+                          <tspan x="215.976px 252.521px 283.509px 312.875px 324.779px 350.069px "
+                              y="91.699px 91.699px 91.699px 91.699px 91.699px 91.699px ">OBP.EU</tspan></text></g>
+              </svg>
+          </a>
+
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav md-auto ">
+                  <li href="">
+                      <div class="" id="flags">
+                          <a href="" id="flag">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.3rem" class="flags">
+                                  <rect y="85.337" style="fill:#F0F0F0;" width="512" height="341.326"/>
+                                  <rect y="85.337" style="fill:#D80027;" width="512" height="113.775"/>
+                                  <rect y="312.888" style="fill:#6DA544;" width="512" height="113.775"/>
+                                                                      </svg>
+                          </a>
+
+                          <a href="" id="flag">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.3rem" class="flags">
+                                  <rect y="85.331" style="fill:#FFDA44;" width="512" height="341.326"/>
+                                  <rect y="85.331" style="fill:#0052B4;" width="170.663" height="341.337"/>
+                                  <rect x="341.337" y="85.331" style="fill:#D80027;" width="170.663" height="341.337"/>
+                                  
+                                  </svg>
+                          </a>
+
+
+                          <a href="ENG/EN.html" id="flag">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" width="1.3rem" class="flags">
+                                  <rect y="85.333" style="fill:#F0F0F0;" width="512" height="341.337"/>
+                                  <polygon style="fill:#D80027;" points="288,85.33 224,85.33 224,223.996 0,223.996 0,287.996 224,287.996 224,426.662 288,426.662   288,287.996 512,287.996 512,223.996 288,223.996 "/>
+                                  <g>
+                                      <polygon style="fill:#0052B4;" points="393.785,315.358 512,381.034 512,315.358  "/>
+                                      <polygon style="fill:#0052B4;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358  "/>
+                                      <polygon style="fill:#0052B4;" points="458.634,426.662 311.652,344.998 311.652,426.662  "/>
+                                  </g>
+                                  <polygon style="fill:#F0F0F0;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 "/>
+                                  <polygon style="fill:#D80027;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 "/>
+                                  <g>
+                                      <polygon style="fill:#0052B4;" points="90.341,315.356 0,365.546 0,315.356  "/>
+                                      <polygon style="fill:#0052B4;" points="200.348,329.51 200.348,426.661 25.491,426.661  "/>
+                                  </g>
+                                  <polygon style="fill:#D80027;" points="143.693,315.358 0,395.188 0,426.662 0,426.662 200.348,315.358 "/>
+                                  <g>
+                                      <polygon style="fill:#0052B4;" points="118.215,196.634 0,130.958 0,196.634  "/>
+                                      <polygon style="fill:#0052B4;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634  "/>
+                                      <polygon style="fill:#0052B4;" points="53.366,85.33 200.348,166.994 200.348,85.33  "/>
+                                  </g>
+                                  <polygon style="fill:#F0F0F0;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 "/>
+                                  <polygon style="fill:#D80027;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 "/>
+                                  <g>
+                                      <polygon style="fill:#0052B4;" points="421.659,196.636 512,146.446 512,196.636  "/>
+                                      <polygon style="fill:#0052B4;" points="311.652,182.482 311.652,85.331 486.509,85.331  "/>
+                                  </g>
+                                  <polygon style="fill:#D80027;" points="368.307,196.634 512,116.804 512,85.33 512,85.33 311.652,196.634 "/>
+                     
+                                  </svg>
+                          </a>
+                          <a href="" id="flag">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.3rem" class="flags">
+                                  <rect y="85.331" style="fill:#D80027;" width="512" height="341.337"/>
+                                  <rect y="85.331" width="512" height="113.775"/>
+                                  <rect y="312.882" style="fill:#FFDA44;" width="512" height="113.775"/>
+                              </svg>
+                          </a>
+
+                      </div>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#top">Kezdőlap</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="#FacebookDiv" id="facebook" style="background-color: #71b9d3; border-radius: 25px;">Facebook</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="#PostaJob" id="postajob" style="background-color: #d29320;">Hirdetésfeladás</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#accordionContainer">Rólunk</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+  <div class="translate_wrapper">
+    <div class="current_lang">
+      <div class="lang">
+        <img src="https://image.flaticon.com/icons/svg/299/299722.svg">
+        <span class="lang-txt">EN</span> 
+        <span class="fa fa-chevron-down chevron"></span>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- end FACEBOOK Container -->
+
+    <!--- Script Source Files -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js "></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js "></script>
+    <script src="js/iheader.js "></script>
+
+
+    <script>
+var tnum = 'en';
+
+$(document).ready(function(){
+  
+  $(document).click( function(e) {
+       $('.translate_wrapper, .more_lang').removeClass('active');     
+  });
+  
+  $('.translate_wrapper .current_lang').click(function(e){    
+    e.stopPropagation();
+    $(this).parent().toggleClass('active');
+    
+    setTimeout(function(){
+      $('.more_lang').toggleClass('active');
+    }, 5);
+  });
+  
+
+  /*TRANSLATE*/
+  translate(tnum);
+  
+  $('.more_lang .lang').click(function(){
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $('.more_lang').removeClass('active');  
+    
+    var img = $(this).find('img').attr('src');    
+    var lang = $(this).attr('data-value');
+    var tnum = lang;
+    translate(tnum);
+    
+    $('.current_lang .lang-txt').text(lang);
+    $('.current_lang img').attr('src', img);
+    
+    if(lang == 'ar'){
+      $('body').attr('dir', 'rtl');
+    }else{
+      $('body').attr('dir', 'ltr');
+    }
+    
+  });
+});
+
+function translate(tnum){
+  $('h1').text(trans[0][tnum]);
+  $('p').text(trans[1][tnum]);
+  $('.content a span').text(trans[2][tnum]);
+}
+
+var trans = [ 
+  { 
+    en : 'kutyafasz',
+    pt : 'Camaleão',
+    es : 'Camaleón',
+    fr : 'Caméléon',
+    de : 'Chamäleon', 
+    cn : '变色龙',
+    ar : 'حرباء'
+  },{ 
+    en : 'bal sadsadh djfkdbfdh jkdjsh j kjkdently in domed turrets. Feet with toes fused into mitten-like pincers. Horns sprouting from brow and snout. Knobbly nasal ornaments. A skin flap circling the neck like a lace ruff on an Elizabethan noble.',
+    pt : 'Por uma infinidade de características anatômicas, o camaleão tem poucos rivais. Uma língua muito mais longa do que o seu corpo, disparando para pegar insetos em uma fração de segundo. Olhos de visão telescópica que giram de forma independente em torres com abóbadas. Pés com os dedos fundidos em pinças tipo luva. Chifres brotando da sobrancelha e do focinho. Ornamentos nasais knobbly. Uma aba de pele que circunda o pescoço como uma barriga de renda em um nobre isabelino.',
+    es : 'Por pura amplitud de extrañas características anatómicas, el camaleón tiene pocos rivales. Una lengua mucho más larga que su cuerpo, disparando para atrapar insectos en una fracción de segundo. Ojos de visión telescópica que giran independientemente en las torretas abovedadas. Pies con dedos de los pies fusionados en pinzas tipo mitones. Cuernos que brotan de la frente y el hocico. Adornos nasales nudosos. Una aleta de piel que rodea el cuello como una puntilla de encaje sobre un noble isabelino.',
+    fr: "Pour l'ampleur pure des caractéristiques anatomiques bizarres, le caméléon a peu de rivaux. Une langue bien plus longue que son corps, tirant pour arracher les insectes en une fraction de seconde. Yeux à vision télescopique pivotant indépendamment dans des tourelles à dôme. Pieds avec les orteils fondus dans des tenailles mitaines. Cornes qui poussent du front et du museau. Ornements nasaux Knobbly. Un lambeau de peau entourant le cou comme une collerette de dentelle sur un noble élisabéthain.",
+    de: 'Wegen der schieren Breite der anatomischen Besonderheiten hat das Chamäleon wenige Rivalen. Eine Zunge, die viel länger ist als ihr Körper und in einem Bruchteil einer Sekunde Insekten erjagt. Teleskopische Augen, die unabhängig voneinander in Kuppeltürmen schwenken. Füße mit Zehen verschmolzen zu handschuhartigen Zangen. Hörner sprießen von der Stirn und der Schnauze. Knoblige Nasenverzierungen. Ein Hautlappen umkreist den Hals wie ein Spitzenkragen an einem elisabethanischen Adligen.',
+    cn: '由于极其奇特的解剖特征，变色龙几乎没有对手。一只比它的身体长得多的舌头，在几分之一秒内射出来抓住昆虫。在圆顶炮塔中独立旋转的望远镜视力眼睛。脚趾融合成中爪状的钳子。喇叭从眉头和鼻子发芽。棘手的鼻饰。在伊丽莎白的优雅的伊丽莎白时代，像皮带一样绕着脖子的皮瓣',
+    ar : 'لمجرد اتساع الميزات التشريحية فظيع، والحرباء لديها منافسيه قليلة. اللسان أطول بكثير من جسمه، واطلاق النار لانتزاع الحشرات في جزء صغير من الثانية. عيون الرؤية تلسكوبية التي قطب بشكل مستقل في الأبراج القبة. قدم مع أصابع تنصهر في وسط-- مثل بينكرز. هورنز، تبرعم، من، الحواجب، أيضا، سنوت. نوبل الحلي الأنفية. جلد رفرف تحلق الرقبة مثل الرباط روف على إليزابيثية أنيقة.'
+  },{ 
+    en : 'See More',
+    pt : 'Saiba mais',
+    es : 'Más información',
+    fr : 'En savoir plus',
+    de : 'Weitere Infos',
+    cn : '查看更多',
+    ar : 'مشاهدة المزيد'
+  },{
+en : 'this has to be translated'
+
+  }
+  
+];
+
+
+    </script>
+
+    <!--- End of Script Source Files -->
+  </body>
+</html>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-lg-12">© 2020 JobP. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
