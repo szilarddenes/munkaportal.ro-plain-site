@@ -32,6 +32,7 @@ form.addEventListener('submit', (e) => {
     console.log('Too many messages.');
     submitDenied();
     return false;
+    
   } else {
     fetch(scriptURL, {
       method: 'POST',
@@ -39,9 +40,10 @@ form.addEventListener('submit', (e) => {
     })
       .then((response) => console.log('Success!', response))
       .catch((error) => console.error('Error!', error.message));
-    submitButtonA();
-    console.log('submitButton', submit.value);
-    console.log('clicked?', clicked.value);
+      submitButtonA();
+      console.log('submitButton',submit.value);
+      console.log('clicked?',clicked.value);
+  
   }
 });
 
@@ -120,15 +122,15 @@ function checkInputs() {
   }
 
   //deadline
-  if (checkboxDeadline.checked === false) {
-    if (deadlineUNIX < today || deadlineValue.toString() == '') {
-      //show error
-      //add error class
-      setErrorForDeadline(deadlineDiv, `A megadott dátum helytelen.`);
-    } else {
-      setSuccessForDeadline(deadlineDiv);
-    }
+if (checkboxDeadline.checked === false){
+  if (deadlineUNIX < today || deadlineValue.toString() == '') {
+    //show error
+    //add error class
+    setErrorForDeadline(deadlineDiv, `A megadott dátum helytelen.`);
+  } else {
+    setSuccessForDeadline(deadlineDiv);
   }
+}
   // console.log('deadlineUNIX', deadlineUNIX);
   // console.log('deadline', deaDline);
   // console.log('Today is:', today);
@@ -136,6 +138,8 @@ function checkInputs() {
   // console.log('deadlineDiv', deadlineDiv);
   // console.log('string', deadlineUNIX == '');
   // console.log('masodik ag:', deadlineUNIX.toString() == '');
+
+  
 
   //   FindUS
   if (
@@ -159,17 +163,14 @@ function checkInputs() {
   const karakterhossz = document.getElementById('JobAnnouncement').length;
   const karakterures = document.getElementById('JobAnnouncement').value;
 
-  console.log(`khossz`, karakterhossz);
-  console.log(`kures`, karakterures);
+  console.log (`khossz`,karakterhossz);
+  console.log (`kures`,karakterures);
 
   if (karakterures === '' || karakterhossz > 2000) {
     //show error
     //add error class
     //        jobAdiv.classList.add('error')
-    setErrorFor(
-      jobAdiv,
-      `Kérjük add meg a hírdetés leírását legfeljebb 2000 karakterben.`
-    );
+    setErrorFor(jobAdiv, `Kérjük add meg a hírdetés leírását legfeljebb 2000 karakterben.`);
   } else {
     setSuccessFor(jobAdiv);
   }
@@ -192,7 +193,7 @@ function setErrorFor(input, message) {
   const formGroup = input.parentElement;
   const small = formGroup.querySelector('small');
   formGroup.className = 'form-group error';
-  // small.setAttribute('data-i18n','tr21');
+  small.setAttribute('data-i18n=','tr')
   small.innerText = message;
   messages.push('common error');
 }
@@ -226,85 +227,90 @@ function isEmail(email) {
 }
 
 function submitButtonA() {
-  var clicked = false;
-  var submit = document.querySelector('.submit');
-  //submit.addEventListener("click", function(){
-  // Make sure user cannot click button again until it has been reset
-  // if( !clicked ){
-  //   clicked = true;
-  submit.classList.remove('return');
-  submit.blur();
-  document.querySelector('.loading-dock').classList.add('loaded');
-  document.getElementById('load').style.display = 'initial';
-  document.getElementById('load-b').style.display = 'initial';
-  setTimeout(function () {
-    document.getElementById('load').style.opacity = 1;
-  }, 550);
-  setTimeout(function () {
-    document.getElementById('load-b').style.opacity = 1;
-  }, 700);
-  setTimeout(function () {
-    document.querySelector('.loading-dock').classList.remove('loaded');
-    document.getElementById('load').style.display = 'none';
-    document.getElementById('load-b').style.display = 'none';
-    document.getElementById('load').style.opacity = 0;
-    document.getElementById('load-b').style.opacity = 0;
-    let submit = document.querySelector('.submit');
-    submit.classList.add('popout');
-    submit.innerHTML = '';
-    setTimeout(function () {
-      document.getElementById('check').style.display = 'block';
-    }, 500);
-  }, 2000);
+    var clicked = false;
+    var submit = document.querySelector('.submit');
+    //submit.addEventListener("click", function(){
+      // Make sure user cannot click button again until it has been reset
+      // if( !clicked ){
+      //   clicked = true;
+        submit.classList.remove("return");
+        submit.blur();
+        document.querySelector('.loading-dock').classList.add('loaded');
+        document.getElementById('load').style.display= 'initial';
+        document.getElementById('load-b').style.display= 'initial';
+        setTimeout(function(){
+          document.getElementById('load').style.opacity = 1;
+        }, 550);
+        setTimeout(function(){
+          document.getElementById('load-b').style.opacity = 1;
+        }, 700);
+        setTimeout(function(){
+          document.querySelector('.loading-dock').classList.remove('loaded');
+          document.getElementById('load').style.display = 'none';
+          document.getElementById('load-b').style.display = 'none';
+          document.getElementById('load').style.opacity = 0;
+          document.getElementById('load-b').style.opacity = 0;
+          let submit = document.querySelector('.submit');
+          submit.classList.add("popout");
+          submit.innerHTML = "";
+          setTimeout(function(){
+          document.getElementById('check').style.display = "block";
+          }, 500);
+        },2000);
+    
+        //reset all
+        setTimeout(function(){
+          submit.classList.remove("popout");
+          submit.classList.remove("denied");
+          submit.classList.add("return");
+          submit.innerHTML = "Beküldés";
+          document.getElementById('check').style.display = "none";
+          clicked = false;
+        }, 4500);
+      // }
+   // });
 
-  //reset all
-  setTimeout(function () {
-    submit.classList.remove('popout');
-    submit.classList.remove('denied');
-    submit.classList.add('return');
-    submit.innerHTML = 'Beküldés';
-    document.getElementById('check').style.display = 'none';
-    clicked = false;
-  }, 4500);
-  // }
-  // });
 }
 
-function submitDenied() {
+function submitDenied(){
   var submit = document.querySelector('.submit');
   submit.classList.add('denied');
   // document.getElementById('xMark').style.visibility = "visible";
   // document.getElementById('xMark').style.marginRight = ".5rem";
-  submit.innerHTML = 'Sikertelen';
+  submit.innerHTML = "Sikertelen";
 
-  //reset all
-  setTimeout(function () {
-    submit.classList.remove('popout');
-    submit.classList.remove('denied');
-    submit.classList.add('return');
-    submit.innerHTML = 'Beküldés';
-    document.getElementById('check').style.display = 'none';
-    //   document.getElementById('xMark').style.display = "none";
-    // document.getElementById('xMark').style.marginRight = "0rem";
-    clicked = false;
+   //reset all
+   setTimeout(function(){
+    submit.classList.remove("popout");
+    submit.classList.remove("denied");
+    submit.classList.add("return");
+        submit.innerHTML = "Beküldés";
+    document.getElementById('check').style.display = "none";
+  //   document.getElementById('xMark').style.display = "none";
+  // document.getElementById('xMark').style.marginRight = "0rem";
+        clicked = false;
   }, 3000);
+
 }
 
-//deadline checkbox
+//deadline checkbox 
 
-var checkboxDeadline = document.getElementById('DeadlineContInp');
-var deadline = document.getElementById('deaDline');
+var checkboxDeadline = document.getElementById("DeadlineContInp");
+  var deadline = document.getElementById("deaDline");
 
-document.getElementById('DeadlineContInp').onclick = function () {
-  if (checkboxDeadline.checked) {
-    deaDline.setAttribute('disabled', 'disabled');
-    deadlineDiv.classList.remove('error');
-    deadlineDiv.classList.remove('success');
+    document.getElementById('DeadlineContInp').onclick = function() {
+     if(checkboxDeadline.checked) {
+        deaDline.setAttribute("disabled", "disabled");
+        deadlineDiv.classList.remove('error');
+        deadlineDiv.classList.remove('success');
     //    setSuccessFor(DeadlineCont);
-  } else {
-    deaDline.removeAttribute('disabled');
-  }
-};
-console.log('checkboxDeadline', checkboxDeadline);
-console.log('checkboxDeadline.checked', checkboxDeadline.checked);
-console.log('deadline', deadline);
+     } else {
+        deaDline.removeAttribute("disabled");
+     }
+ };
+console.log ('checkboxDeadline',checkboxDeadline);
+console.log ('checkboxDeadline.checked',checkboxDeadline.checked);
+console.log ('deadline',deadline);
+
+
+

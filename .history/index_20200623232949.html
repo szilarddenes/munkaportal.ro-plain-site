@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>jobP by Munkaportal.ro | állás, munka, álláshirdetés, önéletrajz, álláskeresés</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <!-- start test merge -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/submitbtn.css" />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" href="css/paperplane.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/mailchimpClassic.css" type="text/css">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/v4-shims.min.css" type="text/css">
+    <!-- end test merge -->
+    <!-- <link rel="stylesheet" href="allmrg.css" type="text/css"> -->
+
+
+    <!-- -------------SVG------------ -->
+    <div class="clouds">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant super-slow massive">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px" height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud slower">
+            <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z" />
+        </svg>
+    </div>
+    <!-- -------------SVG------------ -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarSupportedContent">
+
+    <!--- Start Home section -->
+    <div id="home">
+        <!---Navigation-->
+        <!-- navbar-light navbar-transparent headroom--not-bottom headroom--pinned headroom--top -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="site-header">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="10%" height="100%" viewBox="0 0 512 512" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                    <ellipse cx="249.847" cy="255.084" rx="249.847" ry="255.084" style="fill:#393939;" />
+                    <path
+                        d="M285.816,339.282l0,98.895l-56.763,0l0,-281.256l107.455,0c20.664,0 38.875,3.89 54.567,11.604c15.692,7.714 27.768,18.724 36.227,32.965c8.46,14.24 12.657,30.459 12.657,48.656c0,27.558 -9.235,49.315 -27.703,65.27c-18.469,15.889 -44.041,23.866 -76.717,23.866l-49.723,0l0,0Zm0,-47.074l50.692,0c14.982,0 26.412,-3.625 34.355,-10.812c7.879,-7.186 11.817,-17.471 11.817,-30.855c0,-13.779 -4.004,-24.921 -11.947,-33.426c-7.942,-8.505 -18.92,-12.856 -32.933,-13.12l-51.984,0l0,88.213Z"
+                        style="fill:#d29420;fill-rule:nonzero;" />
+                    <path
+                        d="M224.768,145.524c6.893,-0.097 15.699,-0.097 19.624,4.398c3.925,4.496 2.968,13.488 2.872,38.116c-0.096,24.629 0.67,64.895 0.67,89.328c0,24.433 -0.766,33.034 -2.297,40.657c-1.532,7.624 -3.829,14.269 -6.721,19.058c-2.891,4.789 -6.377,7.721 -9.057,11.142c-2.68,3.421 -4.556,7.33 -8.174,10.848c-3.618,3.519 -8.978,6.646 -11.276,2.248c-2.297,-4.398 -1.531,-16.321 -1.244,-51.212c0.287,-34.891 0.096,-92.749 -0.192,-123.926c-0.287,-31.177 -0.67,-35.672 1.627,-38.018c2.298,-2.346 7.276,-2.541 14.168,-2.639l0,0Z"
+                        style="fill:#393939;" />
+                    <path
+                        d="M176.791,277.023l0,-195.928c9.5,-5.43 18.62,-8.147 28.5,-8.147c20.141,0 33.061,13.579 33.061,32.977l0,183.512c0,44.617 -27.36,70.611 -73.342,70.611c-20.14,0 -37.241,-3.491 -53.201,-10.474l7.601,-46.557c9.499,5.043 21.28,7.372 31.16,7.372c17.1,0 26.221,-12.803 26.221,-33.366l0,0Z"
+                        style="fill:#71b9d3;fill-rule:nonzero;" />
+                    <g transform="matrix(0.0151001,0.999886,-0.999876,0.0157396,278.399,-99.2964)"><text x="189.574px"
+                            y="91.699px"
+                            style="font-family:'Poppins-ExtraBold', 'Poppins';font-weight:800;font-size:45.368px;fill:#d29421;stroke:#393939;stroke-width:2px;">J
+                            <tspan x="215.976px 252.521px 283.509px 312.875px 324.779px 350.069px "
+                                y="91.699px 91.699px 91.699px 91.699px 91.699px 91.699px ">OBP.EU</tspan></text></g>
+                </svg>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+
+            <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav md-auto ">
+                    <li class="flags" id="flags">
+<!-- flags start -->
+                        <!-- <div class="flags" id="flags"> -->
+                            <a class="flagHU" id="hu"  >
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.7rem" id="hu">
+                                    <rect y="85.337" style="fill:#F0F0F0;" width="512" height="341.326"/>
+                                    <rect y="85.337" style="fill:#D80027;" width="512" height="113.775"/>
+                                    <rect y="312.888" style="fill:#6DA544;" width="512" height="113.775"/>
+                                                                        </svg>
+                            </a>
+  
+                            <a  class="flagRO" id="ro">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.7rem" id="ro">
+                                    <rect y="85.331" style="fill:#FFDA44;" width="512" height="341.326"/>
+                                    <rect y="85.331" style="fill:#0052B4;" width="170.663" height="341.337"/>
+                                    <rect x="341.337" y="85.331" style="fill:#D80027;" width="170.663" height="341.337"/>
+                                    
+                                    </svg>
+                            </a>
+  
+  
+                            <a class="flagEN" id="en">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" width="1.7rem" id="en">
+                                    <rect y="85.333" style="fill:#F0F0F0;" width="512" height="341.337"/>
+                                    <polygon style="fill:#D80027;" points="288,85.33 224,85.33 224,223.996 0,223.996 0,287.996 224,287.996 224,426.662 288,426.662   288,287.996 512,287.996 512,223.996 288,223.996 "/>
+                                    <g>
+                                        <polygon style="fill:#0052B4;" points="393.785,315.358 512,381.034 512,315.358  "/>
+                                        <polygon style="fill:#0052B4;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358  "/>
+                                        <polygon style="fill:#0052B4;" points="458.634,426.662 311.652,344.998 311.652,426.662  "/>
+                                    </g>
+                                    <polygon style="fill:#F0F0F0;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 "/>
+                                    <polygon style="fill:#D80027;" points="311.652,315.358 512,426.662 512,395.188 368.307,315.358 "/>
+                                    <g>
+                                        <polygon style="fill:#0052B4;" points="90.341,315.356 0,365.546 0,315.356  "/>
+                                        <polygon style="fill:#0052B4;" points="200.348,329.51 200.348,426.661 25.491,426.661  "/>
+                                    </g>
+                                    <polygon style="fill:#D80027;" points="143.693,315.358 0,395.188 0,426.662 0,426.662 200.348,315.358 "/>
+                                    <g>
+                                        <polygon style="fill:#0052B4;" points="118.215,196.634 0,130.958 0,196.634  "/>
+                                        <polygon style="fill:#0052B4;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634  "/>
+                                        <polygon style="fill:#0052B4;" points="53.366,85.33 200.348,166.994 200.348,85.33  "/>
+                                    </g>
+                                    <polygon style="fill:#F0F0F0;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 "/>
+                                    <polygon style="fill:#D80027;" points="200.348,196.634 0,85.33 0,116.804 143.693,196.634 "/>
+                                    <g>
+                                        <polygon style="fill:#0052B4;" points="421.659,196.636 512,146.446 512,196.636  "/>
+                                        <polygon style="fill:#0052B4;" points="311.652,182.482 311.652,85.331 486.509,85.331  "/>
+                                    </g>
+                                    <polygon style="fill:#D80027;" points="368.307,196.634 512,116.804 512,85.33 512,85.33 311.652,196.634 "/>
+                       
+                                    </svg>
+                            </a>
+                            <a  class= "flagDE" id="de">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.7rem" id="de">
+                                    <rect y="85.331" style="fill:#D80027;" width="512" height="341.337"/>
+                                    <rect y="85.331" width="512" height="113.775"/>
+                                    <rect y="312.882" style="fill:#FFDA44;" width="512" height="113.775"/>
+                                </svg>
+                            </a>
+  
+                        <!-- </div> -->
+<!-- flags end  -->
+                    </li>
+                    <li class="nav-item active">
+                        <a data-i18n="tr1" class="nav-link" href="#top">Kezdőlap</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FacebookDiv" id="facebook" style="background-color: #71b9d3; border-radius: 25px;">Facebook</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-i18n="tr2" class="nav-link" href="#PostaJob" id="postajob" style="background-color: #d29320;">Hirdetésfeladás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-i18n="tr3" class="nav-link" href="#accordionContainer">Rólunk</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!---End Navigation-->
+
+
+
+    <!-- Spacer 1-->
+    <!-- <p class="p-1"></p> -->
+
+    <!-- start Cloud Animation -->
+    <div class="jumbotron-fluid frame" id="plane-bcg">
+        <div class="plane-container">
+            <a href="#" target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304" xml:space="preserve" class="plane">
+                    <polygon fill="#D8D8D8"
+                        points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  " />
+                    <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   " />
+                </svg></a>
+
+        </div>
+    </div>
+    <!-- end Cloud Animation -->
+
+
+    <!-- start Jumobtron Desktop -->
+    <div class="jumbotron-fluid text-center shadow-soft margin" id="CarouselDesktop">
+        <!-- start carousel-control container -->
+        <div class="container">
+            <!-- Start Carousel -->
+            <div id="CarouseDesk" class="carousel slide rounded" data-ride="carousel" data-interval="9000">
+                <ol class="carousel-indicators" style="bottom: -6rem;">
+                    <li data-target="#CarouseDesk" data-slide-to="0" class="active"></li>
+                    <li data-target="#CarouseDesk" data-slide-to="1" class=""></li>
+                    <li data-target="#CarouseDesk" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner rounded">
+                    <!--start carousel item1 -->
+                    <div class="carousel-item active">
+                        <!-- start row1 -->
+                        <div class="row">
+                            <!-- start  rov1 column1 -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-i18n="tr4" class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                        Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row1column1 -->
+
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/agro.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+                        </div>
+                        <!-- end row1 -->
+
+                        <br />
+                        <!-- start row2 -->
+                        <div class="row">
+                            <!-- start  rov2 column1 Image -->
+                            <div class="d-inline-flex justify-content-start">
+                                <div class="d-flex justify-content-center align-items-center" id="hidebelowSM">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="img/hegeszto.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                    </div>
+                                </div>
+                                <!-- end  rov2 column1 Image -->
+                                <!-- start  rov2 column2 -->
+                                <div class="col-md-6">
+                                    <div data-i18n="tr5" class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                        Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek.
+                                    </div>
+                                </div>
+                                <!-- end  rov2 column2 -->
+                            </div>
+                        </div>
+                        <!-- end start row2 -->
+                    </div>
+                    <!-- end carousel item 1 -->
+
+                    <!--start carousel item2 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <div class="row">
+                            <!-- start  rov1 column1 -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-i18n="tr6" class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                        Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod.
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row1column1 -->
+
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/szakacs.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+                        </div>
+                        <!-- end row1 -->
+
+                        <br />
+                        <!-- start row2 -->
+                        <div class="row">
+                            <!-- start  rov2 column1 Image -->
+                            <div class="d-inline-flex justify-content-start">
+                                <div class="d-flex justify-content-center align-items-center" id="hidebelowSM">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="img/pincer.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                    </div>
+                                </div>
+                                <!-- end  rov2 column1 Image -->
+                                <!-- start  rov2 column2 -->
+                                <div class="col-md-6">
+                                    <div data-i18n="tr7"class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                        Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások és a nagyvállalatok számára egyaránt.
+                                    </div>
+                                </div>
+                                <!-- end  rov2 column2 -->
+                            </div>
+                        </div>
+                        <!-- end start row2 -->
+                    </div>
+                    <!-- end carousel item 2 -->
+
+                    <!--start carousel item3 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <div class="row">
+                            <!-- start  rov1 column1 -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-i18n="tr8" class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                        Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal.
+                                        <br />
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row1column1 -->
+
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/epitomunkas.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+                        </div>
+                        <!-- end row1 -->
+
+                        <br />
+                        <!-- start row2 -->
+                        <div class="row">
+                            <!-- start  rov2 column1 Image -->
+                            <div class="d-inline-flex justify-content-start">
+                                <div class="d-flex justify-content-center align-items-center" id="hidebelowSM">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="img/mernok.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                    </div>
+                                </div>
+                                <!-- end  rov2 column1 Image -->
+                                <!-- start  rov2 column2 -->
+                                <div class="col-md-6">
+                                    <div data-i18n="tr9" class="text-md-start" id="paragraph1" style="font-weight: 500; font-size: 1rem; text-align: left;">
+                                        Ha kéred, egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br>
+                                    </div>
+                                </div>
+                                <!-- end  rov2 column2 -->
+                            </div>
+                        </div>
+                        <!-- end start row2 -->
+                    </div>
+                    <!-- end carousel item 3 -->
+
+                </div>
+                <a class="carousel-control-prev" href="#CarouseDesk" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#CarouseDesk" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+            <!-- end carousel control container-->
+
+            <!-- end carousel Inner Rounded -->
+        </div>
+
+
+    </div>
+    <!-- end Jumbotron Desktop -->
+
+
+
+
+
+    <!-- start Jumobtron Mobile -->
+    <div class="jumbotron-fluid text-center shadow-soft margin" id="CarouselMobile">
+        <div class="container">
+            <!-- Start Carousel -->
+            <div id="CarouseMob" class="carousel slide rounded" data-ride="carousel" data-interval="9000">
+                <ol class="carousel-indicators" style="bottom: -6rem;">
+                    <li data-target="#CarouseMob" data-slide-to="0" class="active"></li>
+                    <li data-target="#CarouseMob" data-slide-to="1" class=""></li>
+                    <li data-target="#CarouseMob" data-slide-to="2" class=""></li>
+                    <li data-target="#CarouseMob" data-slide-to="3" class=""></li>
+                    <li data-target="#CarouseMob" data-slide-to="4" class=""></li>
+                    <li data-target="#CarouseMob" data-slide-to="5" class=""></li>
+                </ol>
+                <div class="carousel-inner rounded">
+                    <!--start carousel item1 -->
+                    <div class="carousel-item active">
+                        <!-- start row1 -->
+                        <div class="row">
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/agro.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+
+                            <!-- start  rov1 column1 -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-i18n="tr10" class="text-md-start" id="paragraph1" style="
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      text-align:center;
+                    ">
+                                        Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row1column1 -->
+                        </div>
+                        <!-- end row1 -->
+                    </div>
+                    <!-- end carousel item 1 -->
+
+                    <!--start carousel item2 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div data-i18n="tr11" class="text-md-start" id="paragraph1" style="
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    text-align:center;
+                  ">
+                                    Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+                        <div class="row">
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/hegeszto.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+                        </div>
+                        <!-- end row1 -->
+                    </div>
+                    <!-- end carousel item 2 -->
+
+                    <!--start carousel item3 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <div class="row">
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/szakacs.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+
+                            <!-- start  rov1 column1 -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div  data-i18n="tr12" class="text-md-start" id="paragraph1" style="
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      text-align:center;
+                    ">
+                                        Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod.
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row1column1 -->
+                        </div>
+                        <!-- end row1 -->
+                    </div>
+                    <!-- end carousel item 3 -->
+
+                    <!--start carousel item4 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div data-i18n="tr13"class="text-md-start" id="paragraph1" style="
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    text-align:center;
+                  ">
+                                    Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások és a nagyvállalatok számára egyaránt.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+                        <div class="row">
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/pincer.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+                        </div>
+                        <!-- end row1 -->
+                    </div>
+                    <!-- end carousel item 4 -->
+
+                    <!--start carousel item5 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <div class="row">
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/epitomunkas.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+
+                            <!-- start  rov1 column1 -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div  data-i18n="tr14" class="text-md-start" id="paragraph1" style="
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      text-align:center;
+                    ">
+                                        Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal.
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row1column1 -->
+                        </div>
+                        <!-- end row1 -->
+                    </div>
+                    <!-- end carousel item 5 -->
+
+                    <!--start carousel item6 -->
+                    <div class="carousel-item">
+                        <!-- start row1 -->
+                        <!-- start  rov1 column1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div  data-i18n="tr15" class="text-md-start" id="paragraph1" style="
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    text-align:center;
+                  ">
+                                    Ha kéred, egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra szánt anyagi erőforrásaidra optimalizálva. <br /><br />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row1column1 -->
+                        <div class="row">
+                            <!-- start row1 column2 Image -->
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="img/mernok.svg" alt="hegeszto" ; class="img-responsive" width="100%" />
+                                </div>
+                            </div>
+                            <!-- end row1 column2 Image -->
+                        </div>
+                        <!-- end row1 -->
+                    </div>
+                    <!-- end carousel item 6 -->
+                </div>
+                <!-- end carousel Inner Rounded -->
+                <a class="carousel-control-prev" href="#CarouseMob" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#CarouseMob" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+            <!-- end carousel control container-->
+        </div>
+        <!-- end Carousel -->
+    </div>
+    <!-- end Jumbotron Mobile -->
+
+    <!--- End Landing Page Section-->
+
+    <div class="container">
+        <div class="col-md">
+
+            <img class="img-fluid" src="img/jobP_logo_85x40svg.svg" alt="logo" id="dividerLogo">
+        </div>
+    </div>
+
+
+    <!-- Announce 2 POST A JOB-->
+    <!-- <p class="p-1"></p> -->
+    <div class="col-row jumbotron-fluid shadow-soft margin text-center-md ">
+        <div data-i18n="para1" class="col-row">
+        <p data-i18n="tr16" class="para1" id="para1"> Vadonatúj weboldalunk hamarosan elindul a <a data-i18n="tr17" href="https://jobp.eu"  target="_blank">www.jobp.eu</a> címen, de addig is fogadjuk az álláshirdetéseket, melyeket ingyen közzéteszünk a közösségi média oldalainkon.</p>
+            <br> <p data-i18n="tr18" class="para1" id="para1"> Ha egy komplex reklámkampányra van szükséged, vedd fel a kapcsolatot velünk a hello@jobp.eu e-mail címen és személyre szabott hirdetési csomagot állítunk össze Neked. Keress minket bizalommal!</p>
+        </div>
+    </div>
+
+    <!-- start Divider 1-->
+    <div class="jumbotron" id="divider2">
+
+    </div>
+    <!-- end Divider 1-->
+
+
+
+    <!-- start Post a Job Jumbotron Container -->
+    <div class="jumbotron-fluid shadow-soft margin" id="PostaJob">
+
+        <!-- START FORM -->
+
+
+
+        <form name="submit-to-google-sheet" id="gsheetForm" onsubmit="return checkInputs()">
+            <!-- start heading -->
+            <h2 data-i18n="tr2" id="H2Title">Hirdetésfeladás<i class="fas fa-user-check" id="imaichimp"></i></h2>
+
+
+            <!-- end heading -->
+            <!--start divider loader -->
+            <div class="d-md-flex justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="row-md">
+                        <div class="load">
+                            <div class="load__bar load__bar--1"></div>
+                            <div class="load__bar load__bar--2"></div>
+                            <div class="load__bar load__bar--3"></div>
+                            <div class="load__bar load__bar--4"></div>
+                            <div class="load__bar load__bar--5"></div>
+                        </div>
+
+
+                        <div class="row-md">
+                            <div class="load load2">
+                                <div class="load__bar load__bar--1-inv"></div>
+                                <div class="load__bar load__bar--2-inv"></div>
+                                <div class="load__bar load__bar--3-inv"></div>
+                                <div class="load__bar load__bar--4-inv"></div>
+                                <div class="load__bar load__bar--5-inv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--end divider loader -->
+            <p data-i18n="tr19" class="para1"> Az űrlap segítségével elküldheted állásajánlatodat, melyet maximum 48 órán belül feldolgozunk és ingyenesen közzétesszük a Facebook oldalunkon.</p>
+
+            <p data-i18n="tr20" class="para1"> Fontos, hogy megadj minden általunk kért információt, hisz csak így tudjuk biztosítani a megjelenő hirdetések minőségét és átláthatóságát.</p>
+
+            <p data-i18n="tr21" class="para1 paraHighlightOrange">Franchise értékesítő hálózatba vagy MLM rendszerbe történő belépést szorgalmazó hirdetéseket (Avon, Farmasi, Tupperware, Oriflame, stb.) nem áll módunkban közzétenni.</p>
+            <p class="p-2"></p>
+            <!--start row1 -->
+            <div class="row">
+                <!-- Email -->
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <label for="email">E-mail cím</label>
+                        <input type="email" class="form-control" id="email" placeholder="e-mail" name="Email">
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small >Error message</small>
+                    </div>
+
+                </div>
+                <!--  col-md-6   -->
+                <!-- Jobcategory -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fa fa-user-md fa-lg"></i>
+                        <label for="JobCategories"> Állás kategória</label>
+                        <select class="custom-select custom-select-lg mb-3" id="JobCategory" name="Jobcategory">
+                            <option selected>válassz</option>
+                            <option value="Adminisztráció, Irodai munka">Adminisztráció, Irodai munka</option>
+                            <option value="Bank, Biztosítás, Bróker">Bank, Biztosítás, Bróker</option>
+                            <option value="Cégvezetés, Menedzsment">Cégvezetés, Menedzsment</option>
+                            <option value="Egészségügy, Gyógyszeripar">Egészségügy, Gyógyszeripar</option>
+                            <option value="Építőipar, Ingatlan">Építőipar, Ingatlan</option>
+                            <option value="Értékesítés, Kereskedelem">Értékesítés, Kereskedelem</option>
+                            <option value="Fizikai, Segéd, Betanított munkás">Fizikai, Segéd, Betanított munkás</option>
+                            <option value="Gyártás, Termelés">Gyártás, Termelés</option>
+                            <option value="HR, Munkaügy">HR, Munkaügy</option>
+                            <option value="IT programozás, Fejlesztés">IT programozás, Fejlesztés</option>
+                            <option value="IT üzemeltetés, Telekom">IT üzemeltetés, Telekom</option>
+                            <option value="Jog, Jogi tanácsadás">Jog, Jogi tanácsadás</option>
+                            <option value="Közigazgatás">Közigazgatás</option>
+                            <option value="Marketing, Média, PR">Marketing, Média, PR</option>
+                            <option value="Mérnök">Mérnök</option>
+                            <option value="Mezőgazdaság, Környezet">Mezőgazdaság, Környezet</option>
+                            <option value="Oktatás, Kutatás, Tudomány">Oktatás, Kutatás, Tudomány</option>
+                            <option value="Pénzügy, Könyvelés">Pénzügy, Könyvelés</option>
+                            <option value="Szakmunka">Szakmunka</option>
+                            <option value="Szállítás, Beszerzés, Logisztika">Szállítás, Beszerzés, Logisztika</option>
+                            <option value="Ügyfélszolgálat, Vevőszolgálat">Ügyfélszolgálat, Vevőszolgálat</option>
+                            <option value="Üzleti támogató központok">Üzleti támogató központok</option>
+                            <option value="Vendéglátás, Idegenforgalom">Vendéglátás, Idegenforgalom</option>
+                        </select>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <!-- end row1 -->
+
+            <!--start row2 -->
+            <div class="row">
+                <!-- Jobtype -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fa fa-clock fa-lg"></i>
+                        <label for="JobType"> Állás típusa</label>
+                        <select class="custom-select custom-select-lg mb-3" id="JobType" name="Jobtype">
+                            <option selected>válassz</option>
+                            <option value="Teljes munkaidős">Teljes munkaidős</option>
+                            <option value="Részmunkaidős">Részmunkaidős</option>
+                            <option value="Diákmunka">Diákmunka</option>
+                            <option value="Szezon/idény munka">Szezon/idény munka</option>
+                        </select>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <!-- Joblocation -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fa fa-map-marker-alt fa-lg"></i>
+                        <label for="JobLocation">Munkavégzés helye</label>
+                        <input type="text" class="form-control" id="joblocation" placeholder="ország, város" name="Joblocation">
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <!--end row2 -->
+
+            <!-- start row3 -->
+            <div class="row">
+                <!-- Company -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <i class="fas fa-copyright fa-lg"></i>
+                        <label for="company">Cég/szervezet neve</label>
+                        <input type="text" class="form-control" placeholder="név" id="company" name="Company">
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <i class="fas fa-phone-square-alt fa-lg"></i>
+                        <label for="phone">Telefonszám</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="+00-000-0000" name="Phone">
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+            </div>
+            <!-- end row3 -->
+
+            <!-- start row4   -->
+            <div class="row">
+                <!-- Deadline -->
+                <div class="col-md-6">
+                    <div class="form-group" id="deadlineDiv"> <i class="fas fa-hourglass-half fa-lg"></i>
+                        <label for="Deadline">Jelentkezési határidő</label>
+                        <input class="form-control" type="date" id="deaDline" name="Deadline">
+                        <i id="igoodDate" class="fas fa-check-circle"></i>
+                        <i id="ierrorDate" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="checkbox text-center" id="DeadlineCont" name="DeadlineCont">
+                        <label>
+                            <input type="checkbox" id="DeadlineContInp" value="Folyamato" name="DeadlineContInp">
+                            Folyamatos a munkakör betöltéséig.
+                        </label>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                    </div>
+                </div>
+                <!-- col md-6 -->
+
+                <!-- How U Find us? -->
+                <div class="col-md-6">
+                    <div class="form-group justify-content-md-center"> <i class="fas fa-search fa-lg"></i>
+                        <label for="form-check">Hol találtál ránk?<i id="igoodFind" class="fas fa-check-circle"></i><i
+                                id="ierrorFind" class="fas fa-exclamation-circle"></i></label>
+
+
+                        <div class="form-check text-left" id="findUS">
+
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckFacebook" name="chkFacebook">
+                            <label class="form-check-label" for="CheckFacebook">
+                                Facebook
+                            </label>
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div class="form-check"> -->
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckInstagram" name="chkInstagram">
+                            <label class="form-check-label" for="CheckInstagram">
+                                Instagram
+                            </label>
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div class="form-check"> -->
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckWebSearch" name="chkWebSearch">
+                            <label class="form-check-label" for="CheckWebSearch">
+                                Webes keresés
+                            </label>
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div class="form-check"> -->
+                            <input class="form-check-input" type="checkbox" value="yes" id="CheckElse" name="chkElse">
+                            <label class="form-check-label" for="CheckElse">
+                                Egyéb
+                            </label>
+                            <!-- </div> -->
+
+                            <small>Error message</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- end  row4 -->
+
+            <!-- start row5 -->
+
+            <!-- Jobannouncement -->
+            <div class="row justify-content-center">
+                <div class="col" id="jobAdiv">
+                    <div class="form-group">
+                        <i class="fas fa-keyboard fa-lg"></i>
+                        <label for="jobAnnouncement">Álláshirdetés leírása</label>
+
+                        <textarea class="form-control" rows="8" placeholder="maximum 2000 karakter" name="Jobannouncement" id="JobAnnouncement"></textarea>
+                        <i id="igood" class="fas fa-check-circle"></i>
+                        <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <!-- col md-6 -->
+
+            </div>
+            <!-- end row 5 -->
+
+            <!-- Terms And Conditions -->
+            <div class="row justify-content-center text-center">
+
+                <label for="TermsConditions">
+                    <i class="fas fa-user-check fa-lg" style="margin-right: .5rem;"></i> <a id="ASZFAccept"> A hirdetés
+                        beküldésével hozzájárulok, hogy a fentiekben megadott adatok nyilvánosan közzétételre
+                        kerüljenek.</a>
+                </label>
+
+
+                <div class="row justify-content-center">
+                    <div class="form=group">
+                        <div class="checkbox text-center" id="TermsCondi">
+                            <label>
+                                <input type="checkbox" id="TermsConditions" value="yes" name="Termsandconditions">
+                                <a id="accept"> Elfogadom a feltételeket.</a>
+                            </label>
+                            <i id="igood" class="fas fa-check-circle"></i>
+                            <i id="ierror" class="fas fa-exclamation-circle"></i>
+                        </div>
+
+                        <div id="chkMessage">Kérjük, fogadd el az adatkezelési szabályzatot.</div>
+
+
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-6">
+                        <!-- start submit button -->
+                        <!-- Inspired by this dribbble post by Colin Garvin https://dribbble.com/shots/1426764-Submit-Button -->
+                        <div class="loading-dock">
+
+                            <!-- start loader svg -->
+                            <svg xmlns="http://www.w3.org/2000/svg" id="load-b" x="0px" y="0px" viewBox="0 0 150 150" height="150" width="150">
+                                <circle class="loading-inner" cx="75" cy="75" r="60" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="load" x="0px" y="0px" viewBox="0 0 150 150">
+                                <circle class="loading-inner" cx="75" cy="75" r="60" height="150" width="150" />
+                            </svg>
+
+
+
+                            <!-- start submit button -->
+                            <button class="submit" type="submit">Beküldés </button>
+                            <!-- <i class="fas fa-times" id="xMark"></i> -->
+                            <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#FFFFFF"
+                                    d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" />
+                            </svg>
+                        </div>
+                        <!-- end submit button -->
+                    </div>
+
+                    <!-- submit button -->
+
+                    <!-- 
+                    <button id="buttonSubmit" type="submit" class="basic"></button> -->
+
+
+                    <!-- end codepen submit button -->
+
+                </div>
+            </div>
+        </form>
+        <!-- End FORM -->
+
+    </div>
+    <!-- </div> -->
+    <!-- end Post a Job Jumbotron Container -->
+
+    <!-- start Divider 2-->
+    <div class="jumbotron" id="divider1">
+
+    </div>
+    <!-- end Divider 2-->
+
+
+
+    <!-- Announce 2 FACEBOOK GROUP-->
+    <!-- <p class="p-1"></p> -->
+
+    <!-- start emojis -->
+    <div class="jumbotron-fluid text-center shadow-soft margin " id="FacebookDiv">
+
+        <!-- start  row1 -->
+
+        <div class="row justify-content-center">
+            <div>
+                <h2 id="KovessMinket">Kövess minket!<i class="fas fa-thumbs-up" id="imaichimp"></i></h2>
+
+                <div class="d-flex justify-content-center align-items-center" id="facebookHeart">
+                    <!-- SVG heart -->
+                    <svg version="1.1" id="svgFacebookHeart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: url(#bgRed_1_);
+                            }
+
+                            .st1 {
+                                fill: #FFFFFF;
+                            }
+                        </style>
+                        <linearGradient id="bgRed_1_" gradientUnits="userSpaceOnUse" x1="500" y1="1002" x2="500" y2="2"
+                            gradientTransform="matrix(1 0 0 -1 0 1002)">
+                            <stop offset="0" style="stop-color:#FF6680" />
+                            <stop offset="1" style="stop-color:#E61739" />
+                        </linearGradient>
+                        <path id="bgRed" class="st0" d="M500,0C367.4,0,240.2,52.7,146.4,146.4C52.7,240.2,0,367.4,0,500c0,132.6,52.7,259.8,146.4,353.6
+              C240.2,947.3,367.4,1000,500,1000c132.6,0,259.8-52.7,353.6-146.4c93.8-93.8,146.4-221,146.4-353.6c0-132.6-52.7-259.8-146.4-353.6
+              C759.8,52.7,632.6,0,500,0L500,0z" />
+                        <path id="svgFacebookwhiteHeart" class="st1" d="M654.6,250C517.2,250,500,364,500,364s-17.1-114-154.5-114C213.4,250,174.9,388.9,191,463.1
+              c42.5,196.3,309,333.8,309,333.8s266.6-137.5,309.1-333.8C825.1,388.9,786.6,250,654.6,250z" />
+                    </svg>
+                    <!-- SVG HEart -->
+                </div>
+            </div>
+
+
+
+            <div class="embed-responsive embed-responsive-1by1" id="embedResponsive1by1">
+                <!-- <div class="justify-content-center gradient-box" id="gradientContainer"> -->
+                <div class="fb-page" data-href="https://www.facebook.com/munkaportal/" data-tabs="timeline" data-width="296" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/munkaportal/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/munkaportal/">MunkaPortal.ro - állás, munka, karrier</a>
+                    </blockquote>
+                </div>
+                <!-- </div> -->
+
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="7352TWtX"></script>
+
+            </div>
+
+            <!-- start counter -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" id="countCol">
+                        <h1>
+                            <span id="plusz">+</span>
+                            <span class="" id="count1">1700</span>
+                        </h1>
+                        <h3 id="feliratkozo">Feliratkozó</h3>
+                        <i class="fa fa-users" id="feliratkozo"></i>
+                    </div>
+                    <div class="col-md-4" id="countCol">
+                        <h1><span id="plusz">+</span>
+                            <span class="" id="count2">5800</span>
+                        </h1>
+                        <h3 id="lajk">Követő</h3>
+                        <i class="fa fa-thumbs-up" id="lajk"></i>
+                    </div>
+                    <div class="col-md-4" id="countCol">
+                        <h1><span id="plusz">+</span>
+                            <span class="" id="count3">5400</span>
+                        </h1>
+                        <h3 id="kavescsesze">Bögre kávé</h3>
+                        <i class="fa fa-coffee" id="kavescsesze"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- end counter -->
+            <!--- Start Social section -->
+
+            <div class="container-md mx-lg-auto " id="followus">
+                <div class="mx-auto" style="width: fit-content; ">
+                    <!-- MODEL 3D -->
+                    <ul class="social-nav model-3d-0 ">
+                        <!-- <li>
+                    <a class="twitter shade-hard " href=" https://twitter.com/ ">
+                        <div class="front "><i class="fa fa-twitter "></i></div>
+                        <div class="back "><i class="fa fa-twitter "></i></div>
+                    </a>
+                </li> -->
+                        <li>
+                            <a class="instagram shade-hard " href=" https://www.instagram.com/jobp.eu/" id="socIG">
+                                <div class="front "><i class="fa fa-instagram "></i></div>
+                                <div class="back "><i class="fa fa-instagram "></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook shade-hard " href="https://www.facebook.com/munkaportal/" id="socFB">
+                                <div class="fornt "><i class="fa fa-facebook ">
+                                    </i>
+                                </div>
+                                <div class="back "><i class="fa fa-facebook ">
+                                    </i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                    <a class="google-plus shade-hard " href="https://plus.google.com/u ">
+                        <div class="front "><i class="fa fa-google-plus "></i></div>
+                        <div class="back "><i class="fa fa-google-plus "></i></div>
+                    </a>
+                </li> -->
+                        <li>
+                            <a class="linkedin shade-hard " href="https://www.linkedin.com/company/jobp/" id="socIN">
+                                <div class="front "><i class="fa fa-linkedin "></i></div>
+                                <div class="back "><i class="fa fa-linkedin "></i></div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                    <a class="pinterest shade-hard ">
+                        <div class="front "><i class="fa fa-pinterest-p "></i></div>
+                        <div class="back "><i class="fa fa-pinterest-p "></i></div>
+                    </a>
+                </li> -->
+                    </ul>
+                    <br />
+                    <!-- End Model Section -->
+                </div>
+            </div>
+            <!-- End Social Section -->
+
+        </div>
+        <!-- end row1 -->
+
+
+    </div>
+
+    <!-- end FACEBOOK Container -->
+
+
+
+
+
+
+
+
+
+
+    <!-- start form scripts -->
+    <!-- Begin Mailchimp Signup Form -->
+
+    <div class="mailchimp shadow-soft">
+        <div class="row-md">
+            <div id="mc_embed_signup">
+                <form action="https://munkaportal.us2.list-manage.com/subscribe/post?u=65aca9618e88585663a95015e&amp;id=4d66111564" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <h2 id="hirlevel">Hírlevél
+                            <i class="fas fa-envelope-open-text" id="imaichimp"></i>
+                        </h2>
+                        <div class="indicates-required" id="asterisk"><span class="asterisk">*</span> kötelező mezők
+                        </div>
+                        <div class="mc-field-group">
+
+                            <label for="mce-EMAIL"><i class="fas fa-at" id="imaichimp"></i>E-mail cím <span
+                                    class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME"><i class="fas fa-file-signature" id="imaichimp"></i>Név </label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_65aca9618e88585663a95015e_4d66111564" tabindex="-1" value=""></div>
+                        <div class="row-md justify-content-center">
+                            <div class="clear"><input type="submit" value="Feliratkozás" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- start gdpr and terms -->
+
+    <!-- start accordion container -->
+    <div class="container flex-column" id="accordionContainer">
+        <div class="accordion shadow-soft rounded">
+
+
+            <div class="card card-sm card-body bg-primary border-light mb-0"><a href="#panel-5" data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1"><span class="icon-title h6 mb-0 font-weight-bold"><span class="fas fa-users"
+                            style="margin-right: 1rem;"></span> Rólunk</span>
+                    <span class="icon"><span class="fas fa-plus"></span></span></a>
+                <div class="collapse" id="panel-5">
+                    <div class="pt-3">
+                        <p class="para2">
+                            Legyen szó egy mezőgazdasági munkáról, vagy egy mérnöki pozícióról, a Jobp.eu/Munkaportal.ro lehetőséget biztosít céged számára, hogy álláshirdetéseid reklámozd Erdélyben, Romániában. Kihasználjuk a közösségi média által biztosított kommunikációs csatornákat
+                            annak érdekében, hogy állásajánlatodat eljuttassuk a célközönségednek. </p>
+                        <p class="para2"> Igény esetén megtervezzük és lebonyolítjuk digitális toborzási kampányodat, így neked csak a jelentkezők kiválasztására kell koncentrálnod. Hirdetési csomagjainkat úgy alakítjuk ki, hogy szolgáltatásaink kedvezőek legyenek a kisvállalkozások
+                            és a nagyvállalatok számára egyaránt. Ingyenesen kínálunk hirdetési lehetőséget, melyet az igényeid szerint kibővíthetsz extra szolgáltatásokkal. Ha kéred, egyedi hirdetési csomagot állítunk össze neked, igényeidre és a toborzásra
+                            szánt anyagi erőforrásaidra optimalizálva. </p>
+
+
+
+                        <p class="para2"> Ha egy komplex reklámkampányra van szükséged, vedd fel a kapcsolatot velünk a hello@jobp.eu e-mail címen és személyre szabott hirdetési csomagot állítunk össze Neked. Keress minket bizalommal.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-sm card-body bg-primary border-light mb-0">
+                <a href="#panel-4" data-target="#panel-4" class="accordion-panel-header collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
+                    <span class="icon-title h6 mb-0 font-weight-bold">
+                        <span class="fab fa-leanpub" style="margin-right: 1rem;">
+
+                        </span> ÁSZF és GDPR</span>
+                    <span class="icon">
+                        <span class="fas fa-plus">
+
+                        </span>
+                    </span>
+                </a>
+                <div class="collapse" id="panel-4">
+                    <div class="pt-3">
+                        <p class="mb-0">
+                            <p class="para2">A Munkaportal.ro/Jobp.eu hirdetési felületet biztosít felhasználói számára állásajánlatok hirdetésére, és azok böngészéséhez kapcsolódó egyéb szolgáltatásokat nyújt a fent megnevezett weboldalakon, illetve az üzemeltető által
+                                kezelt közösségi média felületeken.</p>
+                            <p class="para2">Az üzemeltető az adatkezelés során az Európai Parlament és a Tanács (EU) 2016/679 Rendeletében, valamint az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvényben foglaltaknak megfelelően
+                                jár el. A teljes ÁSZF <a href="aszf.html" target="_blank">itt</a>, az Adatkezelési nyilatkozat pedig <a href="gdpr.html" target="_blank">itt</a> ismerhető meg. </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- end accordion container -->
+
+    <!-- end gdpr and terms -->
+
+
+    <!--- Script Source Files -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script defer src="bootstrap-4.5.0-dist/js/bootstrap.min.js "></script>
+    <!-- ASYNC -->
+    <script async src="js/all.min.js"></script>
+    <!-- ASYNC -->
+    <script defer src="js/v4-shims.min.js"></script>
+    <script defer src="js/carouselnrm.js "></script>
+    <script defer src="js/iheader.js "></script>
+    <!-- <script defer src="js/counter.js "></script> -->
+    <script defer src="js/main.js "></script>
+    <script defer src="js/submit.js"></script>
+    <script defer src="js/triggeranime.js"></script>
+    <script src="js/translator.js"></script>
+
+    <script defer crossorigin="anonymous " SameSite="none" src=" https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0 "></script>
+    <!-- <script src="allmrgJQ.js "></script> -->
+
+
+    <!--- End of Script Source Files -->
+    <script type='text/javascript' src='js/local-mc-validate.min.js'></script>
+    <script type='text/javascript'>
+        (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            /*
+             * Translated default messages for the $ validation plugin.
+             * Locale: HU
+             */
+            $.extend($.validator.messages, {
+                required: "Kötelező megadni. ",
+                maxlength: $.validator.format("Legfeljebb {0} karakter hosszú legyen. "),
+                minlength: $.validator.format("Legalább {0} karakter hosszú legyen. "),
+                rangelength: $.validator.format("Legalább {0} és legfeljebb {1} karakter hosszú legyen. "),
+                email: "Érvényes e-mail címnek kell lennie. ",
+                url: "Érvényes URL-nek kell lennie. ",
+                date: "Dátumnak kell lennie. ",
+                number: "Számnak kell lennie. ",
+                digits: "Csak számjegyek lehetnek. ",
+                equalTo: "Meg kell egyeznie a két értéknek. ",
+                range: $.validator.format("{0} és {1} közé kell esnie. "),
+                max: $.validator.format("Nem lehet nagyobb, mint {0}. "),
+                min: $.validator.format("Nem lehet kisebb, mint {0}. "),
+                creditcard: "Érvényes hitelkártyaszámnak kell lennie. "
+            });
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+    <!--End mc_embed_signup-->
+    <!-- end form scripts -->
+
+
+
+</body>
+
+
+</html>
+
+<footer class="footer ">
+    <div class="container-fluid ">
+        <div class="row text-center ">
+            <div class="col-lg-12 "> © 2020 JobP. All rights reserved.</div>
+        </div>
+    </div>
+
+</footer>
+
