@@ -114,17 +114,17 @@ translator.load();
 //     console.log("currenttarget.id",event.currentTarget);
 
 //  translator.load(nyelv);
-document.querySelector('.flagHU svg').addEventListener('click', function (evt) {
+document.querySelector('.flagHU svg, .flagRO svg').addEventListener('click', function (evt) {
   var nyelv = evt.target.id;
   var nyelv = event.currentTarget.id;
   translator.load(nyelv);
   console.log('id=', evt.target.id);
   console.log('nyelv=', nyelv);
 });
-document.querySelector('.flagRO svg').addEventListener('click', function (evt) {
-  var nyelv = evt.target.id;
-  var nyelv = event.currentTarget.id;
-  translator.load(nyelv);
-  console.log('id=', evt.target.id);
-  console.log('nyelv=', nyelv);
-});
+// document.querySelector('.flagRO svg').addEventListener('click', function (evt) {
+//   var nyelv = evt.target.id;
+//   var nyelv = event.currentTarget.id;
+//   translator.load(nyelv);
+//   console.log('id=', evt.target.id);
+//   console.log('nyelv=', nyelv);
+// });

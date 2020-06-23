@@ -332,7 +332,6 @@ body {
 .flag {
   /* margin-top: 1rem;
   padding: 0rem 0.575rem 0rem 0rem; */
-  z-index: 99999;
   display: inline-block;
 }
 /* end interactive header */
