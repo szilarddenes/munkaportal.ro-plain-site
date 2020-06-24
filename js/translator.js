@@ -8,8 +8,10 @@ class Translator {
         }
         //get default language start
     getLanguage() {
+
         if (!this._options.detectLanguage) {
             return this._options.defaultLanguage;
+
         }
 
         var stored = localStorage.getItem('language');
@@ -18,14 +20,19 @@ class Translator {
             return stored;
         }
 
+
         var lang = navigator.languages ?
             navigator.languages[0] :
             navigator.language;
-        // console.log(navigator.languages);
-        // console.log(lang);
+        console.log(navigator.languages);
 
+        console.log("getLanguage Default Language", lang.substr(0, 2));
+        window.defLang = lang.substr(0, 2)
         return lang.substr(0, 2);
+
+
     }
+
 
     //get default language end
 
@@ -56,6 +63,7 @@ class Translator {
                     err
                 );
             });
+
     }
 
     toggleLangTag() {
@@ -81,9 +89,9 @@ class Translator {
     get defaultConfig() {
         return {
             persist: false,
-            // languages: ["en"],
-            // defaultLanguage: "en",
-            filesLocation: '/i18n',
+            languages: ["en"],
+            defaultLanguage: "en",
+            filesLocation: 'i18n/',
         };
     }
 }
@@ -98,12 +106,15 @@ var translator = new Translator({
 });
 
 translator.load();
-
+//adding a default value to our listener variable nyelv, for the submit.js --to be able to see something if somebody didn't choose any language
+var nyelv = defLang;
 //click event HU flag
 document.querySelector('.flagHU svg').addEventListener('click', function(evt) {
     var nyelv = event.currentTarget.id;
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
+    window.nyelv = nyelv;
+
 });
 
 
@@ -112,6 +123,7 @@ document.querySelector('.flagRO svg').addEventListener('click', function(evt) {
     var nyelv = event.currentTarget.id;
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
+    window.nyelv = nyelv;
 });
 
 
@@ -120,6 +132,7 @@ document.querySelector('.flagEN svg').addEventListener('click', function(evt) {
     var nyelv = event.currentTarget.id;
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
+    window.nyelv = nyelv;
 });
 
 
@@ -128,7 +141,10 @@ document.querySelector('.flagDE svg').addEventListener('click', function(evt) {
     var nyelv = event.currentTarget.id;
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
+    window.nyelv = nyelv;
 });
+
+
 
 //click event all flag
 // document.querySelector('li a svg').addEventListener('click', function (evt) {
