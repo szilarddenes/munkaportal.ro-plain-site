@@ -108,14 +108,27 @@ var translator = new Translator({
 translator.load();
 //adding a default value to our listener variable nyelv, for the submit.js --to be able to see something if somebody didn't choose any language
 var nyelv = defLang;
+
+//defining the flag DIV, and not the SVG --important at the removeTransition function
+
+const fleghu = document.querySelector('.flagHU');
+const flegro = document.querySelector('.flagRO');
+const flegen = document.querySelector('.flagEN');
+const flegde = document.querySelector('.flagDE');
+
 //click event HU flag
 document.querySelector('.flagHU svg').addEventListener('click', function(evt) {
     var nyelv = event.currentTarget.id;
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
     window.nyelv = nyelv;
+    fleghu.classList.add('flagActive');
 
 });
+fleghu.addEventListener('transitionend', removeTransition);
+
+
+
 
 
 //click event RO flag
@@ -124,7 +137,10 @@ document.querySelector('.flagRO svg').addEventListener('click', function(evt) {
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
     window.nyelv = nyelv;
+    flegro.classList.add('flagActive');
 });
+flegro.addEventListener('transitionend', removeTransition);
+
 
 
 //click event EN flag
@@ -133,7 +149,10 @@ document.querySelector('.flagEN svg').addEventListener('click', function(evt) {
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
     window.nyelv = nyelv;
+    flegen.classList.add('flagActive');
 });
+flegen.addEventListener('transitionend', removeTransition);
+
 
 
 //click event DE flag
@@ -142,13 +161,12 @@ document.querySelector('.flagDE svg').addEventListener('click', function(evt) {
     translator.load(nyelv);
     console.log("nyelv = =", nyelv);
     window.nyelv = nyelv;
+    flegde.classList.add('flagActive');
 });
+flegde.addEventListener('transitionend', removeTransition);
 
-
-
-//click event all flag
-// document.querySelector('li a svg').addEventListener('click', function (evt) {
-//   var nyelv = event.currentTarget.id;
-//   translator.load(nyelv);
-//   console.log("nyelv = =",nyelv);
-// });
+function removeTransition(evt) {
+    if (evt.propertyName !== 'transform') return; //skip if it's not a transform
+    this.classList.remove('flagActive');
+    console.log('RM TR', this);
+}

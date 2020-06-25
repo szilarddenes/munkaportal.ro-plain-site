@@ -363,25 +363,13 @@ body {
     margin-top: 0.7rem;
     padding: 0rem 0.575rem 0rem 0rem;
     display: inline-block;
+    transition: 700ms;
 }
 
-
-/* .flagActive{
-  transition: transform 600ms ease-in-out; 
-  pointer-events: none;
-  transform: scale(2);
-  margin: 2rem;
-} */
-
-
-/* .flagHU svg.flagActive{
-  transform: scale(2);
-  margin: 2rem;
+.flagActive {
+    transform: scale(1.5);
+    margin-right: 2rem;
 }
-.flagRO svg.flagActive{
-  transform: scale(2);
-  margin: 2rem;
-} */
 
 
 /* end interactive header */
