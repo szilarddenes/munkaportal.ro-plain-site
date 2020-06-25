@@ -112,9 +112,12 @@ var nyelv = defLang;
 //defining the flag DIV, and not the SVG --important at the removeTransition function
 
 const fleghu = document.querySelector('.flagHU');
+const fleghuNY = document.querySelector('.navbar-collapse.nyitva li .flagHU');
 const flegro = document.querySelector('.flagRO');
 const flegen = document.querySelector('.flagEN');
 const flegde = document.querySelector('.flagDE');
+
+console.log("fleghuNY", document.getElementsByClassName('.navbar-collapse.nyitva li .flagHU'));
 
 //click event HU flag
 document.querySelector('.flagHU svg').addEventListener('click', function(evt) {
@@ -174,3 +177,5 @@ function removeTransition(evt) {
     this.classList.remove('flagActive');
     console.log('RM TR', this);
 }
+
+//.navbar-collapse.nyitva li
