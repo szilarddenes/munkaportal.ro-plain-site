@@ -126,6 +126,7 @@ document.querySelector('.flagHU svg').addEventListener('click', function(evt) {
 
 });
 fleghu.addEventListener('transitionend', removeTransition);
+fleghu.addEventListener('webkitTransitionEnd', removeTransition);
 
 
 
@@ -140,6 +141,7 @@ document.querySelector('.flagRO svg').addEventListener('click', function(evt) {
     flegro.classList.add('flagActive');
 });
 flegro.addEventListener('transitionend', removeTransition);
+flegro.addEventListener('webkitTransitionEnd', removeTransition);
 
 
 
@@ -152,6 +154,7 @@ document.querySelector('.flagEN svg').addEventListener('click', function(evt) {
     flegen.classList.add('flagActive');
 });
 flegen.addEventListener('transitionend', removeTransition);
+flegen.addEventListener('webkitTransitionEnd', removeTransition);
 
 
 
@@ -164,6 +167,7 @@ document.querySelector('.flagDE svg').addEventListener('click', function(evt) {
     flegde.classList.add('flagActive');
 });
 flegde.addEventListener('transitionend', removeTransition);
+flegde.addEventListener('webkitTransitionEnd', removeTransition);
 
 function removeTransition(evt) {
     if (evt.propertyName !== 'transform') return; //skip if it's not a transform

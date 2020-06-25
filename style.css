@@ -302,10 +302,8 @@ body {
 
 #europe {
     position: absolute;
-    position: absolute;
     left: 50vw;
     z-index: 0 !important;
-    transform( scale): .5;
     top: 5rem;
     overflow: visible !important;
     transform: translateZ(0);
