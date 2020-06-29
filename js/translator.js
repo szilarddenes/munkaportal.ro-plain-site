@@ -141,7 +141,7 @@ document.querySelector('.flagRO svg').addEventListener('click', function(evt) {
     window.nyelv = nyelv;
     flegro.classList.toggle('flagActive');
     // nav1.classList.add('flagSwing');
-    // nav2.classList.add('flagSwing');
+    nav2.classList.add('flagSwing');
     nav3.classList.add('flagSwing');
     // nav4.classList.add('flagSwing');
 });
