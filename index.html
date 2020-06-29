@@ -111,19 +111,19 @@
             <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav md-auto ">
                     <li class="flags" id="flags">
-<!-- flags start -->
-<!-- <div class="flags" id="flags"> -->
+                        <!-- flags start -->
+                        <!-- <div class="flags" id="flags"> -->
                         <div class="flagHU" id="hu">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.7rem" id="hu">
                                     <rect y="85.337" style="fill:#F0F0F0;" width="512" height="341.326"/>
                                     <rect y="85.337" style="fill:#D80027;" width="512" height="113.775"/>
                                     <rect y="312.888" style="fill:#6DA544;" width="512" height="113.775"/>
                                                                         </svg>
-                                                                    </div>
-                     
-                    
-                      
-                     
+                        </div>
+
+
+
+
                         <div class="flagRO" id="ro">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.7rem" id="ro">
                                     <rect y="85.331" style="fill:#FFDA44;" width="512" height="341.326"/>
@@ -131,7 +131,7 @@
                                     <rect x="341.337" y="85.331" style="fill:#D80027;" width="170.663" height="341.337"/>
                                     
                                     </svg>
-                                </div>
+                        </div>
 
 
                         <div class="flagEN" id="en">
@@ -165,20 +165,20 @@
                                     <polygon style="fill:#D80027;" points="368.307,196.634 512,116.804 512,85.33 512,85.33 311.652,196.634 "/>
                        
                                     </svg>
-                                </div>
+                        </div>
                         <div class="flagDE" id="de">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.7rem" id="de">
                                     <rect y="85.331" style="fill:#D80027;" width="512" height="341.337"/>
                                     <rect y="85.331" width="512" height="113.775"/>
                                     <rect y="312.882" style="fill:#FFDA44;" width="512" height="113.775"/>
                                 </svg>
-                            </div>
+                        </div>
 
                         <!-- </div> -->
-<!-- flags end  -->
+                        <!-- flags end  -->
                     </li>
                     <li class="nav-item active" id="navlinks">
-                        <a data-i18n="tr1" class="nav-link" href="#top">Kezdőlap</a>
+                        <a data-i18n="tr1" class="nav-link" id="home" href="#top">Kezdőlap</a>
                     </li>
 
                     <li class="nav-item">
@@ -189,7 +189,7 @@
                         <a data-i18n="tr2" class="nav-link" href="#PostaJob" id="postajob" style="background-color: #d29320;">Hirdetésfeladás</a>
                     </li>
                     <li class="nav-item">
-                        <a data-i18n="tr3" class="nav-link" href="#accordionContainer">Rólunk</a>
+                        <a data-i18n="tr3" class="nav-link" id="aboutus" href="#accordionContainer">Rólunk</a>
                     </li>
                 </ul>
             </div>
@@ -198,7 +198,7 @@
 
     <!---End Navigation-->
 
-   
+
     <!-- Spacer 1-->
     <!-- <p class="p-1"></p> -->
 
@@ -766,9 +766,9 @@
                     <div class="form-group">
                         <i class="fa fa-map-marker-alt fa-lg"></i>
                         <label data-i18n="tr53" for="JobLocation">Munkavégzés helye</label>
-                        <!-- {% if nyelv == 'hu' %} -->
+                        <!-- {% if nyelv == 'hu ' %} -->
                         <input data-i18n="tr54" type="text" class="form-control" id="joblocation" placeholder="&#x1f3d9" name="Joblocation">
-                        <!-- {% elseif nyelv == 'de' %} -->
+                        <!-- {% elseif nyelv == 'de ' %} -->
                         <!-- <input data-i18n="tr54" type="text" class="form-control" id="joblocation" placeholder="Land, Kreis" name="Joblocation"> -->
                         <!-- {%endif %} -->
                         <i id="igood" class="fas fa-check-circle"></i>
@@ -1274,15 +1274,15 @@
 
 
     <!--- End of Script Source Files -->
-    <script type='text/javascript' src='js/local-mc-validate.min.js'></script>
-    <script type='text/javascript'>
+    <script type='text/javascript ' src='js/local-mc-validate.min.js '></script>
+    <script type='text/javascript '>
         (function($) {
             window.fnames = new Array();
             window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
+            fnames[0] = 'EMAIL ';
+            ftypes[0] = 'email ';
+            fnames[1] = 'FNAME ';
+            ftypes[1] = 'text ';
             /*
              * Translated default messages for the $ validation plugin.
              * Locale: HU

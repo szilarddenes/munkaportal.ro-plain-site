@@ -1,101 +1,101 @@
 //src : https://codesandbox.io/s/i18n-example-phtsp?file=/src/js/index.js
 // 'use strict';
 class Translator {
-  constructor(options = {}) {
-    this._options = Object.assign({}, this.defaultConfig, options);
-    this._lang = this.getLanguage();
-    this._elements = document.querySelectorAll('[data-i18n]');
-  }
-  //get default language start
-  getLanguage() {
-    if (!this._options.detectLanguage) {
-      return this._options.defaultLanguage;
-    }
-
-    var stored = localStorage.getItem('language');
-
-    if (this._options.persist && stored) {
-      return stored;
-    }
-
-    var lang = navigator.languages
-      ? navigator.languages[0]
-      : navigator.language;
-    console.log(navigator.languages);
-
-    console.log('getLanguage Default Language', lang.substr(0, 2));
-    window.defLang = lang.substr(0, 2);
-    return lang.substr(0, 2);
-  }
-
-  //get default language end
-
-  load(lang = null) {
-    if (lang) {
-      if (!this._options.languages.includes(lang)) {
-        return;
-      }
-
-      this._lang = lang;
-    }
-
-    var path = `${this._options.filesLocation}/${this._lang}.json`;
-
-    fetch(path)
-      .then((res) => res.json())
-      .then((translation) => {
-        this.translate(translation);
-        this.toggleLangTag();
-
-        if (this._options.persist) {
-          localStorage.setItem('language', this._lang);
+    constructor(options = {}) {
+            this._options = Object.assign({}, this.defaultConfig, options);
+            this._lang = this.getLanguage();
+            this._elements = document.querySelectorAll('[data-i18n]');
         }
-      })
-      .catch((err) => {
-        console.error(
-          `Could not load ${path}.json. Please make sure that the path is correct.`,
-          err
-        );
-      });
-  }
+        //get default language start
+    getLanguage() {
+        if (!this._options.detectLanguage) {
+            return this._options.defaultLanguage;
+        }
 
-  toggleLangTag() {
-    if (document.documentElement.lang !== this._lang) {
-      document.documentElement.lang = this._lang;
-    }
-  }
+        var stored = localStorage.getItem('language');
 
-  translate(translation) {
-    function replace(element) {
-      var text = element.dataset.i18n
-        .split('.')
-        .reduce((obj, i) => obj[i], translation);
+        if (this._options.persist && stored) {
+            return stored;
+        }
 
-      if (text) {
-        element.innerHTML = text;
-      }
+        var lang = navigator.languages ?
+            navigator.languages[0] :
+            navigator.language;
+        console.log(navigator.languages);
+
+        console.log('getLanguage Default Language', lang.substr(0, 2));
+        window.defLang = lang.substr(0, 2);
+        return lang.substr(0, 2);
     }
 
-    this._elements.forEach(replace);
-  }
+    //get default language end
 
-  get defaultConfig() {
-    return {
-      persist: false,
-      languages: ['en'],
-      defaultLanguage: 'en',
-      filesLocation: 'i18n/',
-    };
-  }
+    load(lang = null) {
+        if (lang) {
+            if (!this._options.languages.includes(lang)) {
+                return;
+            }
+
+            this._lang = lang;
+        }
+
+        var path = `${this._options.filesLocation}/${this._lang}.json`;
+
+        fetch(path)
+            .then((res) => res.json())
+            .then((translation) => {
+                this.translate(translation);
+                this.toggleLangTag();
+
+                if (this._options.persist) {
+                    localStorage.setItem('language', this._lang);
+                }
+            })
+            .catch((err) => {
+                console.error(
+                    `Could not load ${path}.json. Please make sure that the path is correct.`,
+                    err
+                );
+            });
+    }
+
+    toggleLangTag() {
+        if (document.documentElement.lang !== this._lang) {
+            document.documentElement.lang = this._lang;
+        }
+    }
+
+    translate(translation) {
+        function replace(element) {
+            var text = element.dataset.i18n
+                .split('.')
+                .reduce((obj, i) => obj[i], translation);
+
+            if (text) {
+                element.innerHTML = text;
+            }
+        }
+
+        this._elements.forEach(replace);
+    }
+
+    get defaultConfig() {
+        return {
+            persist: false,
+            languages: ['en'],
+            defaultLanguage: 'en',
+            filesLocation: 'i18n/',
+        };
+    }
 }
 
 //  export default Translator;
 var translator = new Translator({
-  persist: false,
-  languages: ['hu', 'ro', 'en', 'de'],
-  defaultLanguage: 'hu',
-  detectLanguage: true,
-  filesLocation: 'i18n/',
+    persist: false,
+    languages: ['hu', 'ro', 'en', 'de'],
+    defaultLanguage: 'hu',
+    detectLanguage: true,
+    filesLocation: 'i18n/',
 });
 
 translator.load();
@@ -110,76 +110,92 @@ const fleghuNY = document.querySelector('.navbar-collapse.nyitva li .flagHU');
 const flegro = document.querySelector('.flagRO');
 const flegen = document.querySelector('.flagEN');
 const flegde = document.querySelector('.flagDE');
-var navlinks = document.querySelector('.nav-item');
-var navlinksParent = document.querySelector('.nav-item').parentElement;
-console.log('navlinksParent :', navlinksParent);
-console.log('navlinks :', navlinks);
+
+var nav1 = document.getElementById('home');
+var nav2 = document.getElementById('facebook');
+var nav3 = document.getElementById('postajob');
+var nav4 = document.getElementById('aboutus')
 
 //click event HU flag
-document.querySelector('.flagHU svg').addEventListener('click', function (evt) {
-  var nyelv = event.currentTarget.id;
-  translator.load(nyelv);
-  console.log('nyelv = =', nyelv);
-  window.nyelv = nyelv;
-  fleghu.classList.add('flagActive');
-  navlinks.style.
-  navlinks.classList.add('flagSwing');
-//   swingLinks();
-  //animate__shakeX
+document.querySelector('.flagHU svg').addEventListener('click', function(evt) {
+    var nyelv = event.currentTarget.id;
+    translator.load(nyelv);
+    console.log('nyelv = =', nyelv);
+    window.nyelv = nyelv;
+    fleghu.classList.add('flagActive');
+    // nav1.classList.add('flagSwing');
+    // nav2.classList.add('flagSwing');
+    nav3.classList.add('flagSwing');
+    // nav4.classList.add('flagSwing');
+
 });
 
 fleghu.addEventListener('transitionend', removeTransition);
 fleghu.addEventListener('webkitTransitionEnd', removeTransition);
 
 //click event RO flag
-document.querySelector('.flagRO svg').addEventListener('click', function (evt) {
-  var nyelv = event.currentTarget.id;
-  translator.load(nyelv);
-  console.log('nyelv = =', nyelv);
-  window.nyelv = nyelv;
-  flegro.classList.toggle('flagActive');
-  navlinks.classList.add('flagSwing');
+document.querySelector('.flagRO svg').addEventListener('click', function(evt) {
+    var nyelv = event.currentTarget.id;
+    translator.load(nyelv);
+    console.log('nyelv = =', nyelv);
+    window.nyelv = nyelv;
+    flegro.classList.toggle('flagActive');
+    // nav1.classList.add('flagSwing');
+    // nav2.classList.add('flagSwing');
+    nav3.classList.add('flagSwing');
+    // nav4.classList.add('flagSwing');
 });
 flegro.addEventListener('transitionend', removeTransition);
 flegro.addEventListener('webkitTransitionEnd', removeTransition);
 
 //click event EN flag
-document.querySelector('.flagEN svg').addEventListener('click', function (evt) {
-  var nyelv = event.currentTarget.id;
-  translator.load(nyelv);
-  console.log('nyelv = =', nyelv);
-  window.nyelv = nyelv;
-  flegen.classList.toggle('flagActive');
-  navlinks.classList.add('flagSwing');
+document.querySelector('.flagEN svg').addEventListener('click', function(evt) {
+    var nyelv = event.currentTarget.id;
+    translator.load(nyelv);
+    console.log('nyelv = =', nyelv);
+    window.nyelv = nyelv;
+    flegen.classList.toggle('flagActive');
+    // nav1.classList.add('flagSwing');
+    nav2.classList.add('flagSwing');
+    nav3.classList.add('flagSwing');
+    // nav4.classList.add('flagSwing');
 });
 flegen.addEventListener('transitionend', removeTransition);
 flegen.addEventListener('webkitTransitionEnd', removeTransition);
 
 //click event DE flag
-document.querySelector('.flagDE svg').addEventListener('click', function (evt) {
-  var nyelv = event.currentTarget.id;
-  translator.load(nyelv);
-  console.log('nyelv = =', nyelv);
-  window.nyelv = nyelv;
-  flegde.classList.add('flagActive');
-  navlinks.classList.add('flagSwing');
+document.querySelector('.flagDE svg').addEventListener('click', function(evt) {
+    var nyelv = event.currentTarget.id;
+    translator.load(nyelv);
+    console.log('nyelv = =', nyelv);
+    window.nyelv = nyelv;
+    flegde.classList.add('flagActive');
+    // nav1.classList.add('flagSwing');
+    nav2.classList.add('flagSwing');
+    nav3.classList.add('flagSwing');
+    // nav4.classList.add('flagSwing');
 });
 flegde.addEventListener('transitionend', removeTransition);
 flegde.addEventListener('webkitTransitionEnd', removeTransition);
 
 // function swingLinks() {
-//     var gyermekek = navlinksParent.childNodes;
-//     console.log('gyermekek :', gyermekek);
-//     for(var i=0; i<childNodes.length; i++) {
-//         //  if (childNnodes[i].nodeName.toLowerCase() == 'a') {
-//         childNodes[i].classList.add('flagSwing');
-//         //  }
-//     }
+// var flags = document.querySelectorAll('.flagHU, .flagRO, .flagDE, .flagEN')
+// console.log("swingLinks -> flags", flags)
+
+
+// for (var i = 0; i <= flags.length; i++) {
+//     console.log("swingLinks -> flags.length", flags.length)
+//     flags[i].classList.add('flagSwing');
+//     console.log("swingLinks -> i", i)
+//     console.log("swingLinks -> flags[i]", flags[i]);
 // }
 
 function removeTransition(evt) {
-  if (evt.propertyName !== 'transform') return; //skip if it's not a transform
-  this.classList.remove('flagActive');
-  navlinks.classList.remove('flagSwing');
-  console.log('RM TR', this);
+    if (evt.propertyName !== 'transform') return; //skip if it's not a transform
+    this.classList.remove('flagActive');
+    // nav1.classList.remove('flagSwing');
+    nav2.classList.remove('flagSwing');
+    nav3.classList.remove('flagSwing');
+    // nav4.classList.remove('flagSwing');
+    console.log('RM TR', this);
 }
