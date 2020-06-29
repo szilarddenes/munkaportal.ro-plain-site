@@ -389,26 +389,26 @@ body {
 
 @-webkit-keyframes swingflag {
     15% {
-        -webkit-transform: translate(5px);
-        transform: translate(5px);
+        -webkit-transform: translate(3.5px);
+        transform: translate(3.5px);
         transform: scale(0.8);
     }
     30% {
-        -webkit-transform: translate(-5px);
-        transform: translate(-5px);
+        -webkit-transform: translate(-3.5px);
+        transform: translate(-3.5px);
     }
     50% {
-        -webkit-transform: translate(3px);
-        transform: translate(3px);
+        -webkit-transform: translate(2px);
+        transform: translate(2px);
     }
     65% {
-        -webkit-transform: translate(-3px);
-        transform: translate(-3px);
+        -webkit-transform: translate(-2px);
+        transform: translate(-2px);
         transform: scale(1.4);
     }
     80% {
-        -webkit-transform: translate(2px);
-        transform: translate(2px);
+        -webkit-transform: translate(1px);
+        transform: translate(1px);
     }
     100% {
         -webkit-transform: translate(0);
@@ -419,23 +419,23 @@ body {
 
 @keyframes swingflag {
     15% {
-        -webkit-transform: translate(5px);
-        transform: translate(5px);
+        -webkit-transform: translate(3.5px);
+        transform: translate(3.5px);
     }
     30% {
-        -webkit-transform: translate(-5px);
-        transform: translate(-5px);
+        -webkit-transform: translate(-3.5px);
+        transform: translate(-3.5px);
     }
     50% {
-        -webkit-transform: translate(3px);
+        -webkit-transform: translate(2px);
     }
     65% {
-        -webkit-transform: translate(-3px);
-        transform: translate(-3px);
+        -webkit-transform: translate(-2px);
+        transform: translate(-2px);
     }
     80% {
-        -webkit-transform: translate(2px);
-        transform: translate(2px);
+        -webkit-transform: translate(1px);
+        transform: translate(1px);
     }
     100% {
         -webkit-transform: translate(0);
