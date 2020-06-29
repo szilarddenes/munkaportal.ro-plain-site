@@ -343,24 +343,13 @@ body {
     filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.5));
 }
 
+medea
 
-@media (min-width: 992px) {
 #flags {
+    /* margin-right: 10rem; */
     position: absolute;
-    right: 55%;
-    margin-left: auto;
-    margin-right: auto;
+    left: calc(59% - 19.5rem);
 }
-}
-@media (min-width: 1200px) {
-#flags {
-    position: absolute;
-    right: 42%;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-
 
 .navbar-collapse.nyitva #flags {
     margin-right: 0rem;

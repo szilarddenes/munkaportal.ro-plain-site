@@ -344,10 +344,11 @@ body {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+    
 #flags {
     position: absolute;
-    right: 55%;
+    right: 43%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -355,7 +356,7 @@ body {
 @media (min-width: 1200px) {
 #flags {
     position: absolute;
-    right: 42%;
+    right: 43%;
     margin-left: auto;
     margin-right: auto;
 }

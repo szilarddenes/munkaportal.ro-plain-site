@@ -344,23 +344,17 @@ body {
 }
 
 
-@media (min-width: 992px) {
-#flags {
-    position: absolute;
-    right: 55%;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-@media (min-width: 1200px) {
-#flags {
-    position: absolute;
-    right: 42%;
-    margin-left: auto;
-    margin-right: auto;
-}
+@media (max-width: 768px) {
+    .pcheck{
+        display:none;
+    }
 }
 
+#flags {
+    /* margin-right: 10rem; */
+    position: absolute;
+    left: calc(59% - 19.5rem);
+}
 
 .navbar-collapse.nyitva #flags {
     margin-right: 0rem;
