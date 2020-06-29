@@ -1,0 +1,181 @@
+        .loading-dock {
+            /* background-color: white;
+  width: 300px;
+  height: 200px;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        button.submit{
+            cursor: pointer;
+            width: 10rem;
+            height: 3.2rem;
+            font-size: .9rem;
+            font-weight: 600;
+            color: #fefffe;
+            background-color: #15DEA5;
+            border-radius: 40px;
+            border: 2px solid #15DEA5;
+            transition: all .2s;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
+            transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+
+        .denied{
+            background-color: #e74c3c !important;
+            border: 2px solid#e74c3c !important;
+        }
+        #xMark{
+            /* margin-right: .5rem; */
+            padding-top: .3rem;
+            font-size: 1.4rem;
+            visibility: visible;
+            position: absolute;
+            right:0;
+
+            
+            
+        }
+        
+        button.submit:hover {
+            background: #15DEA5;
+            color: white;
+        }
+        
+        button.submit:active {
+            transform: scale(0.95);
+        }
+        
+        button.submit:focus {
+            outline: none;
+            background: #15DEA5;
+            color: white;
+        }
+        
+        button.submit.popout {
+            animation: circle-to-button .4s linear forwards;
+        }
+        
+        button.submit.return {
+            animation: fade-to-original .3s linear;
+        }
+        
+        button.submit.return:hover {
+            background: #15DEA5;
+            color: white;
+        }
+        
+        .loaded button.submit {
+            background-color: #15DEA5;
+            animation: button-to-circle .3s linear forwards;
+            animation-delay: .3s;
+        }
+        
+        .loaded #load {
+            animation: loading-circle 3s linear forwards;
+            animation-delay: .3s;
+        }
+        
+        #load,
+        #load-b {
+            display: none;
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            opacity: 0;
+
+        }
+        
+        #load .loading-inner,
+        #load-b .loading-inner {
+            stroke-dasharray: 900;
+            stroke-width: 10;
+            stroke-miterlimit: 10;
+            stroke-linecap: round;
+            stroke: #E5E7EE;
+            fill: transparent;
+        }
+        
+        #load-b {
+            opacity: 0;
+        }
+        
+        #load-b .loading-inner {
+            stroke: #15DEA5;
+        }
+        
+        #check {
+            position: absolute;
+            display: none;
+        }
+        
+        @keyframes loading-circle {
+            0% {
+                opacity: 1;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                opacity: 1;
+                stroke-dashoffset: -100;
+            }
+            100% {
+                opacity: 1;
+                stroke-dashoffset: -600;
+            }
+        }
+        
+        @keyframes button-to-circle {
+            0% {
+                width: 160px;
+                color: #15DEA5;
+                border-color: #15DEA5;
+                background-color: #15DEA5;
+            }
+            50% {
+                color: rgba(255, 255, 255, 0);
+            }
+            90% {
+                width: 50px;
+                color: rgba(255, 255, 255, 0);
+                border-color: #c3c3c3;
+            }
+            100% {
+                width: 50px;
+                border-color: rgba(255, 255, 255, 0);
+                color: rgba(255, 255, 255, 0);
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+        
+        @keyframes circle-to-button {
+            0% {
+                border-color: #15DEA5;
+                background-color: #15DEA5;
+                height: 50px;
+                width: 50px;
+            }
+            50% {
+                height: 50px;
+                width: 50px;
+            }
+            100% {
+                height: 50px;
+                width: 160px;
+                border-color: #15DEA5;
+                background-color: #15DEA5;
+            }
+        }
+        
+        @keyframes fade-to-original {
+            0% {
+                background-color: #15DEA5;
+            }
+            100% {
+                background-color: white;
+            }
+        }
