@@ -380,7 +380,6 @@ body {
 }
 
 .flagSwing {
-    /* transform: rotateZ(360deg); */
     -webkit-animation: swing .25s ease;
     animation: swingflag .25s ease;
     /* -webkit-animation-iteration-count: 1;
