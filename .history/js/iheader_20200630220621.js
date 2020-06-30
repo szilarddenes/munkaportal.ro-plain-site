@@ -56,7 +56,7 @@ $('.navbar-collapse ul li a:not(.dropdown-toggler)').bind('click', function () {
   $('.navbar-toggler:visible').click();
  });
 
-//nyitva
+ //nyitva
  const menuBtn = document.querySelector('.navbar-toggler');
 const navbarBcg = document.querySelector('.navbar');
 const navbarFlexJustify = document.querySelector('.navbar-collapse');

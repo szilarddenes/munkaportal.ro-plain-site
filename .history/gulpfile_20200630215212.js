@@ -42,7 +42,7 @@ gulp.task('concat', function (done) {
 //minify js --already included in scripts
 gulp.task('minify', function (done) {
   gulp
-    .src('gdist/jsmin/*.js')
+    .src('gdist/jsmi/*.js')
     .pipe(uglify('ugly.js'))
     .pipe(gulp.dest('gdist/jsconcmin'));
   done();
