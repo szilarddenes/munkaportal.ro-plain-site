@@ -263,7 +263,7 @@ function checkInputs() {
         setErrorFor(findUS, 'Check an option.');
         break;
       case 'de':
-        setErrorFor(findUS, 'Wählen Sie eine Option.');
+        setErrorFor(findUS, 'Wähle eine Option.');
         break;
     }
     //   error message end ---------------->

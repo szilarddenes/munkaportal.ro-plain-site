@@ -119,7 +119,7 @@ function checkInputs() {
         setErrorFor(JobCategory, 'Choose a category.');
         break;
       case 'de':
-        setErrorFor(JobCategory, 'Wählen Sie eine Kategorie.');
+        setErrorFor(JobCategory, 'Wähle eine Kategorie.');
         break;
     }
     //   error message end ---------------->
@@ -263,7 +263,7 @@ function checkInputs() {
         setErrorFor(findUS, 'Check an option.');
         break;
       case 'de':
-        setErrorFor(findUS, 'Wählen Sie eine Option.');
+        setErrorFor(findUS, 'Wähle eine Option.');
         break;
     }
     //   error message end ---------------->
@@ -397,7 +397,7 @@ function submitButtonA() {
             submit.innerHTML = 'Beküldés';
             break
         case "ro":
-            submit.innerHTML = 'Trimitere';
+            submit.innerHTML = 'Trimite';
             break
         case "en":
             submit.innerHTML = 'Submit';
