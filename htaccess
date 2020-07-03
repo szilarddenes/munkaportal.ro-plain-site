@@ -9,6 +9,9 @@
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://munkaportal.ro/$1 [R=301,L,NE]
+RewriteCond %{HTTP_HOST} ^yourdomain\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.yourdomain.com/$1 [R,L]
 
 AddType     image/svg+xml              svg svgz
 AddEncoding gzip                       svgz
