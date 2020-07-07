@@ -8,24 +8,29 @@ class Translator {
         }
         //get default language start
     getLanguage() {
-        if (!this._options.detectLanguage) {
-            return this._options.defaultLanguage;
-        }
+        // if (!this._options.detectLanguage) {
+        //     return this._options.defaultLanguage;
+        // }
 
-        var stored = localStorage.getItem('language');
+        // var stored = localStorage.getItem('language');
 
-        if (this._options.persist && stored) {
-            return stored;
-        }
+        // if (this._options.persist && stored) {
+        //     return stored;
+        // }
 
-        var lang = navigator.languages ?
-            navigator.languages[0] :
-            navigator.language;
-        console.log(navigator.languages);
+        // var lang = navigator.languages ?
+        //     navigator.languages[0] :
+        //     navigator.language;
+        // console.log(navigator.languages);
 
-        console.log('getLanguage Default Language', lang.substr(0, 2));
-        window.defLang = lang.substr(0, 2);
-        return lang.substr(0, 2);
+        // console.log('getLanguage Default Language', lang.substr(0, 2));
+        // window.defLang = lang.substr(0, 2);
+        // return lang.substr(0, 2);
+
+        //**********       the above script if we want to check the browsers default(or installation) language */
+        var lang = 'hu'
+        window.defLang = lang
+        return lang
     }
 
     //get default language end
@@ -82,8 +87,8 @@ class Translator {
     get defaultConfig() {
         return {
             persist: false,
-            languages: ['en'],
-            defaultLanguage: 'en',
+            languages: ['hu'],
+            defaultLanguage: 'hu',
             filesLocation: 'i18n/',
         };
     }
